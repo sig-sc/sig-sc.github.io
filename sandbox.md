@@ -1,5 +1,6 @@
 ---
 title: Sandbox - お砂場
+layout: post
 ---
 
 # 見出し１
