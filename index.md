@@ -38,10 +38,12 @@
   - エッジコンピューティング
   - フォグコンピューティング
 
-## <font color="red">【募集中】</font> 第27回研究会 発表募集
+## 第27回SC研究会・発表募集<font color="red">【募集中】</font> 
 
 2018年8月に東京・法政大学で行われる第27回サービスコンピューティング研究会の参加を受け付けています．
+
 今回は，[ソフトウェアインタプライズモデリング研究会（SWIM）](http://www.ieice.org/iss/swim/jpn/)との共催です．
+
 奮ってご参加ください．
 
 - __テーマ：__ __「ソサエティ5.0に向けたサービスコンピューティングとインタプライズモデル化技術および一般 」および一般__
@@ -64,15 +66,15 @@
 #### 委員長
 - 中村 匡秀 (神戸大学)
 
-### 副委員長
+#### 副委員長
 - 菊地 伸治（会津大学）
 - 山登 庸次（NTT）
 
-### 幹事
+#### 幹事
 - 木村 功作（富士通研究所）
 - 細野 繁（NEC)
 
-### 委員
+#### 委員
 - 青山 幹雄 （南山大学）
 - 井垣 宏（大阪工業大学）
 - 石川 冬樹（国立情報学研究所）
@@ -91,19 +93,19 @@
 - 横山 重俊（群馬大学）
 - Donghui Lin（京都大学）
 
-# 関連リンク
-## ジャーナル
+## 関連リンク
+### ジャーナル
 - [IEEE Transactions on Services Computing](http://www.computer.org/tsc)
 - [International Journal of Web Services Research (JWSR)](http://www.servicescomputing.org/jwsr/)
 
-## 国際会議
+### 国際会議
 - [IEEE International Conference on Web Services (IEEE ICWS)](http://www.icws.org/)
 - [IEEE International Conference on Services Computing (IEEE SCC)](http://thescc.org/)
 - [IEEE International Conference on Cloud Computing (IEEE CLOUD)](http://www.thecloudcomputing.org/)
 - [The 4th International Congress on Big Data (IEEE BigData Congress)](http://www.ieeebigdata.org/)
 - [International Conference on Service Oriented Computing (ICSOC)](http://www.icsoc.org/)
 
-## その他
+### その他
 - [IEEE Services Computing Community](https://www.ieeecommunities.org/services)
 - [Technical Committee on Services Computing (TCSVC)](http://tab.computer.org/tcsc/)
 
