@@ -1,6 +1,6 @@
 ---
 title: Sandbox - お砂場
-layout: post
+site.title: SIG-SC
 ---
 
 # 見出し１
