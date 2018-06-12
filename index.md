@@ -105,10 +105,10 @@ Everything as a Service）は，[ソサイエティ5.0(超スマート社会)](h
 - [International Journal of Web Services Research (JWSR)](http://www.servicescomputing.org/jwsr/)
 
 ### 国際会議
-- [IEEE International Conference on Web Services (IEEE ICWS)](http://www.icws.org/)
-- [IEEE International Conference on Services Computing (IEEE SCC)](http://thescc.org/)
-- [IEEE International Conference on Cloud Computing (IEEE CLOUD)](http://www.thecloudcomputing.org/)
-- [The 4th International Congress on Big Data (IEEE BigData Congress)](http://www.ieeebigdata.org/)
+- [IEEE International Conference on Web Services (IEEE ICWS)](http://conferences.computer.org/icws/)
+- [IEEE International Conference on Services Computing (IEEE SCC)](http://conferences.computer.org/scc/)
+- [IEEE International Conference on Cloud Computing (IEEE CLOUD)](http://conferences.computer.org/cloud/)
+- [IEEE International Congress on Big Data (IEEE BigData Congress)](http://conferences.computer.org/bigdatacongress/)
 - [International Conference on Service Oriented Computing (ICSOC)](http://www.icsoc.org/)
 
 ### その他
