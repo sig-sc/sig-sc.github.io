@@ -12,7 +12,7 @@
 - hoge.md --> https://sig-sc.github.io/hoge.html
 
 また，通常のhtml形式もコミットできます．
-- fuga.html --> https://sig-sc.github.io/hoge.html
+- fuga.html --> https://sig-sc.github.io/fuga.html
 
 ## ファイル・ディレクトリ構成
 - index.md  --トップページです．
