@@ -11,8 +11,8 @@ categories: seminar report update
 - __場所:__ 会津大学UBIC3DTheater
 - __プログラム:__
 
-<pre>
 
+<pre>
 3月27日(金) 午後 ■研究会１日目（第1セッション） （13：00～15：05）
 座長: Incheon Paik (会津大)
 

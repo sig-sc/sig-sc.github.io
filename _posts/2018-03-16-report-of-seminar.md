@@ -11,8 +11,8 @@ categories: seminar report update
 - __場所:__ 国立情報学研究所12F会議室
 - __プログラム:__
 
-<pre>
 
+<pre>
 (1) 11:00 - 11:10
 オープニング
 

@@ -11,8 +11,8 @@ categories: seminar report update
 - __場所:__ 国立情報学研究所(NII)12F会議室（1210/1208）
 - __プログラム:__
 
-<pre>
 
+<pre>
 (1) 11:00-11:30
 Towards a Practical Method for Interactive Traffic Visualizations in Data Centers
 ○Marat Zhanikeev（Kyushu Inst. of Tech.）

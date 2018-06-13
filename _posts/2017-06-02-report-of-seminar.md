@@ -11,8 +11,8 @@ categories: seminar report update
 - __場所:__ 会津大学産業イノベーションセンター(UBIC)３Ｄシアター
 - __プログラム:__
 
-<pre>
 
+<pre>
 6月2日(金) 午後 AIおよびデータマイング （13：05～14：45）
 座長: 中村匡秀(神戸大学)
 
@@ -25,7 +25,7 @@ Correlation Between Taxonomy Data Distribution and Classification Performance
 ○Incheon Paik・Kazuki Sasaki（Univ. of Aizu）
 
 (3) 13:55 - 14:20
-Taxonomy Classification By Explicit Semantic Analysis & Deep Machine Learning
+Taxonomy Classification By Explicit Semantic Analysis &amp; Deep Machine Learning
 ○Kento Hayasaka・Incheon Paik（Univ. of Aizu）
 
 (4) 14:20 - 14:45
