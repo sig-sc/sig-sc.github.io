@@ -113,25 +113,25 @@ Arbitrary Location Estimation Using Infrared Sensors by Machine Learning
 ### 写真
 
 会津大学です．気持ちのいい天気でした．
-<img src="../assets/file/20180601/u-aizu.jpg">
+<img src="/assets/file/20180601/u-aizu.jpg">
 
 受付の様子．会津大学の学生さんたちにご協力いただきました．
-<img src="../assets/file/20180601/reception.jpg">
+<img src="/assets/file/20180601/reception.jpg">
 
 興味深い発表と活発な議論の様子．
 
-<img src="../assets/file/20180601/presen1.jpg"><br />
-<img src="../assets/file/20180601/presen2.jpg"><br />
-<img src="../assets/file/20180601/presen3.jpg"><br />
-<img src="../assets/file/20180601/presen4.jpg"><br />
+<img src="/assets/file/20180601/presen1.jpg"><br />
+<img src="/assets/file/20180601/presen2.jpg"><br />
+<img src="/assets/file/20180601/presen3.jpg"><br />
+<img src="/assets/file/20180601/presen4.jpg"><br />
 
 情報交換会も盛り上がりました．
 
-<img src="../assets/file/20180601/banquet.jpg"><br />
+<img src="/assets/file/20180601/banquet.jpg"><br />
 
 全体の集合写真
 
-<img src="../assets/file/20180601/zentai.jpg"><br />
+<img src="/assets/file/20180601/zentai.jpg"><br />
 
 次回の第26回研究会は，8/24(金)に法政大学で開催されます（※申し込みは6/15(金)です）．
 SWIM研究会との共催です．ぜひ発表をご検討ください！！
