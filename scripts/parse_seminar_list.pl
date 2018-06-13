@@ -26,18 +26,19 @@ sub generate_post_file {
 	
 	open (my $out, ">$post_dir/$file_name") || die;
 	
+	#プリ案ブル
 	print $out "---\n";
-	print $out "layout: post\n";
+	print $out "layout: default\n";
 	print $out "title:  \"$obj->{heading} $obj->{date}\"\n";
 	print $out "date:   $obj->{dateStr} 21:00:00 +0900\n";
 	print $out "categories: seminar report update\n";
 	print $out "---\n\n";
 
 	print $out "###$obj->{heading}\n";
-	print $out "- ___テーマ:___ $obj->{theme}\n";
-	print $out "- ___日程:___ $obj->{date}\n";
-	print $out "- ___場所:___ $obj->{location}\n";
-	print $out "- ___プログラム: ___\n";
+	print $out "- __テーマ:__ $obj->{theme}\n";
+	print $out "- __日程:__ $obj->{date}\n";
+	print $out "- __場所:__ $obj->{location}\n";
+	print $out "- __プログラム:__\n";
 	print $out "\n<pre>\n";
 	print $out "$obj->{content}";
 	print $out "</pre>\n\n";
