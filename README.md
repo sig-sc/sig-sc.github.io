@@ -15,17 +15,24 @@
 - fuga.html --> https://sig-sc.github.io/hoge.html
 
 ## ファイル・ディレクトリ構成
-- index.md   #トップページです．
-- seminar_list.md #過去の研究会開催ページ
+- index.md  --トップページです．
+- seminar_list.md  --過去の研究会ページへのインデクスです．
+- sandbox.md -- テスト用のファイルです．テスト用に自由に編集してください．
+- _posts -- 過去の研究会のページを入れるディレクトリです．
+  - ファイル名 (yyyy-mm-dd-file-name.md)を作成し，プリアンブルを書いておくと，seminar_list.mdに自動的にリンクされます．
+  - 他のファイルをコピーして作ると楽です．
+- assets -- スライドや写真を保存するディレクトリです．
+  file/yyyymmddの下に適宜保存して，他のページからリンクしてください．
+- scripts -- 以前のページからコンテンツをマイグレーションするためのスクリプトが入っています．
+  - とりあえず使う必要はありません．
 
 ## テーマ
 - [Jekyll](https://jekyllrb.com/)というフレームワークで，マークダウンからhtmlを自動生成しています．
 - JekyllはGitHub Pagesの標準サービスで，Settingsからいろんなテーマを適用できるようです．
--- 現在は，[cayman](https://github.com/pages-themes/cayman) というテーマにしています
+  - 現在は，[cayman](https://github.com/pages-themes/cayman) というテーマにしています
 
 ## ToDo
-- 過去の開催のページを整備していく必要があります
-- YYYYMMDD形式のフォルダを作って，その中に写真も含めたコンテンツを入れていこうと考えています．
+- 継続的な運用．
 
 ## 更新の方法
 - git clone して，適宜branchを切って，そのbranch名でpushしてください．
