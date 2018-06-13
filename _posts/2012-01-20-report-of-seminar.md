@@ -19,21 +19,21 @@ categories: seminar report update
 
 13:45-15:40 Discussion 1: クラウドコンピューティング導入
 クラウドの性質 - 利用者の観点から
-  中村匡秀 (神戸大) <a href="/assets/file20120119/nakamura_talk20120119.pdf">スライド</a>
+  中村匡秀 (神戸大) <a href="/assets/file/20120119/nakamura_talk20120119.pdf">スライド</a>
 情報システム統合とクラウド
   鯵坂恒夫 (和歌山大)
 企業情報システムにおけるクラウド活用検討プロセス
-  鵜野 和也 (オージス総研) <a href="/assets/file20120119/uno_talk20120119.pdf">スライド</a>
+  鵜野 和也 (オージス総研) <a href="/assets/file/20120119/uno_talk20120119.pdf">スライド</a>
 企業情報システムにおけるWeb APIの利用
-  齋藤 伸也 (オージス総研) <a href="/assets/file20120119/saito_talk20120119.pdf">スライド</a>
-既存サービスを利用するソフトウェアにおける機能・品質の分析に関する議論 <a href="/assets/file20120119/ishikawa_talk20120119.pdf">スライド</a>
+  齋藤 伸也 (オージス総研) <a href="/assets/file/20120119/saito_talk20120119.pdf">スライド</a>
+既存サービスを利用するソフトウェアにおける機能・品質の分析に関する議論 <a href="/assets/file/20120119/ishikawa_talk20120119.pdf">スライド</a>
   石川冬樹(NII)
 
 15:45-17:00 Discussion 2：ソフトウェア工学へのクラウドコンピューティング適用
 クラウドサービス工学への挑戦
-  青山 幹雄(南山大) <a href="/assets/file20120119/aoyama_talk20120119.pdf">スライド</a>
+  青山 幹雄(南山大) <a href="/assets/file/20120119/aoyama_talk20120119.pdf">スライド</a>
 クラウド環境におけるサービス連携のための利益配分モデル
-  田仲正弘(NICT)  <a href="/assets/file20120119/mtnk_talk20120119.pdf">スライド</a>
+  田仲正弘(NICT)  <a href="/assets/file/20120119/mtnk_talk20120119.pdf">スライド</a>
 ソースコードメトリクス算出サービスへのクラウドの適用
   まつ本真佑(神大)
 
@@ -43,10 +43,10 @@ categories: seminar report update
 9:00-10:55 Discussion 3：クラウドコンピューティングと教育
 ソフトウェアイノベーション先導のためのクラウドコンピューティングを対象とした教育プログラムの検討
   井垣宏，楠本真二 (阪大)
-物理・仮想マシンの統一的なクラスタ管理フレームワーク: dodai <a href="/assets/file20120119/yokoyama_talk20120119.pdf">スライド</a>
+物理・仮想マシンの統一的なクラスタ管理フレームワーク: dodai <a href="/assets/file/20120119/yokoyama_talk20120119.pdf">スライド</a>
   横山重俊，長久勝，吉岡信和(NII)
 IT Spiral におけるedubase Cloud の活用事例
-  福安直樹，佐伯幸郎，水谷泰治 (和歌山大，高知工科大，大阪工業大) <a href="/assets/file20120119/saiki_talk20120119.pdf">スライド</a>
+  福安直樹，佐伯幸郎，水谷泰治 (和歌山大，高知工科大，大阪工業大) <a href="/assets/file/20120119/saiki_talk20120119.pdf">スライド</a>
 Apache Virtual Computing Laboratory
   梶田将司(京都大)
 アカデミックプライベートクラウドの導入事例研究

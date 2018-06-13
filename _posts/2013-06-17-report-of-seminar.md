@@ -26,13 +26,13 @@ categories: seminar report update
 NICTサイエンスクラウド: 広域分散型クラウドの基本性能と有効性の検証
 ○村田健史・渡邉英伸（NICT）・鵜川健太郎・村永和哉・鈴木　豊（SEC社）
 ・黒澤　隆（日立）・木村映善（愛媛大）・建部修見（筑波大）
-・山本和憲・久保田康文・笠井康子（NICT）・荻野竜樹（名大）  <a href="/assets/file20130617/murata_slide.pdf">スライド</a>
+・山本和憲・久保田康文・笠井康子（NICT）・荻野竜樹（名大）  <a href="/assets/file/20130617/murata_slide.pdf">スライド</a>
 
 
 (3) 14:10 - 14:35
 NICTサイエンスクラウド: 広域分散ファイルシステムのセキュリティ機能拡張
 ○渡邉英伸・岩間　司・村田健史（NICT）・鵜川健太郎・村永和哉・鈴木　豊（SEC社）
-・木村映善（愛媛大）・建部修見（筑波大）  <a href="/assets/file20130617/watanabe_slide.pdf">スライド</a>
+・木村映善（愛媛大）・建部修見（筑波大）  <a href="/assets/file/20130617/watanabe_slide.pdf">スライド</a>
 
 
 (4) 14:35 - 15:00
@@ -52,12 +52,12 @@ NICTサイエンスクラウド: ビッグデータ分散処理性能検証
 (6) 15:50 - 16:15
 Automatic Adaptation of Streaming Data for WebELS Meeting for Low Speed Internet
 ○Osamnia Mohamed（SOKENDAI）・Arjulie John Berena（NII）・Sila Chunwijitra（SOKENDAI）
-・Hitoshi Okada・Haruki Ueno（NII）・Khiat Zekuia（USTO）  <a href="/assets/file20130617/osamnia_slide.pdf">スライド</a>
+・Hitoshi Okada・Haruki Ueno（NII）・Khiat Zekuia（USTO）  <a href="/assets/file/20130617/osamnia_slide.pdf">スライド</a>
 
 
 (7) 16:15 - 16:40
 Experiences from Measuring Per-Packet Cost of Sofware Defined Networking
-○Marat Zhanikeev（Kyutech）  <a href="/assets/file20130617/zhanikeev_slide.pdf">スライド</a>
+○Marat Zhanikeev（Kyutech）  <a href="/assets/file/20130617/zhanikeev_slide.pdf">スライド</a>
 
 
 －－－　休憩　（ 10分 ）　－－－
@@ -67,7 +67,7 @@ Experiences from Measuring Per-Packet Cost of Sofware Defined Networking
 
 (8) 16:50 - 17:15
 決定木を用いたクラウドインフラ設定パラメータの自動生成
-○内海哲哉・菊池慎司・松本安英（富士通研）  <a href="/assets/file20130617/uchiumi_slide.pdf">スライド</a>
+○内海哲哉・菊池慎司・松本安英（富士通研）  <a href="/assets/file/20130617/uchiumi_slide.pdf">スライド</a>
 
 
 (9) 17:15 - 17:40

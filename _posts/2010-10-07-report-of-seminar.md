@@ -16,34 +16,34 @@ categories: seminar report update
 Part 1: 「Webサービス、クラウドの先へ：サービスコンピューティング研究が拓く世界」
          （サービスコンピューティング時限研究専門委員会） 
 10:05-10:35 サービス・コンピューティング[が|を]支えるクラウド・コンピューティング
-            浦本 直彦(日本IBM) <a href="/assets/file20101007/uramoto_talk.pdf">スライド</a>
+            浦本 直彦(日本IBM) <a href="/assets/file/20101007/uramoto_talk.pdf">スライド</a>
 10:35-11:05 クラウドがもたらす次世代情報システムのアーキテクチャ
-            青山 幹雄(南山大) <a href="/assets/file20101007/aoyama_talk.pdf">スライド</a>
+            青山 幹雄(南山大) <a href="/assets/file/20101007/aoyama_talk.pdf">スライド</a>
 11:05-11:30 あなたのクラウドサービスを組み立てる
             ～クラウドの今後に向けたサービスコンピューティング研究紹介～
-            石川 冬樹(NII) <a href="/assets/file20101007/ishikawa_talk.pdf">スライド</a>
+            石川 冬樹(NII) <a href="/assets/file/20101007/ishikawa_talk.pdf">スライド</a>
 11:30-11:55 言語グリッド：サービス指向集合知による多言語サービス基盤
-            村上 陽平(NICT) <a href="/assets/file20101007/yohei_talk.pdf">スライド</a>
+            村上 陽平(NICT) <a href="/assets/file/20101007/yohei_talk.pdf">スライド</a>
 
 Part 2: 「エンタープライズにおけるクラウドコンピューティングの適用可能性 (チュートリアル） 」
           （ソフトウェアインタプライズモデリング研究専門委員会）
 12:05-12:45 チュートリアル招待講演：クラウドコンピューティングについての国内外の最新状況と今後
-            林 雅之氏(NTTコミュニケーションズ) <a href="/assets/file20101007/hayashi_talk.pdf">スライド</a>
+            林 雅之氏(NTTコミュニケーションズ) <a href="/assets/file/20101007/hayashi_talk.pdf">スライド</a>
 12:45-13:05 クラウドコンピューティングによるアプリケーション試作開発事例
             ～トライアルプロジェクト中間報告～
-            宮西 洋太郎(アイエスイーエム) <a href="/assets/file20101007/miyanishi_talk.pdf">スライド</a>
+            宮西 洋太郎(アイエスイーエム) <a href="/assets/file/20101007/miyanishi_talk.pdf">スライド</a>
 14:00-14:25 Google App Engineを用いた意見収集・形成システムの試作
-            庄司 諒 (宮城大)  <a href="/assets/file20101007/shoji_talk.pdf">スライド</a>
+            庄司 諒 (宮城大)  <a href="/assets/file/20101007/shoji_talk.pdf">スライド</a>
 14:25-14:50 GAE環境におけるSQLデータベース移行に関する技術的考察
-            曽根 碧 (宮城大)  <a href="/assets/file20101007/sone_talk.pdf">スライド</a>
+            曽根 碧 (宮城大)  <a href="/assets/file/20101007/sone_talk.pdf">スライド</a>
 
 Part 3: 合同パネルディスカッション
 15:00-17:00 クラウドコンピューティングの現状と今後
 司　　　会： 浦本 直彦 (日本IBM)
-パネリスト： 青山 幹雄 (南山大学) <a href="/assets/file20101007/aoyama_panel.pdf">スライド</a>
-パネリスト： 横山 重俊 (国立情報学研究所) <a href="/assets/file20101007/yokoyama_panel.pdf">スライド</a>
+パネリスト： 青山 幹雄 (南山大学) <a href="/assets/file/20101007/aoyama_panel.pdf">スライド</a>
+パネリスト： 横山 重俊 (国立情報学研究所) <a href="/assets/file/20101007/yokoyama_panel.pdf">スライド</a>
 パネリスト： 林 　雅之 (NTTコミュニケーションズ)
-パネリスト： 森 　正勝 (日立製作所 システム開発研究所) <a href="/assets/file20101007/mori_panel.pdf">スライド</a>
+パネリスト： 森 　正勝 (日立製作所 システム開発研究所) <a href="/assets/file/20101007/mori_panel.pdf">スライド</a>
 
 </pre>
 
