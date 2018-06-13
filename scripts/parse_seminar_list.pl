@@ -12,6 +12,8 @@ use Data::Dumper;
 # コマンドラインで与えられたローカルHTMLファイルを読み込む
 my $db = &parse_html_file($ARGV[0]);
 
+
+
 for my $date (sort {$b cmp $a} (keys %{$db})) {
 	my $s = $db->{$date};
 	&generate_post_file($s);
@@ -21,6 +23,7 @@ for my $date (sort {$b cmp $a} (keys %{$db})) {
 sub generate_post_file {
 	my $obj = shift;
 
+	mkdir "_posts", 755;
 	my $post_dir = "_posts";
 	my $file_name = sprintf "%s-report-of-seminar.md", $obj->{dateStr};
 	
@@ -39,9 +42,11 @@ sub generate_post_file {
 	print $out "- __日程:__ $obj->{date}\n";
 	print $out "- __場所:__ $obj->{location}\n";
 	print $out "- __プログラム:__\n";
-	print $out "\n<pre>\n";
-	print $out "$obj->{content}";
-	print $out "</pre>\n\n";
+	print $out "\n\n";
+	
+	my $content = $obj->{content};
+	$content =~ s/file\//\/assets\/file/g;
+	print $out "$content\n\n";
 
 	close $out;
 }
@@ -76,7 +81,7 @@ sub parse_html_file {
 	## コンテンツ(プログラム)を取得
 	my @contents;
 	for my $pre ($dom->find('pre')) {
-		my $str = Encode::encode('utf8', $pre->as_text);
+		my $str = Encode::encode('utf8', $pre->as_HTML('&<>'));
 		push @contents, $str;
 	}
 

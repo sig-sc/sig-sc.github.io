@@ -11,8 +11,8 @@ categories: seminar report update
 - __場所:__ 京都大学（KRP拠点）
 - __プログラム:__
 
-<pre>
 
+<pre>
 1月15日(金) 午後 IoTセッション （13：00～14：20）
 
 －－－　委員長挨拶　（ 5分 ）　－－－

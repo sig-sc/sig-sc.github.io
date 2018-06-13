@@ -11,8 +11,8 @@ categories: seminar report update
 - __場所:__ 会津大学UBIC3DTheater
 - __プログラム:__
 
-<pre>
 
+<pre>
 6月3日(金)
 13:00〜　オープニング
 

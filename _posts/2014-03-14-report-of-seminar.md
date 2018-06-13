@@ -11,8 +11,8 @@ categories: seminar report update
 - __場所:__ 国立情報学研究所(NII)12F会議室（1210/1208）
 - __プログラム:__
 
-<pre>
 
+<pre>
 (1) 13:10 - 14:00  招待講演
 ディペンダブルなクラウドコンピューティング基盤を目指して
 講演者: 加藤和彦
@@ -34,7 +34,7 @@ Database Environment
 Online Failure Prediction with Accurate Failure Localization in Cloud
 Infrastructures
 ○Hiroshi Otsuka（Flab）・Kaustubh Joshi・Matti Hiltunen・Scott
-Daniels（AT&T Lab）・Yasuhide Matsumoto（Flab）
+Daniels（AT&amp;T Lab）・Yasuhide Matsumoto（Flab）
 
 (4) 15:00 - 15:25
 インタークラウド仮想インフラ構築システムIrisのプロトタイプシステムの開発

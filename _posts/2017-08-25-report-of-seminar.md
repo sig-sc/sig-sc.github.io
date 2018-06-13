@@ -11,8 +11,8 @@ categories: seminar report update
 - __場所:__ 法政大学新一口坂校舎
 - __プログラム:__
 
-<pre>
 
+<pre>
 (1) 10:45 - 11:10
 Real-time Trend Analysis of Streaming Twitter and News Based on Big Data Infrastructure
 Chungho Lee・○Incheon Paik（UoA）
