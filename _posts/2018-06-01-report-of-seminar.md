@@ -133,7 +133,7 @@ Arbitrary Location Estimation Using Infrared Sensors by Machine Learning
 
 <img src="/assets/file/20180601/zentai.jpg"><br />
 
-次回の第26回研究会は，8/24(金)に法政大学で開催されます（※申し込みは6/15(金)です）．
+次回の第27回研究会は，8/24(金)に法政大学で開催されます（※申し込みは6/15(金)です）．
 SWIM研究会との共催です．ぜひ発表をご検討ください！！
 
 
