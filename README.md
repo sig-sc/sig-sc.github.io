@@ -12,16 +12,16 @@
 - hoge.md --> https://sig-sc.github.io/hoge.html
 
 また，通常のhtml形式もコミットできます．
-- fuga.md --> https://sig-sc.github.io/hoge.html
+- fuga.html --> https://sig-sc.github.io/hoge.html
 
 ## ファイル・ディレクトリ構成
 - index.md   #トップページです．
 - seminar_list.md #過去の研究会開催ページ
 
 ## テーマ
-- Jikyllというフレームワークで，マークダウンからhtmlを自動生成しています．
-- GitHub Pagesの標準サービスで，Settingsからいろんなテーマを適用できるようです．
--- 現在は，cayman というテーマにしています
+- [Jekyll](https://jekyllrb.com/)というフレームワークで，マークダウンからhtmlを自動生成しています．
+- JekyllはGitHub Pagesの標準サービスで，Settingsからいろんなテーマを適用できるようです．
+-- 現在は，[cayman](https://github.com/pages-themes/cayman) というテーマにしています
 
 ## ToDo
 - 過去の開催のページを整備していく必要があります
