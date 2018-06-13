@@ -45,7 +45,7 @@ sub generate_post_file {
 	print $out "\n\n";
 	
 	my $content = $obj->{content};
-	$content =~ s/file\//\/assets\/file/g;
+	$content =~ s/file\//\/assets\/file\//g;
 	print $out "$content\n\n";
 
 	close $out;

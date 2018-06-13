@@ -18,21 +18,21 @@ categories: seminar report update
 13:05-13:45 	【招待講演】クラウドサービスにおけるネットワークの課題と今後
   ○淀野 直弥（NECビッグローブ）
 13:45-14:10 	研究クラウドgunniiの開発
-  ○吉岡信和・長久　勝（NII）・谷沢智史（e-ambition）・横山重俊（NII） <a href="/assets/file20120611/yoshioka_slide.pdf">スライド</a>
+  ○吉岡信和・長久　勝（NII）・谷沢智史（e-ambition）・横山重俊（NII） <a href="/assets/file/20120611/yoshioka_slide.pdf">スライド</a>
 14:10-14:35 	プライベートクラウド監視アーキテクチャの提案
   ○谷沢智史・西村一彦（e-ambition）・長久　勝・横山重俊・吉岡信和（NII）
 14:35-15:00 	Service-Controlled Networkingに基づくネットワークフローの動的制御手法
-  ○木全　崇・豊村鉄男・金　京淑・是津耕司（NICT）<a href="/assets/file20120611/kimata_slide.pdf">スライド</a>
+  ○木全　崇・豊村鉄男・金　京淑・是津耕司（NICT）<a href="/assets/file/20120611/kimata_slide.pdf">スライド</a>
 
 セッション２：Webサービスおよび一般 座長: 田仲 正弘（NICT）15:10 - 17:10 
 15:10-15:50 	【招待講演】Webサービス化するインフラと、進化するコンピュータの概念
-  ○山崎 泰宏（あくしゅ）<a href="/assets/file20120611/yamazaki_slide.pdf">スライド</a>
+  ○山崎 泰宏（あくしゅ）<a href="/assets/file/20120611/yamazaki_slide.pdf">スライド</a>
 15:50-16:15 	サービス・コモンズ
-  ○立堀道昭（IBM）<a href="/assets/file20120611/tatsubori_slide.pdf">スライド</a>
+  ○立堀道昭（IBM）<a href="/assets/file/20120611/tatsubori_slide.pdf">スライド</a>
 16:15-16:40    利用者のブラウザ操作をWebサービス化するための開発・最適化支援環境
-  ○田中昌弘・粂　照宜・松尾明彦（富士通研）<a href="/assets/file20120611/tanaka_slide.pdf">スライド</a>
+  ○田中昌弘・粂　照宜・松尾明彦（富士通研）<a href="/assets/file/20120611/tanaka_slide.pdf">スライド</a>
 16:40-17:05 	スマートシティにおける大規模住宅ログを活用したサービスの検討
-  ○山本晋太郎・高橋昂平・大櫛章裕・まつ本真佑・中村匡秀（神戸大）<a href="/assets/file20120611/yamamoto_slide.pdf">スライド</a>
+  ○山本晋太郎・高橋昂平・大櫛章裕・まつ本真佑・中村匡秀（神戸大）<a href="/assets/file/20120611/yamamoto_slide.pdf">スライド</a>
 17:05-17:10 	SC 専門委員長挨拶　（ 5分 ）
 </pre>
 

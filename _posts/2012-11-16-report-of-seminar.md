@@ -29,11 +29,11 @@ categories: seminar report update
 ○中村匡秀（神戸大）
 
 (3) 14:40 - 15:10
-サービスコンピューティングのためのHTML利用基盤の確立  <a href="/assets/file20121116/sunaga_slide.pdf">スライド</a>
+サービスコンピューティングのためのHTML利用基盤の確立  <a href="/assets/file/20121116/sunaga_slide.pdf">スライド</a>
 ○須永　宏（阪工大）
 
 (4) 15:10 - 15:40
-ソフトウェア開発PBLのためのDaaSを利用した開発環境の構築  <a href="/assets/file20121116/saiki_slide.pdf">スライド</a>
+ソフトウェア開発PBLのためのDaaSを利用した開発環境の構築  <a href="/assets/file/20121116/saiki_slide.pdf">スライド</a>
 ○佐伯幸郎（高知工科大）・井垣　宏（阪大）・福安直樹（和歌山大）・まつ本真佑（神戸大）・楠本真二（阪大）
 
 －－－　休憩　（ 10分 ）　－－－

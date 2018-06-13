@@ -13,9 +13,9 @@ categories: seminar report update
 
 
 <pre>
-1. サービスコンピューティングのビジョン 村上 陽平（情報通信研究機構）<a href="/assets/file20111027/jaws2011_murakami.pdf">スライド</a>
-2. クラウドコンピューティングにおけるエージェントのアプローチ  石川 冬樹（国立情報学研究所）<a href="/assets/file20111027/jaws2011_ishikawa.pdf">スライド</a>
+1. サービスコンピューティングのビジョン 村上 陽平（情報通信研究機構）<a href="/assets/file/20111027/jaws2011_murakami.pdf">スライド</a>
+2. クラウドコンピューティングにおけるエージェントのアプローチ  石川 冬樹（国立情報学研究所）<a href="/assets/file/20111027/jaws2011_ishikawa.pdf">スライド</a>
 3. サービスコンピューティングにおけるクラウドソーシングへのアプローチ 田仲 正弘（情報通信研究機構）
-   <a href="/assets/file20111027/jaws2011_tanaka.pdf">スライド</a>
+   <a href="/assets/file/20111027/jaws2011_tanaka.pdf">スライド</a>
 </pre>
 
