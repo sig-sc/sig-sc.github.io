@@ -41,9 +41,9 @@
   - エッジコンピューティング
   - フォグコンピューティング
 
-## 第27回SC研究会・発表募集<font color="red">【募集中】</font> 
+## 第27回SC研究会 <font color="red">【発表申込は締め切られました】</font> 
 
-2018年8月に東京・法政大学で行われる第27回サービスコンピューティング研究会の参加を受け付けています．
+2018年8月に東京・法政大学で行われる第27回サービスコンピューティング研究会のご案内です．
 
 今回は，[ソフトウェアインタプライズモデリング研究会（SWIM）](http://www.ieice.org/iss/swim/jpn/)との共催です．
 
@@ -59,7 +59,7 @@ Everything as a Service）は，[ソサイエティ5.0(超スマート社会)](h
 - __場 所：__ [法政大学 新一口坂校舎](http://www.im.i.hosei.ac.jp/contact/access/)
 - __参加費:__ 技報の電子化に伴い，参加費が変更されました．[「参加費について」](https://www.ieice.org/ken/user/index.php?cmd=participation&tgs_regid=0964837c02da4e08b2d163fca5e76f6a3ad2a664adaf3e8eb30c1a856343d0d0) をご覧ください．
 - __発表申込方法:__ 発表のお申込みは[電子情報通信学会 研究会発表申込システム](https://www.ieice.org/ken/program/index.php?instsoc=IEICE-D&tgid=IEICE-SC&year=0&region=0&sch1=1&schkey=&pnum=0&psize=2&psort=0&layout=&lang=&term=&pskey=&ps1=1&ps2=1&ps3=1&ps4=1&ps5=1&search_mode=)からお願い致します。(氏名、所属、論文タイトル、アブストラクト100〜200字)
-- __申込〆切：__ 2018年6月15日 (金)
+- __発表申込〆切：__ 2018年6月15日 (金)
   - ※原稿の提出〆切は，開催日の約3週間前となります．正確な日付は，お申し込み後，学会事務局より送付される案内メールをご参照ください．また，原稿フォーマットや，その他の規定については，以下をご参照下さい．
 - __研究会発表・参加方法，FAQ：__ [http://www.ieice.org/jpn/toukou/kenkyukai.html](http://www.ieice.org/jpn/toukou/kenkyukai.html)
 - __問合せ先：__ 中村 匡秀（神戸大）masa-n[at]cs.kobe-u.ac.jp (SC研究会)， 五月女 健治（法政大）（SWIM研究会）
