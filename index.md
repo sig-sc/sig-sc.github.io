@@ -58,7 +58,7 @@ Everything as a Service）は，[ソサイエティ5.0(超スマート社会)](h
 - __日 程：__ 2018年8月24日 (金)
 - __場 所：__ [法政大学 新一口坂校舎](http://www.im.i.hosei.ac.jp/contact/access/)
 - __参加費:__ 技報の電子化に伴い，参加費が変更されました．[「参加費について」](https://www.ieice.org/ken/user/index.php?cmd=participation&tgs_regid=0964837c02da4e08b2d163fca5e76f6a3ad2a664adaf3e8eb30c1a856343d0d0) をご覧ください．
-- __プログラム:__
+- __プログラム:__ [IEICEのページ](https://www.ieice.org/ken/program/index.php?tgs_regid=0964837c02da4e08b2d163fca5e76f6a3ad2a664adaf3e8eb30c1a856343d0d0&tgid=IEICE-SC&lang=)
 
 <pre>
 8月24日(金) （10：40～16：35）
