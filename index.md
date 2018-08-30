@@ -79,7 +79,6 @@
 	- IEICE/SC 30分(20分発表，10分質疑応答）
 - __発表申込方法 ：__ 以下のリンクから「発表申込受付中」メニューを辿ってお申込ください．
 	- [【電子情報通信学会 サービスコンピューティング研究会への発表申込】](https://www.ieice.org/ken/program/index.php?tgid=IEICE-SC)
-	- [【電子情報通信学会 知能ソフトウェア工学研究会への発表申込】](https://www.ieice.org/ken/program/index.php?tgid=IEICE-KBSE)
 - __著作権譲渡 ：__ 予稿集を作成するために著作権譲渡に同意して頂きます．
 電子情報通信学会の著作権規定の基本方針は[こちらのページ](http://www.ieice.org/jpn/about/kitei/chosakukenkitei.html)で閲覧可能です．[発表申し込みの案内](http://www.ieice.org/iss/kbse/meeting/apply/happyo.html)も合わせてご覧ください．
 - __その他：__ 1日目に，懇親会の開催を予定しております．
