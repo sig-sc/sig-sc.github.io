@@ -41,7 +41,7 @@
   - エッジコンピューティング
   - フォグコンピューティング
 
-## 第28回SC研究会 ([※発表申込み受付中　9/7(金)まで](https://www.ieice.org/ken/form/index.php?tgs_regid=b013046336e3df6bcc11b105b6bf65d33b88b5fb3e139b51f21c0c75c9c9ec12&tgid=IEICE-SC&lang=jpn))
+## 第28回SC研究会 ([※発表申込延長しました！　9/12(水)まで](https://www.ieice.org/ken/form/index.php?tgs_regid=b013046336e3df6bcc11b105b6bf65d33b88b5fb3e139b51f21c0c75c9c9ec12&tgid=IEICE-SC&lang=jpn))
 
 2018年8月24日に東京・法政大学で行われる第28回サービスコンピューティング研究会のご案内です．
 
@@ -72,7 +72,7 @@
 - __日 程：__ 2018年11月9日 (金) ～ 10日（土）
 - __場 所：__ [神戸大学 瀧川記念学術交流会館](http://www27.cs.kobe-u.ac.jp/~masa-n/data/takigawa_map.pdf)
 - __参加費:__ 技報の電子化に伴い，参加費が変更されました．[「参加費について」](https://www.ieice.org/ken/user/index.php?cmd=participation&tgs_regid=0964837c02da4e08b2d163fca5e76f6a3ad2a664adaf3e8eb30c1a856343d0d0) をご覧ください．
-- __発表申込締切：__ 2018年9月7日（金）23時59分
+- __発表申込締切：__ 2018年9月12日（水）23時59分
 - __論文ページ数：__ 6ページ以内
 - __発表時間 :__ ※申し込み件数によって，一般セッションの講演時間が短くなる場合があります
 	- IEICE/KBSE 45分(30分発表，15分質疑応答)
