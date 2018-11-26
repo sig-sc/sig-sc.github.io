@@ -27,7 +27,8 @@ categories: seminar report update
 ○中谷将大・佐伯幸郎・中村匡秀（神戸大）・安田　清（阪工大）
 
 (3) 11:30 - 12:00
-Evaluation of the Effectiveness of Recommendation while Managing the Data Density of the Web Service-User Preference
+Evaluation of the Effectiveness of Recommendation while Managing the Data Density
+of the Web Service-User Preference
 ○Rupasingha Arachchilage Hiruni Madhusha Rupasingha・Incheon Paik（UOA）
 
 −−−　休憩　（ 60分 ）　−−−
@@ -40,7 +41,9 @@ Evaluation of the Effectiveness of Recommendation while Managing the Data Densit
 
 (5) 13:45 - 14:30
 畳み込みニューラルネットワークを利用したアプリケーション画面の分類
-○西村駿人・中里克久・高山訓治（富士通研）・吉川嘉修・善方日出夫（富士通デザイン）・元山裕介（富士通鹿児島インフォネット）・小川俊雄（富士通クオリティ&ウィズダム）・田中新司（富士通）
+○西村駿人・中里克久・高山訓治（富士通研）・吉川嘉修・善方日出夫（富士通デザイン）
+・元山裕介（富士通鹿児島インフォネット）・小川俊雄（富士通クオリティ&ウィズダム）
+・田中新司（富士通）
 
 −−−　休憩　（ 15分 ）　−−−
 
@@ -118,7 +121,7 @@ MicrosoftやIBM, GoogleなどAIをサービスとして利用するコグニテ�
 
 ただ，これまでのソフトウェア工学のやり方は現場のやり方に合わなくなってきている
 という声もあります．今回の合同研究会では，SC, KBSEの両研究会からAIの要素を取り
-入れたソフトウェアの開発，サービスについての発表が13件行われました．
+入れたソフトウェアの開発，サービスについての発表が14件行われました．
 
 各発表について，盛んなディスカッションが行われ，非常に実りの多い研究会だったと思います．
 中村研究室からも2件，学生が発表させていただきましたが，多くの質問，コメントをいただき，
@@ -130,7 +133,7 @@ MicrosoftやIBM, GoogleなどAIをサービスとして利用するコグニテ�
 参加いただいた皆様にはとても喜んでいただけました．SC, KBSEの懇親も深まり「ぜひ来年も共同開催しましょう」ということになりました．よかったです！！
 
 開催に当たりご尽力いただきました，KBSE研究会・幹事・猿渡様（NTT），委員長・粂野先生（日本工大），
-および，SC幹事団の皆様，また，発表・ご参加いただいたすべての皆様に感謝いたします．
+および，KBSE幹事団，SC幹事団の皆様，また，発表・ご参加いただいたすべての皆様に感謝いたします．
 
 
 ### セッションの写真
