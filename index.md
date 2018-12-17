@@ -116,18 +116,12 @@ NICTで開発している対話システム「WEKDA（ウェクダ）」は、�
 - __論文ページ数 ：__ 6ページ以内
 - __発表時間 :__  30分(20分発表，10分質疑応答）
 	- ※申し込み件数によって，一般セッションの講演時間が短くなる場合があります．
-- __発表申込方法 ：__ 以下のURLの「発表申込受付中」メニューよりお申込ください．
-	- https://www.ieice.org/ken/program/index.php?tgid=IEICE-SC
+- __発表申込方法 ：__ [電子情報通信学会 研究会発表申込システム](https://www.ieice.org/ken/program/index.php?tgid=IEICE-SC)の「発表申込受付中」メニューよりお申込ください．
 - __著作権譲渡 ：__ 予稿集を作成するために著作権譲渡に同意して頂きます．
-	- 電子情報通信学会の著作権規定の基本方針は次のページで閲覧可能です．
-	- http://www.ieice.org/jpn/about/kitei/chosakukenkitei.html
-	- 以下の発表申し込みの案内も合わせてご覧ください．
-		- http://www.ieice.org/iss/kbse/meeting/apply/happyo.html
-- __※ 聴講参加費について：__ 
-IEICE/SC では，2018年度より技報完全電子化に伴い，
-参加者の属性に応じて聴講参加費の支払いが必要となります．
-詳しくは下記をご覧ください．
-	- https://www.ieice.org/ken/user/index.php?cmd=participation&tgs_regid=6daa1c4905601dc8ac7a05d2a2376bcbb38e03e406a3066ac37a2d66252e61d9
+	- [電子情報通信学会の著作権規定の基本方針](http://www.ieice.org/jpn/about/kitei/chosakukenkitei.html)
+	- [発表申し込みの案内](http://www.ieice.org/iss/kbse/meeting/apply/happyo.html)も合わせてご覧ください．
+- __聴講参加費：__ 2018年度より技報完全電子化に伴い，
+参加者の属性に応じて[聴講参加費の支払い](https://www.ieice.org/ken/user/index.php?cmd=participation&tgs_regid=6daa1c4905601dc8ac7a05d2a2376bcbb38e03e406a3066ac37a2d66252e61d9)が必要となります．
 - __照会先 ：__ 石川 冬樹（国立情報学研究所）： f-ishikawa@nii.ac.jp
 
 
