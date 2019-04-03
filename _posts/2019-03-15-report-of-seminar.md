@@ -152,7 +152,9 @@ Web上の膨大な文書を様々な言語資源で解析し，自然な質問�
 
 <img src="/assets/file/20190315/banquet03.jpg">
 
-<img src="/assets/file/20181110/banquet04.jpg">
+SC研究会発足10年！！
+
+<img src="/assets/file/20190315/banquet04.jpg">
 
 
 ### 次回の予定
