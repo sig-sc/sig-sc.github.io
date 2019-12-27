@@ -1,0 +1,16 @@
+﻿◎【サービス】スマートサービス，CPS，スマートアプリケーション，Web APIとAPIエコノミー，SOA，サービス連携，SLA，BPM，マイクロサービス，クラウドソーシング，モバイルサービス，ビジネスモデル・経済モデル
+◎【クラウド】SaaS, PaaS, IaaS，サービス配備・運用・管理，コンテナ，ハイブリッドクラウド，マルチクラウド，クラウドネイティブ，開発方法論 (クラウドファースト)?
+
+◎【ビッグデータ】大規模データ解析基盤，大規模データ分析サービス，Linked Dataサービス，オントロジーとSemantic Web，オープンデータ
+
+◎【IoT】IoTアーキテクチャ，IoTプラットフォーム，スマートデバイス，スマート家電，エッジコンピューティング，フォグコンピューティング
+
+=== English Version ===
+◎【Service】Smart Services, CPS, Smart Applications, Web API and API Economy, SOA, Service Integration, SLA, BPM, Microservices, Crowd Sourcing, Mobile Services, Business Model, Economy Model
+
+◎【Cloud】SaaS, PaaS, IaaS, Service Deployment, Service Operation, Service Management, Containers, Hybrid Cloud, Multi Cloud, Cloud-Native Approach, Cloud-first Engineering Methods
+
+◎【Big Data】Large-Scale Data Processing Platform, Large-Scale Data Mining Platform, Linked Data Services, Ontology, Semantic Web, Open Data
+ 
+◎【IoT】IoT Architecture, IoT Platform, Smart Devices, Smart Appliances, Edge Computing, Fog Computing
+
