@@ -318,3 +318,5 @@ AIソフトウェア開発におけるライフサイクル管理フレームワ
 - [IEEE Services Computing Community](https://www.ieeecommunities.org/services)
 - [Technical Committee on Services Computing (TCSVC)](http://tab.computer.org/tcsc/)
 
+
+
