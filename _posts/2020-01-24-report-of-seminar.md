@@ -60,46 +60,46 @@ SOAの概念が出てもうすぐ20年になりますが，その間様々な新
 
 ワークショップのオープニング．立命館大学・丸山先生のごあいさつ．
 
-<img src="../assets/file/20200124/01_opening.jpg">
+<img src="/assets/file/20200124/01_opening.jpg">
 
 今年のサービス指向セッションの主旨．
 
-<img src="../assets/file/20200124/02_session_shushi.jpg">
+<img src="/assets/file/20200124/02_session_shushi.jpg">
 
 サービスコンピューティングの歴史をざっと振り返ったものです．
 色んな技術がありました．
 
-<img src="../assets/file/20200124/03_sc_history1.jpg">
+<img src="/assets/file/20200124/03_sc_history1.jpg">
 
-<img src="../assets/file/20200124/04_sc_history2.jpg">
+<img src="/assets/file/20200124/04_sc_history2.jpg">
 
 有名なPapazoglou先生の論文．2005年のジャーナル論文です．
 
-<img src="../assets/file/20200124/05_sc_papazoglou.jpg">
+<img src="/assets/file/20200124/05_sc_papazoglou.jpg">
 
 エンタプライズシステムのアーキテクチャもずいぶんと様変わりしました．
 
-<img src="../assets/file/20200124/06_sc_architecture.jpg">
+<img src="/assets/file/20200124/06_sc_architecture.jpg">
 
 サービスコンピューティング国際会議(SCC)の歴代プロシーディングに掲載された
 論文タイトルから作成したタグクラウド．時代を追うごとに注目されている
 キーワードの変遷が見られます．
-<img src="../assets/file/20200124/07_tag_cloud1.jpg">
-<img src="../assets/file/20200124/08_tag_cloud2.jpg">
-<img src="../assets/file/20200124/09_tag_cloud3.jpg">
-<img src="../assets/file/20200124/10_tag_cloud4.jpg">
+<img src="/assets/file/20200124/07_tag_cloud1.jpg">
+<img src="/assets/file/20200124/08_tag_cloud2.jpg">
+<img src="/assets/file/20200124/09_tag_cloud3.jpg">
+<img src="/assets/file/20200124/10_tag_cloud4.jpg">
 
 今回の参加者の一部．2日目の最後に撮ったので一部の人は入ってません．
-<img src="../assets/file/20200124/11_participants.jpg">
+<img src="/assets/file/20200124/11_participants.jpg">
 
 ### 懇親会の様子
 
 いつもは宿でナイトセッションですが，今年は居酒屋で懇親会でした．
 京都駅近くの「竜馬」で軍鶏（しゃも）料理を食べました．
 
-<img src="../assets/file/20200124/21_konshinkai1.jpg">
+<img src="/assets/file/20200124/21_konshinkai1.jpg">
 
-<img src="../assets/file/20200124/22_konshinkai2.jpg">
+<img src="/assets/file/20200124/22_konshinkai2.jpg">
 
 来年もまた参加できますように．
 
