@@ -243,8 +243,7 @@ AIソフトウェア開発におけるライフサイクル管理フレームワ
 	- （会場について） 白 寅天（会津大）paikic@u-aizu.ac.jp
 
 #### 特記事項
-- __懇親会について：__ 終了後、懇親会の開催を予定しております．詳細や希望調査など，発表申込みの締切後に連絡させていただきます．
-
+- __懇親会について：__ 終了後，懇親会の開催を予定しております．詳細や希望調査など，発表申込みの締切後に連絡させていただきます．
 
 ## これまでの研究会
 
@@ -301,9 +300,4 @@ AIソフトウェア開発におけるライフサイクル管理フレームワ
 ### その他
 - [IEEE Services Computing Community](https://www.ieeecommunities.org/services)
 - [Technical Committee on Services Computing (TCSVC)](http://tab.computer.org/tcsc/)
-
-
-
-
-
 
