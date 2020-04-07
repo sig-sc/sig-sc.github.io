@@ -142,75 +142,75 @@ AIソフトウェア開発におけるライフサイクル管理フレームワ
 
 ホスト会場の日立・中央研究所の門です．
 
-<img src="../assets/file/20200316/00_seimon_0.jpg">
+<img src="/assets/file/20200316/00_seimon_0.jpg">
 
 中村と日立・手塚様が2人で会議をホストします．
 コロナウィルスの影響で致し方なし．．．
 
-<img src="../assets/file/20200316/02_kaijo.jpg">
+<img src="/assets/file/20200316/02_kaijo.jpg">
 
 それにしても素晴らしい会場です．ぜひまたリベンジでSC研究会をやりたいですね．
 
-<img src="../assets/file/20200316/03_kaijo_zentai.jpg">
+<img src="/assets/file/20200316/03_kaijo_zentai.jpg">
 
 
 一般講演．神戸大学・徳田君「対話エージェントを活用した個人関心事の抽出と評価」．Zoomの画面共有でプレゼンがくっきりとよく見えます．聴講の方々がウィンドウで見えています．
 
-<img src="../assets/file/20200316/10_presen_tokuda.jpg">
+<img src="/assets/file/20200316/10_presen_tokuda.jpg">
 
 続いて，神戸大学・関本君の発表．「EVIDENT：神経心理学的描画検査における描画過程の可視化及び可視化インターフェース」
 
-<img src="../assets/file/20200316/11_presen_sekimoto.jpg">
+<img src="/assets/file/20200316/11_presen_sekimoto.jpg">
 
 神戸大学・平山君の発表．「高齢者ケアの科学的な評価を目的としたユーザ定義の顔特徴量の測定」．質問はリアルタイムにZoomのチャット画面に書き込まれていきます．
 
-<img src="../assets/file/20200316/12_presen_hirayama.jpg">
+<img src="/assets/file/20200316/12_presen_hirayama.jpg">
 
 日立・藤田様．「デバイスセンサ情報を基にしたクラウド音声認識プロセス管理手法」
 
-<img src="../assets/file/20200316/13_presen_fujita.jpg">
+<img src="/assets/file/20200316/13_presen_fujita.jpg">
 
 南山大・佐藤さん．「機械学習を用いた発話分析によるプロジェクトマネジメントのQCD合意形成支援方法の提案と評価」
 
-<img src="../assets/file/20200316/14_presen_sato.jpg">
+<img src="/assets/file/20200316/14_presen_sato.jpg">
 
 小山高専・古井さん．「クロックフィンガープリントによるディジタル機器の識別における特徴量の統計的分析
 」
-<img src="../assets/file/20200316/15_presen_furui.jpg">
+<img src="/assets/file/20200316/15_presen_furui.jpg">
 
 
 富士通研・前田様「AIソフトウェア開発におけるライフサイクル管理フレームワークの検討」
 
-<img src="../assets/file/20200316/16_presen_maeda.jpg">
+<img src="/assets/file/20200316/16_presen_maeda.jpg">
 
 遠隔会議で活躍．YAMAHAのスピーカー．クリアな音声が聞こえました．
 
-<img src="../assets/file/20200316/20_speaker.jpg">
+<img src="/assets/file/20200316/20_speaker.jpg">
 
 NTT・山登様．「アプリケーション機能ブロックのGPU，FPGA自動オフロード手法の評価」
 
-<img src="../assets/file/20200316/21_presen_yamato.jpg">
+<img src="/assets/file/20200316/21_presen_yamato.jpg">
 
 
 日立・西田様「マルチテナント型アジャイル開発環境構築技術の提案と実践」
 
-<img src="../assets/file/20200316/22_presen_nishida.jpg">
+<img src="/assets/file/20200316/22_presen_nishida.jpg">
 
 
 立命館大学・地田君．「対訳辞書作成のための信頼に基づくクラウドソーシングの評価」
-<img src="../assets/file/20200316/26_presen_chida.jpg">
+<img src="/assets/file/20200316/26_presen_chida.jpg">
 
 
 大阪産業大学・山田先生「業務アプリ構築クラウドサービスkintoneを活用した幼保業務支援システム開発」
 
-<img src="../assets/file/20200316/23_presen_yamada.jpg">
+<img src="/assets/file/20200316/23_presen_yamada.jpg">
 
 日立・中島様「高信頼なデータ取引を実現するブロックチェーンベース取引ログ格納技術
-<img src="../assets/file/20200316/24_presen_nakajima.jpg">
+<img src="/assets/file/20200316/24_presen_nakajima.jpg">
 
 日立・渡邉様「デジタルサービスエコシステム活性化に向けたブロックチェーンによる協調型スコアリング手法
 」
-<img src="../assets/file/20200316/25_prezen_watanabe.jpg">
+<img src="/assets/file/20200316/25_prezen_watanabe.jpg">
 
 開始前に少しごたついてしまったのですが，すべての発表が無事に終わりました．
 質疑も活発に行われました．通常は質問者にマイクを届ける時間がかかるのですが，オンラインではすぐに質問に移れるというのもいいですね．
