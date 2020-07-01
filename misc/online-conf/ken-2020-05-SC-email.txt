@@ -1,0 +1,130 @@
+# 骨格センシングを用いた宅内身体活動の品質づけ手法の提案
+# ○陳　思楠・佐伯幸郎・中村匡秀（神戸大）
+chensinan@ws.cs.kobe-u.ac.jp
+sachio@carp.kobe-u.ac.jp
+masa-n@cs.kobe-u.ac.jp
+
+# レビューデータのスペクトル分析による効率的な推薦システムの提案
+# ○戸塚洸希・ゴウタム チャクラボルティ・松原雅文・馬淵浩司（岩手県立大）
+g231r021@s.iwate-pu.ac.jp
+goutam@iwate-pu.ac.jp
+masafumi@iwate-pu.ac.jp
+mabu@iwate-pu.ac.jp
+
+# ［ポスター講演］Discovering Suitable Word Embedding Methods for Sentiment Classification on Noisy Twitter Data
+# ○Takahiro Yamauchi・Incheon Paik（Aizu Univ.）
+paikic@u-aizu.ac.jp
+m5231141@u-aizu.ac.jp
+
+# Automatic Service Composition Based-Deep Learning Architecture Generation Service
+# ○Incheon Paik・Ryo Ataka（UoA）
+paikic@u-aizu.ac.jp
+
+# Service Discovery Using Invocation Sequence Learning in Composition with Neural Language Networks
+# ○Zeng Kungan・Incheon Paik（UoA）
+d8201102@u-aizu.ac.jp
+paikic@u-aizu.ac.jp
+
+# ［ポスター講演］Tumor detection from colonoscopy Whole Slice Images By Deep Learning
+# ○Cherubin Mugisha・Incheon Paik（School of Computer Science and Engineering）
+m5222109@u-aizu.ac.jp
+paikic@u-aizu.ac.jp
+
+# ソフトコンピューティング技術に基づく株価予測アルゴリズムに関する研究
+# ○Chun-Yuan Lai・Goutam Chakraborty（岩手県立大学）・Rung-Ching Chen（Chaoyang University）・松原雅文（岩手県立大学）
+john22472417@gmail.com
+
+# Grading Liver Carcinoma Stage Analyzing Cell Biopsy Image
+# ○Yi-Shun Lo・Weilun Wang・Goutam Chakraborty（Iwate prefectural university）・Shao-Kuo Tai（CYUT）・MatsuHara Masafumi（Iwate prefectural university）
+g231r602@s.iwate-pu.ac.jp
+g236q201@s.iwate-pu.ac.jp
+goutam@iwate-pu.ac.jp
+sgdai@cyut.edu.tw
+masafumi@iwate-pu.ac.jp
+
+# Material Informatics環境での一次データ利活用促進に向けた来歴管理に関するサーベイ概説
+# ○菊地伸治（物質・材料研究機構）
+KIKUCHI.Shinji@nims.go.jp
+shinji.kikuchi@ieee.org
+
+
+
+----- E-mailアドレスのみ（Email-1～Email-5の全員, uniq処理済み, キャンセルを除く）-----
+--- ALL ---
+chensinan@ws.cs.kobe-u.ac.jp
+sachio@carp.kobe-u.ac.jp
+masa-n@cs.kobe-u.ac.jp
+g231r021@s.iwate-pu.ac.jp
+goutam@iwate-pu.ac.jp
+masafumi@iwate-pu.ac.jp
+mabu@iwate-pu.ac.jp
+paikic@u-aizu.ac.jp
+m5231141@u-aizu.ac.jp
+d8201102@u-aizu.ac.jp
+m5222109@u-aizu.ac.jp
+john22472417@gmail.com
+g231r602@s.iwate-pu.ac.jp
+g236q201@s.iwate-pu.ac.jp
+sgdai@cyut.edu.tw
+KIKUCHI.Shinji@nims.go.jp
+shinji.kikuchi@ieee.org
+
+--- IEICE-SC ---
+chensinan@ws.cs.kobe-u.ac.jp
+sachio@carp.kobe-u.ac.jp
+masa-n@cs.kobe-u.ac.jp
+g231r021@s.iwate-pu.ac.jp
+goutam@iwate-pu.ac.jp
+masafumi@iwate-pu.ac.jp
+mabu@iwate-pu.ac.jp
+paikic@u-aizu.ac.jp
+m5231141@u-aizu.ac.jp
+d8201102@u-aizu.ac.jp
+m5222109@u-aizu.ac.jp
+john22472417@gmail.com
+g231r602@s.iwate-pu.ac.jp
+g236q201@s.iwate-pu.ac.jp
+sgdai@cyut.edu.tw
+KIKUCHI.Shinji@nims.go.jp
+shinji.kikuchi@ieee.org
+
+
+-- カンマで区切って書き直したものはこちら（Email-1～Email-5の全員, uniq処理済み, キャンセルを除く） --
+--- ALL ---
+chensinan@ws.cs.kobe-u.ac.jp,sachio@carp.kobe-u.ac.jp,masa-n@cs.kobe-u.ac.jp,g231r021@s.iwate-pu.ac.jp,goutam@iwate-pu.ac.jp,masafumi@iwate-pu.ac.jp,mabu@iwate-pu.ac.jp,paikic@u-aizu.ac.jp,m5231141@u-aizu.ac.jp,d8201102@u-aizu.ac.jp,m5222109@u-aizu.ac.jp,john22472417@gmail.com,g231r602@s.iwate-pu.ac.jp,g236q201@s.iwate-pu.ac.jp,sgdai@cyut.edu.tw,KIKUCHI.Shinji@nims.go.jp,shinji.kikuchi@ieee.org,
+--- IEICE-SC ---
+chensinan@ws.cs.kobe-u.ac.jp,sachio@carp.kobe-u.ac.jp,masa-n@cs.kobe-u.ac.jp,g231r021@s.iwate-pu.ac.jp,goutam@iwate-pu.ac.jp,masafumi@iwate-pu.ac.jp,mabu@iwate-pu.ac.jp,paikic@u-aizu.ac.jp,m5231141@u-aizu.ac.jp,d8201102@u-aizu.ac.jp,m5222109@u-aizu.ac.jp,john22472417@gmail.com,g231r602@s.iwate-pu.ac.jp,g236q201@s.iwate-pu.ac.jp,sgdai@cyut.edu.tw,KIKUCHI.Shinji@nims.go.jp,shinji.kikuchi@ieee.org,
+
+
+
+----- E-mailアドレスのみ（Email-1のみ, uniq処理済み, キャンセルを除く）-----
+-- ご注意：連名者全員（Email-1～5）に送りたい場合は，このリストではなく，上のリストをお使いください --
+--- ALL ---
+chensinan@ws.cs.kobe-u.ac.jp
+g231r021@s.iwate-pu.ac.jp
+paikic@u-aizu.ac.jp
+d8201102@u-aizu.ac.jp
+m5222109@u-aizu.ac.jp
+john22472417@gmail.com
+g231r602@s.iwate-pu.ac.jp
+KIKUCHI.Shinji@nims.go.jp
+
+--- IEICE-SC ---
+chensinan@ws.cs.kobe-u.ac.jp
+g231r021@s.iwate-pu.ac.jp
+paikic@u-aizu.ac.jp
+d8201102@u-aizu.ac.jp
+m5222109@u-aizu.ac.jp
+john22472417@gmail.com
+g231r602@s.iwate-pu.ac.jp
+KIKUCHI.Shinji@nims.go.jp
+
+
+-- カンマで区切って書き直したものはこちら（Email-1のみ, uniq処理済み, キャンセルを除く） --
+-- ご注意：連名者全員（Email-1～5）に送りたい場合は，このリストではなく，上のリストをお使いください --
+--- ALL ---
+chensinan@ws.cs.kobe-u.ac.jp,g231r021@s.iwate-pu.ac.jp,paikic@u-aizu.ac.jp,d8201102@u-aizu.ac.jp,m5222109@u-aizu.ac.jp,john22472417@gmail.com,g231r602@s.iwate-pu.ac.jp,KIKUCHI.Shinji@nims.go.jp,
+--- IEICE-SC ---
+chensinan@ws.cs.kobe-u.ac.jp,g231r021@s.iwate-pu.ac.jp,paikic@u-aizu.ac.jp,d8201102@u-aizu.ac.jp,m5222109@u-aizu.ac.jp,john22472417@gmail.com,g231r602@s.iwate-pu.ac.jp,KIKUCHI.Shinji@nims.go.jp,
+
+
