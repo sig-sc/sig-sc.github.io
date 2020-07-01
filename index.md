@@ -6,16 +6,18 @@
 あらゆるシステムの機能を __サービス__ と捉え，これらを __疎結合__ して更なるサービスを創るというサービスコンピューティングの考え方（ __Everything as a Service__ ）は，超スマート社会における異種分散システムをつなぐ糊（のり）として，重要な役割を果たします．本研究会では，そうしたサービスの実現や提供に求められる技術的基盤や方法論，プラクティスなどについて，研究発表および討論を行う機会を提供します．
 
 ## 更新履歴
+- 2020-07-01 第35回研究会の参加登録，プログラム案内を追加しました．
+- 2020-07-01 [第34回研究会【オンライン開催】の報告](/seminar/report/update/2020/05/29/report-of-seminar.html)を書きました
 - 2020-05-16 第34回研究会の参加登録，プログラム案内を追加しました．第35回研究会の開催案内を掲載しました
 - 2020-04-07 [第33回研究会【オンライン開催】の報告](/seminar/report/update/2020/03/16/report-of-seminar.html)を書きました
 - 2020-03-12 第34回研究会の参加募集案内を追加しました
 - 2020-03-12 第33回研究会の【オンライン開催】の告知を追加しました
 - 2020-03-12 [ウィンターワークショップ2020・イン・京都の報告](/seminar/report/update/2020/01/25/report-of-seminar.html)をアップしました．
 - 2020-03-12 [第32回研究会の報告](/seminar/report/update/2019/11/08/report-of-seminar.html)をアップしました．
-- 2020-02-27 第33回研究会の【現地開催中止】の告知を追加しました
-- 2019-12-27 第33回研究会の参加募集案内を追加しました
 
 <!--
+- 2020-02-27 第33回研究会の【現地開催中止】の告知を追加しました
+- 2019-12-27 第33回研究会の参加募集案内を追加しました
 - 2019-08-26 第32回研究会の参加募集案内を追加しました
 - 2019-08-26 [第31回研究会の報告](/seminar/report/update/2019/08/23/report-of-seminar.html)を書きました
 - 2019-08-26 [第30回研究会の報告](/seminar/report/update/2019/05/31/report-of-seminar.html)を書きました
@@ -62,110 +64,84 @@
   - エッジコンピューティング
   - フォグコンピューティング
 
-## 第34回サービスコンピューティング研究会＠会津大学 【5/29(金) オンライン開催】
+## 第35回サービスコンピューティング研究会【8/21(金) オンライン開催】
+
+電子情報通信学会ソフトウェアインタプライズモデリング（SWIM) 研究会との共催となります．
 
 ### 研究会概要
-- __テーマ:__  サービスコンピューティング環境に向けたAIとその応用,その他
-- __日程：__ 2020年5月29日（金）
-- __会場：__ Zoomによるオンライン開催
-- __主催：__ 会津大学
-- __協賛：__ IEEE仙台支部
+- __テーマ:__  ソサエティ5.0に向けたサービスコンピューティングとインタプライズモデル化技術，一般
+- __日程：__ 2020年8月21日（金）
+- __共催：__ [電子情報通信学会 SWIM 研究会](https://www.ieice.org/iss/swim/jpn/index.html)
+- __会場：__ Zoomによるオンライン開催　（法政大学）
 
 
 ### オンライン登録
-- 第34回研究会に参加するためには __オンライン登録が必要__ です．以下のリンクから登録してください．
-	- [Zoomミーティング登録（第34回SC研究会・オンライン開催）](https://us02web.zoom.us/meeting/register/tZIpceqvqDsiHtaZ4RoY575oCHUqqOruI4ax)
+- 第35回研究会に参加するためには __オンライン登録が必要__ です．以下のリンクから登録してください．
+	- [Zoomミーティング登録（2020年度8月SC/SWIM研究会（8/21））](https://hosei-ac-jp.zoom.us/meeting/register/tJAsd-2urj8iE9wTSF3-EaZ1qla-eiwZGr99)
 	- 参加登録が完了すると，Zoomの接続URLがメールで送られます．
 	- 会議当日，時間になりましたら接続URLをクリックして，参加してください．
 - 上記の登録に加えて，参加には __参加費が必要__ です（通常の第1種研究会と同様です）．
 	- 学生（予稿集を必要としない登壇者，または，聴講のみ）は無料です．
 	- それ以外の方は以下のリンクから，参加費をお支払いください．
-		- [電子情報通信学会・参加費(SC研究会)](https://www.ieice.org/ken/user/index.php?cmd=participation&tgs_regid=5af8dffb46d99cb1d85bf6af5a1508a7e6e11aa634912795a7e806638cd0816d&lang=) 
+		- [電子情報通信学会・参加費(SWIM/SC研究会)](https://www.ieice.org/ken/user/index.php?cmd=participation&tgs_regid=d13f19878876723a1fb8f864066f2fcf6b0db5d2723e65f6a703f33c81082a07) 
+    - 準備の都合上，原則として開催の3日前までに受付を終了しますので，お早めにお手続きください．
 
 
 ### プログラム
 
 <pre>
-5月29日(金) 午後
+8月21日(金) 午後 （13：00～16：45）
 
-12:30　オンライン会場オープン
+−−−　SWIM委員長挨拶　（ 10分 ）　−−−
 
-13:05　研究会開始
+(1) 13:10 - 13:35
+進捗会議プロセスの改善方式
+○林　章浩（静岡理工科大）
 
-開会挨拶 - 中村匡秀（神戸大学）　（10分）　
+(2) 13:35 - 14:00
+技術経営成功失敗の考察 ～ 半導体産業の事例より ～
+○山田圀裕（首都大東京）・片岡信弘（インタプライズ研）
 
-主催者挨拶 - Incheon Paik（会津大学）　（10分）
-
-5月29日(金) 午後 特徴点抽出手法とその応用 （13：30～14：35）
-座長: 菊地伸治
-
-(1) 13:30 - 13:55
-骨格センシングを用いた宅内身体活動の品質づけ手法の提案
-○陳　思楠・佐伯幸郎・中村匡秀（神戸大）
-
-(2) 13:55 - 14:20
-レビューデータのスペクトル分析による効率的な推薦システムの提案
-○戸塚洸希・ゴウタム チャクラボルティ・松原雅文・馬淵浩司（岩手県立大）
-
-(3) 14:20 - 14:35
-［ポスター講演］Discovering Suitable Word Embedding Methods for Sentiment Classification on Noisy Twitter Data
-○Takahiro Yamauchi・Incheon Paik（Aizu Univ.）
-
-5月29日(金) 午後 Deep Learning、Neural Network応用における新しいテクニック(1) （14：35～15：30）
-座長: 菊地伸治
-
-(4) 14:35 - 15:00
-Automatic Service Composition Based-Deep Learning Architecture Generation Service
-○Incheon Paik・Ryo Ataka（UoA）
-
-(5) 15:00 - 15:15
-Service Discovery Using Invocation Sequence Learning in Composition with Neural Language Networks
-○Zeng Kungan・Incheon Paik（UoA）
+(3) 14:00 - 14:25
+ビジネスエンジニアリング序説 ～ 論考ビジネスアセスメント ～
+○小松昭英（アプソム）
 
 −−−　休憩　（ 15分 ）　−−−
 
-5月29日(金) 午後 Deep Learning、Neural Network応用における新しいテクニック(2) （15：30～16：35）
-座長: 山登庸次
+(4) 14:40 - 15:40
+［基調講演］超知性通信技術の実現を目指した研究
+○中尾彰宏（東大）
 
-(6) 15:30 - 15:45
-［ポスター講演］Tumor detection from colonoscopy Whole Slice Images By Deep Learning
-○Cherubin Mugisha・Incheon Paik（School of Computer Science and Engineering）
+−−−　休憩　（ 15分 ）　−−−
 
-(7) 15:45 - 16:10
-A Study on Stock Prediction Algorithms Based on Soft-Computing Techniques
-○Chun-Yuan Lai・Goutam Chakraborty（Iwate Prefectural University）・Rung-Ching Chen（Chaoyang University）・Masafumi Matsuhara（Iwate Prefectural University）
+(5) 15:55 - 16:20
+フォームサービスを用いた口腔ケア実施報告システム
+○堀口尚史・中口孝雄（京情大）・佐藤元昭
 
-(8) 16:10 - 16:35
-Grading Liver Carcinoma Stage Analyzing Cell Biopsy Image
-○Yi-Shun Lo・Weilun Wang・Goutam Chakraborty（Iwate prefectural university）・Shao-Kuo Tai（CYUT）・MatsuHara Masafumi（Iwate prefectural university）
-
-5月29日(金) 午後 その他一般 （16：35～17：10）
-座長: 山登庸次
-
-(9) 16:35 - 17:00
-Material Informatics環境での一次データ利活用促進に向けた来歴管理に関するサーベイ概説
+(6) 16:20 - 16:45
+コンピューティング資源のサービス化から見たサービスコンピューティングのこれから(課題)
 ○菊地伸治（物質・材料研究機構）
 
-
-閉会挨拶 - 菊地伸治（物質・材料研究機構）　（ 10分 ）　
+−−−　SC委員長挨拶　（ 5分 ）　−−−
 
 </pre>
 
 ### 発表時間
 - __一般講演 :__ 発表 20 分 ＋ 質疑応答 5 分
-- __ポスター発表 :__ 発表 10 分 ＋ 質疑応答 5 分
 
 
-## 【次回開催案内】第35回サービスコンピューティング研究会
-次回第35回のSC研究会は，8/21に法政大学にて，SWIM研究会と共催で行われます．   
+## 【次回開催案内】第36回サービスコンピューティング研究会
+次回第36回のSC研究会は，11/13-14に桐屋旅館（長野県野沢温泉村）にて，
+KBSE研究会と合同で開催を計画中です．
 申込受付開始まで，もうしばらくお待ちください．
 
-- __テーマ:__  ソサエティ5.0に向けたサービスコンピューティングとインタプライズモデル化技術
-- __日程：__ 2020年8月21日（金）
-- __会場：__ 法政大学  (コロナウィルスの感染拡大の状況によっては，オンライン開催も考慮)
-- __共催__： [電子情報通信学会SWIM研究会](https://www.ieice.org/iss/swim/jpn/index.html)
+- __テーマ:__  未定
+- __日程：__ 2020年11月13日（金）- 14日（土）
+- __会場：__ 桐屋旅館（長野県野沢温泉村） (コロナウィルスの感染拡大の状況によっては，オンライン開催も考慮)
+- __共催__： [電子情報通信学会KBSE研究会](https://www.ieice.org/iss/kbse/)
 
 
+<!-- 
 ### 開催案内
 
 昨年に引き続き，ソフトウェアインタプライズモデリング研究会とサービスコンピューティング研究会の共催となります．
@@ -191,7 +167,7 @@ Material Informatics環境での一次データ利活用促進に向けた来歴
 - サービス環境に関するその他の技術的話題
 
 #### 参加申込要領
-- __発表申込締切 ：__ 決定次第ご案内します <!-- 2020年4月18日（土）-->
+- __発表申込締切 ：__ 2020年4月18日（土）
 - __原稿締切：__ 開催日の約3週間前となります．正確な日付は，お申し込み後，学会事務局より送付される案内メールをご参照ください．
 - __論文ページ数 ：__ 8ページ以内 
 - __発表時間 :__ 25分(20分発表，5分質疑応答）
@@ -209,7 +185,7 @@ Material Informatics環境での一次データ利活用促進に向けた来歴
 #### 特記事項
 - __懇親会について：__ 終了後，懇親会の開催を予定しております．詳細や希望調査など，発表申込みの締切後に連絡させていただきます．
 
-
+-->
 
 ## これまでの研究会
 
@@ -218,15 +194,15 @@ Material Informatics環境での一次データ利活用促進に向けた来歴
 ## 委員会構成
 
 #### 委員長
-- [中村 匡秀 (神戸大学)](http://www27.cs.kobe-u.ac.jp/~masa-n/)
+- [菊地 伸治（NIMS）](https://samurai.nims.go.jp/profiles/kikuchi_shinji?locale=ja)
 
 #### 副委員長
-- [菊地 伸治（NIMS）](https://samurai.nims.go.jp/profiles/kikuchi_shinji?locale=ja)
 - [山登 庸次（NTT）](http://www.sic.ecl.ntt.co.jp/member/yoji-yamato/yoji-yamato.html)
+- [木村 功作（富士通研究所）](https://8card.net/p/39588542006)
 
 #### 幹事
-- [木村 功作（富士通研究所）](https://8card.net/p/39588542006)
 - [細野 繁（東京工科大学)](https://www.teu.ac.jp/info/lab/teacher/cs/index.html?id=1735)
+- [中村 匡秀 (神戸大学)](http://www27.cs.kobe-u.ac.jp/~masa-n/)
 
 #### 委員
 - [青山 幹雄 （南山大学）](http://www.nise.org/)
