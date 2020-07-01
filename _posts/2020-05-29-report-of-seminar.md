@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "サービスコンピューティング研究専門委員会 第34回研究会 2020年5月29日(金)"
-date:   2020-05-30 21:00:00 +0900
+date:   2020-05-29 21:00:00 +0900
 categories: seminar report update
 ---
 
