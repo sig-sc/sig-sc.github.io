@@ -97,7 +97,7 @@
 - 上記の登録に加えて，参加には __参加費が必要__ です（通常の第1種研究会と同様です）．
 	- 学生（予稿集を必要としない登壇者，または，聴講のみ）は無料です．
 	- それ以外の方は以下のリンクから，参加費をお支払いください．
-		- [電子情報通信学会・参加費(SWIM/SC研究会)](https://www.ieice.org/ken/user/index.php?cmd=participation&tgs_regid=1d75051910a9405009d3a8d216e9a9e62ab0d0c997236fb3afec5984e9ff2ffa) 
+		- [電子情報通信学会・参加費(KBSE/SC研究会)](https://www.ieice.org/ken/user/index.php?cmd=participation&tgs_regid=1d75051910a9405009d3a8d216e9a9e62ab0d0c997236fb3afec5984e9ff2ffa) 
     - 準備の都合上， 原則として __開催の3日前までに受付を終了__ しますので，お早めにお手続きください．
 
 ### 参加のための前準備
