@@ -1,13 +1,15 @@
 ## 野沢温泉村 as バーチャル開催地 of 第36回SC研究会
 
-<img src="assets/vv/Nozawa_Onsen_01.jpg">
-<img src="assets/vv/Nozawaonsen_okama.jpg">
+<img src="assets/vv/Nozawa_Onsen_01.jpg" height="240px">
+<img src="assets/vv/Nozawaonsen_okama.jpg" height="240px">
 
 (画像出典： Wikipedia)
 
 2020年11月13日(金)，14日(土)に行われる第36回SC研究会では，当初開催を予定しておりました __野沢温泉村__ を __バーチャル開催地（Virtual Venue，VV）__ に設定し，研究会を実施します．
 
 現在，野沢温泉の名物やお酒をリーズナブルな価格でお取り寄せできる準備を進めています．詳細が決まり次第，こちらのHPで紹介いたします．
+
+- お取り寄せ注文ページへ（準備中）
 
 珍しい野沢温泉村の食べ物に触れ，さらには地元経済を応援するチャンスです．皆様のご理解とご協力をお願いいたします．
 
