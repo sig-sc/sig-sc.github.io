@@ -1,7 +1,9 @@
 ## 野沢温泉村 as バーチャル開催地 of 第36回SC研究会
 
-<img src="assets/vv/Nozawa_Onsen_01.jpg" height="240px">
-<img src="assets/vv/Nozawaonsen_okama.jpg" height="240px">
+<img src="assets/vv/01_village.jpg" height="240px">
+<img src="assets/vv/02_ooyu.jpg" height="240px">
+<img src="assets/vv/03_magama.jpg" height="240px">
+<img src="assets/vv/04_nozawana.jpg" height="240px">
 
 (画像出典： Wikipedia)
 
