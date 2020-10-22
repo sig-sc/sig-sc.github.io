@@ -1,13 +1,12 @@
-## 野沢温泉村 as バーチャル開催地 of 2020年11月 SC研究会/KBSE研究会
-
+## 野沢温泉村 as バーチャル開催地 of SC/KBSE研究会
 <img src="assets/vv/01_village.jpg" height="240px">
 <img src="assets/vv/02_ooyu.jpg" height="240px">
 <img src="assets/vv/03_magama.jpg" height="240px">
 <img src="assets/vv/04_nozawana.jpg" height="240px">
 
-(画像出典： Wikipedia)
+(画像提供： [野沢温泉観光協会](https://nozawakanko.jp/))
 
-2020年11月13日(金)，14日(土)に行われる第36回SC研究会（共催：KBSE研究会）では，当初開催を予定しておりました __野沢温泉村__ を __バーチャル開催地（Virtual Venue，VV）__ に設定し，研究会を実施します．
+2020年11月13日(金)，14日(土)に行われる第36回SC研究会（共催：KBSE研究会）では，当初開催を予定しておりました __信州・野沢温泉村__ を __バーチャル開催地（Virtual Venue，VV）__ に設定し，研究会を実施します．
 
 ### ご当地名物で乾杯しましょう！
 
