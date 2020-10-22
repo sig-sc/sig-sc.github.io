@@ -1,4 +1,4 @@
-## 野沢温泉村 as バーチャル開催地 of 第36回SC研究会
+## 野沢温泉村 as バーチャル開催地 of 2020年11月 SC研究会/KBSE研究会
 
 <img src="assets/vv/01_village.jpg" height="240px">
 <img src="assets/vv/02_ooyu.jpg" height="240px">
