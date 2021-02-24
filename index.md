@@ -147,17 +147,13 @@
 
 ### 参加登録
 - 第37回研究会に参加するためには __オンライン登録が必要__ です．
-  - [Zoomミーティング登録（SC/KBSE11月研究会）](https://zoom.us/meeting/register/tJArfuygpzMvH9RUxUcVi9OnlJzgw28gHDKj)
+  - [Zoomミーティング登録（第37回サービスコンピューティング研究会）](https://zoom.us/meeting/register/tJArfuygpzMvH9RUxUcVi9OnlJzgw28gHDKj)
 	- 参加登録が完了すると，ZoomおよびDiscordの接続URLがメールで送られます．
 	- 会議当日，時間になりましたら接続URLをクリックして，参加してください．
 - 上記の登録に加えて，参加には __参加費が必要__ です（通常の第1種研究会と同様です）．
 	- 学生（予稿集を必要としない登壇者，または，聴講のみ）は無料です．
 	- それ以外の方は以下のリンクから，参加費をお支払いください．
     - [電子情報通信学会 研究会発表申込システム](https://www.ieice.org/ken/program/index.php?tgid=IEICE-SC) の該当する開催の[「参加費について」](https://www.ieice.org/ken/user/index.php?cmd=participation&tgs_regid=5d64fc3042ac6e460817996c37b0e847984d2aa041e2ff634c269d6ed2266fdf)をクリック
-<!--
-   - 準備の都合上， 原則として __11/10(火)に受付を終了__ しますので，お早めにお手続きください．
-      - ※[オンライン懇親会のご当地名物](virtual_venue.md) の注文〆切は __11/5(木)__ になります
--->
 
 <!--
 ## 【次回開催案内】第36回サービスコンピューティング研究会
