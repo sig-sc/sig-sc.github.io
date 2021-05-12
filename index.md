@@ -8,6 +8,7 @@
 - [電子情報通信学会 研究会発表申込システムへ](https://www.ieice.org/ken/program/index.php?tgid=IEICE-SC)
 
 ## 更新履歴
+- 2021-05-12 第37回研究会の参加登録，プログラム案内を追加しました．
 - 2021-03-01 [第36回研究会【オンライン開催】の報告](/seminar/report/update/2020/11/13/report-of-seminar.html)を書きました．
 - 2021-02-24 第37回研究会の参加登録，プログラム案内を追加しました．
 - 2020-10-27 第36回研究会の参加登録をオープンしました．
@@ -74,14 +75,16 @@
   - エッジコンピューティング
   - フォグコンピューティング
 
-## <a name="latest_event"></a>第37回サービスコンピューティング研究会 【3/19(金) オンライン開催】
+## <a name="latest_event"></a>第38回サービスコンピューティング研究会 【5/28(金) オンライン, 会津大学】
 
-第37回研究会は，(株)日立製作所・中央研究所様のご協力の下，Zoomによるオンライン開催となります．
+第38回研究会は，(株)日立製作所・中央研究所様のご協力の下，Zoomによるオンライン開催となります．
 
 ### 研究会概要
-- __テーマ:__   「サイバーフィジカルシステムを支えるサービスコンピューティング技術」および一般
-- __日程：__ 2021年3月19日（金）
-- __協賛：__ (株)日立製作所・中央研究所
+- __テーマ:__   サイバーフィジカルシステム、IoT, 機械学習応用、および一般 
+- __日程：__ 2021年5月28日（金）
+- __会場：__ オンライン, 会津大学　（※新型コロナウイルスの感染拡大防止のため学内関係者のみ参加可） 
+- __共催：__ [日本ソフトウエア科学会/機械学習工学研究会](https://sites.google.com/view/sig-mlse/)
+- __協賛：__ [IEEE 仙台セクション](http://www.ecei.tohoku.ac.jp/ieee-sendai/index.php)
 
 
 ### プログラム (変更の可能性があります)
@@ -91,70 +94,139 @@
 
 −−−　開会挨拶　（ 10分 ）　−−−
 
-(1) 10:10 - 10:40
-スマートフォン連携データ活用システムの自動作成技術の検討
-○伊藤大生（日立）・横山　尚・國岡昭吾（日立建機）
+5月28日(金) 午後 知的サービス応用 （09：30～11：45）
+座長: 石川 冬樹(国立情報学研究所)
 
-(2) 10:40 - 11:10
-機械学習を活用したIT運用における正常イベント監視技術 ～ ＡＩ ｆｏｒ ＩＴ Oｐｓの研究 ～
-○爲重貴志・玉井康之・増田峰義・村山耕一（日立）
+−−−　開催挨拶 (会津大学, 機械学習工学研究会主査)　（ 10分 ）　−−−
 
-(3) 11:10 - 11:40
-クラウド・エッジでの自在な機器接続を目指したFogコンピューティングテストベッドの構築
-○菊地俊介（さくらインターネット）・正木晶子・三谷佳一・山根慶大・高浦則克（日立）
+(1) 09:40 - 10:05
+デジタルツインによるパーソナルで直観的な建物内ナビゲーションシステム
+○小林　透・鬼丸禎史・深江一輝・今井哲郎・荒井研一（長崎大）・中澤瑛介・鈴木智仁（デンソーウェーブ）
 
-−−−　昼休憩　（ 80分 ）　−−−
+(2) 10:05 - 10:30
+Home Evacuee Support:音声対話AIを活用した在宅避難者支援システムの研究
+○小澤洋司・新井悠介・Elserafy Hatem・Jayesh Guntupalli・Chaudhari Pritam Jaywant・Darshan Dharmendra Chawda（日立）
 
-3月19日(金) 午後 セッション2: サービス応用および理論 （13：00～15：15）
+(3) 10:30 - 10:55
+API開発迅速化に向けたサービス認証プロキシ
+○上野里奈・齋藤成之・那須弘志・中田　侑（日立）
 
-(4) 13:00 - 13:30
-コグニティブサービスを用いた翻訳エージェント
-○松岡勇樹・村上陽平（立命館大）
+(4) 10:55 - 11:20
+Ontology and Rule for Repository to Share Knowledge of Deep Learning Architectures
+○Incheon Paik（UoA）
 
-(5) 13:30 - 14:00
-低資源言語ためのブロックチェーンに基づく非中央集権型辞書システム
-○張　禹王・村上陽平（立命館大）
+(5) 11:20 - 11:45
+非画像データに対する表現学習と強化学習の適用の研究
+○赤塚駿一・芹田　進・鯨井俊宏（日立）
 
-(6) 14:00 - 14:30
-健康寿命延伸に向けたフレイル・メータの研究
-○小林　透・岸本友太・木村福義・深江一輝・今井哲郎・荒井研一（長崎大）
+−−−　昼食　（ 90分 ）　−−−
 
-(7) 14:30 - 15:00
-多人数不完全不確定情報ゲームにおけるMiniMax法によるゲームAI ～ ボードゲームBLUFF ～
-○岸本野之香・須永　宏（阪工大）
+5月28日(金) 午後 招待講演 （13：15～14：15）
+座長: 菊地 伸治 (物質・材料研究機構)
 
-−−−　休憩　（ 15分 ）　−−−
+(6) 13:15 - 14:15
+招待講演：
+Smart Cityによる自立分散社会の実現へ
+～市民・地域主導によるデジタルイノベーション～
+アクセンチュア・イノベーションセンター福島 センター共同統括
+マネジング・ディレクター 中村 彰二朗氏
 
-3月19日(金) 午後 セッション3: 社会課題を解決するサービス （15：15～16：55）
+−−−　休憩　（ 10分 ）　−−−
 
-(8) 15:15 - 15:45
-救急ビッグデータに基づく2020年の熱中症搬送者分析
-○松場建都・佐伯幸郎・中村匡秀（神戸大）
+5月28日(金) 午後 機械学習応用 （14：25～16：05）
+座長: 中村 匡秀 (神戸大)
 
-(9) 15:45 - 16:15
-在宅高齢者を支援する個人適応型スピーカーサービスの提案
-○明石拓弥・佐伯幸郎・中村匡秀（神戸大）・安田　清（千葉労災病院）
+(7) 14:25 - 14:50
+機械学習を活用したIT運用におけるモデル管理技術 ～ IT運用向けMLOpsの研究 ～
+○河野泰隆（日立）
 
-(10) 16:15 - 16:45
-在宅高齢者を対象とした困り事・対処法共有サービスの実装
-○雲丹亀和希・佐伯幸郎・中村匡秀（神戸大）・安田　清（阪工大）
+(8) 14:50 - 15:15
+自律運用プログラムの干渉防止に関する検討
+○柿田将幸（日立）
 
-−−−　閉会挨拶　（ 10分 ）　−−−
+(9) 15:15 - 15:40
+海洋環境観測装置のための局所的・短期的太陽光発電量予測システム
+○今井哲郎（広島市大）・市丸理士・荒井研一・小林　透（長崎大）
+
+(10) 15:40 - 16:05
+機械学習を活用したIT運用におけるイべント引き当て精度向上技術
+○岡村　拓・爲重貴志（日立）
+
+−−−　休憩　（ 10分 ）　−−−
+
+5月28日(金) 午後 ライトニングトーク、ポスター発表 （16：15～18：25）
+座長: 木村 功作 (富士通研)
+
+(11) 16:15 - 16:17
+［ポスター講演］Improving Machine Translation using Sentence Augmentation by GPT-2
+○Ranto Sawai・Incheon Paik（UoA）
+
+(12) 16:17 - 16:19
+［ポスター講演］Classification Performance of Special Domain Twitter Message with Deep Learning Word Embeddings
+Ryoya Ito・○Incheon Paik（UoA）
+
+(13) 16:19 - 16:21
+［ポスター講演］Comparison of Word Representation Methods for Sentiment Classification with Twitter Data
+Takahiro Yamauchi・Incheon Paik・○Cherubin Mugisha（UoA）
+
+(14) 16:21 - 16:23
+［ポスター講演］Improving Code Generation with Code Graph based on Ontology
+○Jun-Wei Wang・Incheon Paik（UoA）
+
+(15) 16:23 - 16:25
+［ポスター講演］Comparison of Pre-trained Neural Language modeling pipelines for patient?s outcome prediction from medical text notes.
+○Cherubin Mugisha・Incheon Paik（UoA）
+
+(16) 16:25 - 16:27
+［ポスター講演］SQuADデータセットから抽出したオントロジーとニューラル言語モデルを用いた新しい質問と回答の生成
+○桑名絢士・白　寅天（会津大）
+
+(17) 16:27 - 16:29
+［ポスター講演］Evaluation of Few-Shot Learning for Adaptive Classification of GAN-Generated Images
+Kohei Watanabe・○Kungan Zeng・Incheon Paik（UoA）
+
+(18) 16:29 - 16:31
+［ポスター講演］Dynamic Service Recommendation in Edge Computing by Lightweight BERT-based Service Embedding
+○Kungan Zeng・Incheon Paik（UoA）
+
+(19) 16:31 - 16:33
+［ポスター講演］Multi-modal Neural Style Transfer
+○Nguyen Quang Tuyen（UoA）・Dinh Quang Vinh（VGU）・Incheon Paik（UoA）
+
+(20) 16:35 - 17:20
+パラレルポスター発表(ディスコード)
+* Parallel Session - First Half (16:35 - 17:00)
+- Improving Machine Translation using Sentence Augmentation by GPT-2 ○Ranto Sawai・Incheon Paik（UoA）
+- Classification Performance of Special Domain Twitter Message with Deep Learning Word Embeddings Ryoya Ito・○Incheon Paik（UoA）
+- Comparison of Word Representation Methods for Sentiment Classification with Twitter Data Takahiro Yamauchi・Incheon Paik・○Cherubin Mugisha（UoA）
+- Improving Code Generation with Code Graph based on Ontology ○Jun-Wei Wang・Incheon Paik（UoA）
+- Evaluation of Few-Shot Learning for Adaptive Classification of GAN-Generated Images Kohei Watanabe・○Kungan Zeng・Incheon Paik（UoA）
+
+* Parallel Session - Second Half (17:00 - 17:20)
+- Comparison of Pre-trained Neural Language modeling pipelines for patient's outcome prediction from medical text notes. ○Cherubin Mugisha・Incheon Paik（UoA）
+- SQuADデータセットから抽出したオントロジーとニューラル言語モデルを用いた新しい質問と回答の生成 ○桑名絢士・白 寅天（会津大）
+- Dynamic Service Recommendation in Edge Computing by Lightweight BERT-based Service Embedding ○Kungan Zeng・Incheon Paik（UoA）
+- Multi-modal Neural Style Transfer ○Nguyen Quang Tuyen（UoA）・Dinh Quang Vinh（VGU）・Incheon Paik（UoA）
+
+−−−　閉会挨拶(SC研究会委員長)　（ 5分 ）　−−−
+
+(21) 17:25 - 18:25
+オンライン懇談会
 
 </pre>
 
 ### 発表時間
-- 一般講演：発表 20 分 ＋ 質疑応答 10 分
+- 一般講演：発表 20 分 ＋ 質疑応答 5 分
 
 ### 参加登録
-- 第37回研究会に参加するためには __オンライン登録が必要__ です．下記リンクから登録ください．
-  - [Zoomミーティング登録（第37回サービスコンピューティング研究会）](https://zoom.us/meeting/register/tJArfuygpzMvH9RUxUcVi9OnlJzgw28gHDKj)
+- 第38回研究会に参加するためには __オンライン登録が必要__ です．下記リンクから登録ください．
+  - [Zoomミーティング登録（第38回サービスコンピューティング研究会）](https://kobe-u-ac-jp.zoom.us/meeting/register/tZAvd-GrrTsjGN3zWXwvlOc-F7pFjJVdLwvc)
 	- 参加登録が完了すると，Zoomの接続URLがメールで送られます．
 	- 会議当日，時間になりましたら接続URLをクリックして，参加してください．
 - 上記の登録に加えて，参加には __参加費が必要__ です（通常の第1種研究会と同様です）．
 	- 学生（予稿集を必要としない登壇者，または，聴講のみ）は無料です．
 	- それ以外の方は以下のリンクから，参加費をお支払いください．
-    - [電子情報通信学会 研究会発表申込システム](https://www.ieice.org/ken/program/index.php?tgid=IEICE-SC) の該当する開催の[「参加費について」](https://www.ieice.org/ken/user/index.php?cmd=participation&tgs_regid=5d64fc3042ac6e460817996c37b0e847984d2aa041e2ff634c269d6ed2266fdf)をクリック
+    - [電子情報通信学会 研究会発表申込システム](https://www.ieice.org/ken/program/index.php?tgid=IEICE-SC) の該当する開催の[「参加費について」](https://www.ieice.org/ken/user/index.php?cmd=participation&tgs_regid=794c9655354c6b6bc16133ea6b0b66def8f29d9ba704b62b364e7cbab72147eb)をクリック
 
 <!--
 ## 【次回開催案内】第36回サービスコンピューティング研究会
