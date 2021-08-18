@@ -1,11 +1,5 @@
 # サービスコンピューティング研究会へようこそ！
 
-## 訃報 (2021-05-13)
-
-サービスコンピューティング研究会の立ち上げ当初から専門委員としてご尽力いただきました南山大学の青山幹雄先生が2021/5/13 に逝去されました．研究会から心より哀悼の意を表します． 
-
-- [訃報連絡（故 青山 幹雄 南山大学理工学部ソフトウェア工学科・教授）](https://www.nanzan-u.ac.jp/Menu/koho/pdf/210517_fuho.pdf)
-
 ## 研究会の目的
 我が国が目指す未来社会の姿 [「Society 5.0 (超スマート社会)」](http://www8.cao.go.jp/cstp/society5_0/index.html)は，IoTやビッグデータ，AI，ロボット等の様々なシステムを横断的に連携・協調して，人々が必要なモノやサービスを必要なときに必要なだけ受けられる社会を目指すものです．
 
@@ -14,6 +8,8 @@
 - [電子情報通信学会 研究会発表申込システムへ](https://www.ieice.org/ken/program/index.php?tgid=IEICE-SC)
 
 ## 更新履歴
+- 2021-08-18 [第39回研究会の参加登録，プログラム案内](#latest_event) を追加しました．
+- 2021-08-18 [第38回研究会【オンライン開催】の報告](/seminar/report/update/2021/05/28/report-of-seminar.html)を書きました．
 - 2021-05-17 [第37回研究会【オンライン開催】の報告](/seminar/report/update/2021/03/19/report-of-seminar.html)を書きました．
 - 2021-05-12 [第38回研究会の参加登録，プログラム案内](#latest_event) を追加しました．
 - 2021-03-01 [第36回研究会【オンライン開催】の報告](/seminar/report/update/2020/11/13/report-of-seminar.html)を書きました．
@@ -23,11 +19,11 @@
 - 2020-10-23 [野沢温泉村 as バーチャル開催地](virtual_venue.md) の情報を更新しました．
 - 2020-10-16 第36回研究会の参加登録，プログラム案内を追加しました．
 - 2020-10-16 [第35回研究会【オンライン開催】の報告](/seminar/report/update/2020/08/21/report-of-seminar.html)を書きました．
-- 2020-07-01 第35回研究会の参加登録，プログラム案内を追加しました．
-- 2020-07-01 [第34回研究会【オンライン開催】の報告](/seminar/report/update/2020/05/29/report-of-seminar.html)を書きました．
 - [More...](seminar_list.md)
 
 <!--
+- 2020-07-01 第35回研究会の参加登録，プログラム案内を追加しました．
+- 2020-07-01 [第34回研究会【オンライン開催】の報告](/seminar/report/update/2020/05/29/report-of-seminar.html)を書きました．
 - 2020-05-16 第34回研究会の参加登録，プログラム案内を追加しました．第35回研究会の開催案内を掲載しました．
 - 2020-04-07 [第33回研究会【オンライン開催】の報告](/seminar/report/update/2020/03/16/report-of-seminar.html)を書きました．
 - 2020-03-12 第34回研究会の参加募集案内を追加しました
@@ -82,159 +78,123 @@
   - エッジコンピューティング
   - フォグコンピューティング
 
-## <a id="latest" name="latest_event"></a>第38回サービスコンピューティング研究会 【5/28(金) オンライン】
+## <a id="latest" name="latest_event"></a>第39回サービスコンピューティング研究会 【8/27(金) オンライン】
 
-第38回研究会は，Zoomによるオンライン ~~，および，会津大学のハイブリッド~~開催となります．
-- ~~※会津大での参加は学内関係者のみとなります．ご了承ください~~
-- ※COVID-19感染拡大の影響を受けて，完全オンラインとなりました
+第39回研究会は，Zoomによるオンライン開催となります．
+[電子情報通信学会・ソフトウェアインタプライズモデリング研究会(SWIM)](https://www.ieice.org/iss/swim/jpn/) 様との共催で開催されます．
 
-日本ソフトウェア科学会・機械学習工学研究会様との共催，IEEE仙台セクション様の協賛で開催されます．
+今回は，__FIT2021併催研究会__ として実施いたしますので， __<font color="red">参加申し込み，参加費支払いの方法が通常と異なります．</font>__
+[参加登録方法](#regist)を十分にご確認ください．
+
 
 
 ### 研究会概要
-- __テーマ:__   サイバーフィジカルシステム、IoT, 機械学習応用、および一般 
-- __日程：__ 2021年5月28日（金）
-- __会場：__ オンライン, 会津大学　（※新型コロナウイルスの感染拡大防止のため学内関係者のみ参加可） 
-- __共催：__ [日本ソフトウエア科学会/機械学習工学研究会](https://sites.google.com/view/sig-mlse/)
-- __協賛：__ [IEEE 仙台セクション](http://www.ecei.tohoku.ac.jp/ieee-sendai/index.php)
+- __テーマ:__ ソサエティ5.0に向けたサービスコンピューティングとインタプライズモデル化技術,一般
+- __日程：__ 2021年8月27日（金）
+- __会場：__ Zoomによるオンライン 
+- __共催：__ [電子情報通信学会・ソフトウェアインタプライズモデリング研究会(SWIM)](https://www.ieice.org/iss/swim/jpn/)
+- __併催：__ [第20回情報科学技術フォーラム (FIT2021)](https://www.ipsj.or.jp/event/fit/fit2021/) 
 
 
 ### プログラム (変更の可能性があります)
 
 <pre>
-5月28日(金) 午後 知的サービス応用 （09：30～11：45）
-座長: 石川 冬樹(国立情報学研究所)
+日時　2021年 8月27日(金)　09：30～16：30
 
-−−−　開催挨拶 (会津大学, 機械学習工学研究会主査)　（ 10分 ）　−−−
+会場 オンライン開催（Zoom）
 
-(1) 09:40 - 10:05
-デジタルツインによるパーソナルで直観的な建物内ナビゲーションシステム
-○小林　透・鬼丸禎史・深江一輝・今井哲郎・荒井研一（長崎大）・中澤瑛介・鈴木智仁（デンソーウェーブ）
+議題 ソサエティ5.0に向けたサービスコンピューティングとインタプライズモデル化技術,一般
 
-(2) 10:05 - 10:30
-Home Evacuee Support:音声対話AIを活用した在宅避難者支援システムの研究
-○小澤洋司・新井悠介・Elserafy Hatem・Jayesh Guntupalli・Chaudhari Pritam Jaywant・Darshan Dharmendra Chawda（日立）
+−−−　SWIM委員長挨拶　（ 5分 ）　−−−
 
-(3) 10:30 - 10:55
-API開発迅速化に向けたサービス認証プロキシ
-○上野里奈・齋藤成之・那須弘志・中田　侑（日立）
+8月27日(金) 午前 学生セッション１ （09：35～10：50）
+座長: 山登 庸次 (NTT)
 
-(4) 10:55 - 11:20
-Ontology and Rule for Repository to Share Knowledge of Deep Learning Architectures
-○Incheon Paik（UoA）
+(1) 09:35 - 10:00
+レシートの商品特定に効果的な組み合わせ検索手法とその評価
+○飯島理人・中山雅哉（東大）
 
-(5) 11:20 - 11:45
-非画像データに対する表現学習と強化学習の適用の研究
-○赤塚駿一・芹田　進・鯨井俊宏（日立）
+(2) 10:00 - 10:25
+RFC 8030とPush APIを用いたリソース単位のサーバープッシュの実現
+○伊藤悠斗・真鍋義文（工学院大）
 
-−−−　昼食　（ 90分 ）　−−−
+(3) 10:25 - 10:50
+Combining Multiagent Reinforcement Learning and Discrete Event Modeling for Pathfinding on a Non-Grid Graph
+○Shiyao Ding（Kyoto Univ.）・Hideki Aoyama（Panasonic）・Donghui Lin（Kyoto Univ.）
 
-5月28日(金) 午後 招待講演 （13：15～14：15）
+−−−　休憩　（ 15分 ）　−−−
+
+8月27日(金) 午前 学生セッション２ （11：05～12：20）
+座長: 林 章浩（静岡理工科大）
+
+(4) 11:05 - 11:30
+幼保施設教職員が主導する情報システム構築を目指した預かり保育業務支援システム機能拡張実験
+○寺澤康大・宮田　樹・高橋　徹・山田耕嗣（阪産大）
+
+(5) 11:30 - 11:55
+気象予報を活用した熱中症救急需要の中期予測手法の検討
+○中井哲也（神戸大）・佐伯幸郎（高知工科大）・中村匡秀（神戸大）
+
+(6) 11:55 - 12:20
+コンテキストに基づくサービス連携を支援するイベントルーチングサービスの検討
+○中田匠哉・中村匡秀（神戸大）
+
+−−−　休憩　（ 50分 ）　−−−
+
+8月27日(金) 午後 一般セッション１ （13：10～14：50）
 座長: 菊地 伸治 (物質・材料研究機構)
 
-(6) 13:15 - 14:15
-招待講演：
-Smart Cityによる自立分散社会の実現へ
-～市民・地域主導によるデジタルイノベーション～
-アクセンチュア・イノベーションセンター福島 センター共同統括
-マネジング・ディレクター 中村 彰二朗氏
+(7) 13:10 - 13:35
+生産性向上のためプロセス改善活動 ～ CMMI レベル 3 達成後に継続するプロセス改善活動 ～
+○林　章浩（静岡理工科大）
 
-−−−　休憩　（ 10分 ）　−−−
+(8) 13:35 - 14:00
+An anomaly detection method to reduce the effect of concept drift
+○Jaiswal Satish Kumar・Masuda Mineyoshi（Hitachi）
 
-5月28日(金) 午後 機械学習応用 （14：25～16：05）
-座長: 中村 匡秀 (神戸大)
+(9) 14:00 - 14:25
+ライダモニタリングによる二輪車安全向上システムの構想
+○杉野貴美廣・佐藤洋一郎・有本和民（岡山県大）
 
-(7) 14:25 - 14:50
-機械学習を活用したIT運用におけるモデル管理技術 ～ IT運用向けMLOpsの研究 ～
-○河野泰隆（日立）
+(10) 14:25 - 14:50
+Kafka StreamsとGitOpsによる継続的な連携を考慮したデータ連携基盤の提案
+○鳥山陽平・北島信哉・高橋　潤・山下一寛・佐々木裕介・野間　唯（富士通）
 
-(8) 14:50 - 15:15
-自律運用プログラムの干渉防止に関する検討
-○柿田将幸（日立）
+−−−　休憩　（ 15分 ）　−−−
 
-(9) 15:15 - 15:40
-海洋環境観測装置のための局所的・短期的太陽光発電量予測システム
-○今井哲郎（広島市大）・市丸理士・荒井研一・小林　透（長崎大）
+8月27日(金) 午後 一般セッション２ （15：05～16：30）
+座長: 調整中（SWIM担当）
 
-(10) 15:40 - 16:05
-機械学習を活用したIT運用におけるイべント引き当て精度向上技術
-○岡村　拓・爲重貴志（日立）
+(11) 15:05 - 15:30
+分散共有機能のサービス化に向けたプログラミングモデルの設計と実装
+○中口孝雄（京都情報大）
 
-−−−　休憩　（ 10分 ）　−−−
+(12) 15:30 - 15:55
+プロトタイプ構築法を基にした分野別応用アイディア創出のIoT教育法の提案と実践評価
+○秋山康智（アイテック阪急阪神）・石原正仁（こども教育宝仙大）・大江信宏（サイバー大）・井上雅裕（慶大）・小泉寿男（M2M研究会）
 
-5月28日(金) 午後 ライトニングトーク、ポスター発表 （16：15～18：25）
-座長: 木村 功作 (富士通研)
+(13) 15:55 - 16:20
+ヘテロデバイス自動オフロード時の電力使用量削減評価
+○山登庸次（NTT）
 
-(11) 16:15 - 16:17
-［ポスター講演］Improving Machine Translation using Sentence Augmentation by GPT-2
-○Ranto Sawai・Incheon Paik（UoA）
-
-(12) 16:17 - 16:19
-［ポスター講演］Classification Performance of Special Domain Twitter Message with Deep Learning Word Embeddings
-Ryoya Ito・○Incheon Paik（UoA）
-
-(13) 16:19 - 16:21
-［ポスター講演］Comparison of Word Representation Methods for Sentiment Classification with Twitter Data
-Takahiro Yamauchi・Incheon Paik・○Cherubin Mugisha（UoA）
-
-(14) 16:21 - 16:23
-［ポスター講演］Improving Code Generation with Code Graph based on Ontology
-○Jun-Wei Wang・Incheon Paik（UoA）
-
-(15) 16:23 - 16:25
-［ポスター講演］Comparison of Pre-trained Neural Language modeling pipelines for patient?s outcome prediction from medical text notes.
-○Cherubin Mugisha・Incheon Paik（UoA）
-
-(16) 16:25 - 16:27
-［ポスター講演］SQuADデータセットから抽出したオントロジーとニューラル言語モデルを用いた新しい質問と回答の生成
-○桑名絢士・白　寅天（会津大）
-
-(17) 16:27 - 16:29
-［ポスター講演］Evaluation of Few-Shot Learning for Adaptive Classification of GAN-Generated Images
-Kohei Watanabe・○Kungan Zeng・Incheon Paik（UoA）
-
-(18) 16:29 - 16:31
-［ポスター講演］Dynamic Service Recommendation in Edge Computing by Lightweight BERT-based Service Embedding
-○Kungan Zeng・Incheon Paik（UoA）
-
-(19) 16:31 - 16:33
-［ポスター講演］Multi-modal Neural Style Transfer
-○Nguyen Quang Tuyen（UoA）・Dinh Quang Vinh（VGU）・Incheon Paik（UoA）
-
-(20) 16:35 - 17:20
-パラレルポスター発表(ディスコード)
-* Parallel Session - First Half (16:35 - 17:00)
-- Improving Machine Translation using Sentence Augmentation by GPT-2 ○Ranto Sawai・Incheon Paik（UoA）
-- Classification Performance of Special Domain Twitter Message with Deep Learning Word Embeddings Ryoya Ito・○Incheon Paik（UoA）
-- Comparison of Word Representation Methods for Sentiment Classification with Twitter Data Takahiro Yamauchi・Incheon Paik・○Cherubin Mugisha（UoA）
-- Improving Code Generation with Code Graph based on Ontology ○Jun-Wei Wang・Incheon Paik（UoA）
-- Evaluation of Few-Shot Learning for Adaptive Classification of GAN-Generated Images Kohei Watanabe・○Kungan Zeng・Incheon Paik（UoA）
-
-* Parallel Session - Second Half (17:00 - 17:20)
-- Comparison of Pre-trained Neural Language modeling pipelines for patient's outcome prediction from medical text notes. ○Cherubin Mugisha・Incheon Paik（UoA）
-- SQuADデータセットから抽出したオントロジーとニューラル言語モデルを用いた新しい質問と回答の生成 ○桑名絢士・白 寅天（会津大）
-- Dynamic Service Recommendation in Edge Computing by Lightweight BERT-based Service Embedding ○Kungan Zeng・Incheon Paik（UoA）
-- Multi-modal Neural Style Transfer ○Nguyen Quang Tuyen（UoA）・Dinh Quang Vinh（VGU）・Incheon Paik（UoA）
-
-−−−　閉会挨拶(SC研究会委員長)　（ 5分 ）　−−−
-
-(21) 17:25 - 18:25
-オンライン懇談会
-
+−−−　SC委員長挨拶・次回研究会案内　（ 10分 ）　−−−
 </pre>
 
 ### 発表時間
 - 一般講演：発表 20 分 ＋ 質疑応答 5 分
 
-### 参加登録
-- 第38回研究会に参加するためには __オンライン登録が必要__ です．下記リンクから登録ください．
-  - [Zoomミーティング登録（第38回サービスコンピューティング研究会）](https://kobe-u-ac-jp.zoom.us/meeting/register/tZAvd-GrrTsjGN3zWXwvlOc-F7pFjJVdLwvc)
-	- 参加登録が完了すると，Zoomの接続URLがメールで送られます．
-	- 会議当日，時間になりましたら接続URLをクリックして，参加してください．
-- 上記の登録に加えて，参加には __参加費が必要__ です（通常の第1種研究会と同様です）．
-	- 学生（予稿集を必要としない登壇者，または，聴講のみ）は無料です．
-	- それ以外の方は以下のリンクから，参加費をお支払いください．
-    - [電子情報通信学会 研究会発表申込システム](https://www.ieice.org/ken/program/index.php?tgid=IEICE-SC) の該当する開催の[「参加費について」](https://www.ieice.org/ken/user/index.php?cmd=participation&tgs_regid=794c9655354c6b6bc16133ea6b0b66def8f29d9ba704b62b364e7cbab72147eb)をクリック
+###  <a id="regist" name="regist"></a> 参加登録
+第39回研究会に参加するためには __オンライン登録が必要__ です．
+__FIT2021併催研究会のため，申し込み方法が通常と異なります__ ．
+下記をご参照の上，登録ください．
+- __併催研究会 (SC/SWIM研) のみに参加される場合__　： 以下の２つの手続をお願い致します．
+  1. [【このページ】](https://www.ieice.org/ken/user/index.php?cmd=participation&tgs_regid=a2d68c4cc0a9b6b59a4b7a05c5094a162439344ea4beb086714946105216b256) を参照の上，参加費をお支払いください．
+  1. [【FITのページ】](https://www.ipsj.or.jp/event/fit/fit2021/adv_reserve_sig.html) より，併催研究会SC/SWIM研のみに参加するための手続をお願いします．この手続よりZoomにアクセス可能となります．
+  - __学生の方はFIT聴講参加費が無料__ ですので併催研究会のみ参加希望の場合でもFIT聴講参加にお申し込みください。資料（Webからダウンロード）付です．
+
+- __FIT2021に参加される場合__ : SC/SWIM研究会にそのまま参加していただけます。
+  - [【FITのページ】](https://www.ipsj.or.jp/event/fit/fit2021/adv_reserve.html) より参加申込・参加費支払いをお願いします。
+  - __学生の方はFIT聴講参加費が無料__ ですので併催研究会のみ参加希望の場合でもFIT聴講参加にお申し込みください。資料（Webからダウンロード）付です．
 
 <!--
 ## 【次回開催案内】第36回サービスコンピューティング研究会
@@ -311,6 +271,10 @@ KBSE研究会と合同で開催を計画中です．
 - [細野 繁（東京工科大学)](https://www.teu.ac.jp/info/lab/teacher/cs/index.html?id=1735)
 - [中村 匡秀 (神戸大学)](http://www27.cs.kobe-u.ac.jp/~masa-n/)
 
+#### 幹事補佐
+- 手塚 伸 （日立製作所）
+- [中口 孝雄 （京都情報大学院大学）](https://www.kcg.edu/faculty/associate-professor/t-nakaguchi)
+
 #### 委員
 - [青山 幹雄 （南山大学）](http://www.nise.org/)
 - [井垣 宏（大阪工業大学）](https://www.oit.ac.jp/laboratory/room/230) 
@@ -328,8 +292,6 @@ KBSE研究会と合同で開催を計画中です．
 - [村上 陽平（立命館大学）](http://www.ritsumei.ac.jp/~yohei/)
 - 横山 重俊（群馬大学）
 - [Donghui Lin（京都大学）](http://www.ai.soc.i.kyoto-u.ac.jp/~lindh/)
-- 手塚 伸 （日立製作所）
-- [中口 孝雄 （京都情報大学院大学）](https://www.kcg.edu/faculty/associate-professor/t-nakaguchi)
 - [山田 耕嗣 （大阪産業大学）](http://kenkyu.osaka-sandai.ac.jp/Profiles/19/0001885/profile.html)
 - [干川 尚人 （小山高専）](https://researchmap.jp/nhoshi_pub)
 - [竹内 広宜 (武蔵大学)](https://researchmap.jp/h.takeuchi)
