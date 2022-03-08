@@ -198,7 +198,7 @@ Policy as Codeによるリソースの依存関係を考慮した設定評価に
 ###  <a id="regist" name="regist"></a> 参加登録
 第41回研究会に参加するためには __オンライン登録が必要__ です．
 下記をご参照の上，登録ください．
-1. 【参加費の支払い】　[このページ](https://www.ieice.org/ken/user/index.php?cmd=participation&tgs_regid=92dbe9bdb342696d9d44dc58efc144c9f812c01ccb10a77c7144474816db6873) を参照の上，参加費をお支払いください．__学生の方はFIT聴講参加費が無料__ です．
+1. 【参加費の支払い】　[このページ](https://www.ieice.org/ken/user/index.php?cmd=participation&tgs_regid=92dbe9bdb342696d9d44dc58efc144c9f812c01ccb10a77c7144474816db6873) を参照の上，参加費をお支払いください．__学生の方は聴講参加費が無料__ です．
 1. 【Event-Inへの登録】 [Event-In : SC研究会(2022年3月11日開催)](https://eventin.space/e/4YzwXeJnGZSKw5DQJn36/register)から登録情報を入力して下さい．登録したメールアドレスにリンクが表示されます．当日はそのリンクをクリックして，参加ください．
 
 <!--
