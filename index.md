@@ -289,7 +289,7 @@ Policy as Codeによるリソースの依存関係を考慮した設定評価に
 - 川村 隆浩（国立研究開発法人　農業・食品産業技術総合研究機構）
 - 北島 信哉（富士通研究所）
 - 鈴村 豊太郎（IBM T.J. ワトソン研究所）
-- 佐伯 幸郎（神戸大学）
+- 佐伯 幸郎（高知工科大学）
 - [須永 宏（大阪工業大学）](https://www.oit.ac.jp/laboratory/room/88)
 - [田仲 正弘（NiCT）](http://www2.nict.go.jp/direct/member/mtnk/index.html)
 - [藤田 悟（法政大学）](https://cis.hosei.ac.jp/depts/dm/fujita/)
