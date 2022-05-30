@@ -8,6 +8,7 @@
 - [電子情報通信学会 研究会発表申込システムへ](https://www.ieice.org/ken/program/index.php?tgid=IEICE-SC)
 
 ## 更新履歴
+- 2022-05-30 [第41回研究会【オンライン開催】の報告](/seminar/report/update/2022/03/11/report-of-seminar.html)を書きました．
 - 2022-03-09 [第42回研究会の参加募集](#next_event) を追加しました．
 - 2022-03-08 [第41回研究会の参加登録，プログラム案内](#latest_event) を追加しました．
 - 2022-03-08 [第40回研究会【オンライン開催】の報告](/seminar/report/update/2021/11/06/report-of-seminar.html)を書きました．
