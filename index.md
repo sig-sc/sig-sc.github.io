@@ -227,42 +227,64 @@ RFIDタグによる園児登降園管理システムの可能性
 ## 委員会構成
 
 #### 委員長
-- [菊地 伸治（NIMS）](https://samurai.nims.go.jp/profiles/kikuchi_shinji?locale=ja)
-
-#### 副委員長
-- [山登 庸次（NTT）](http://www.sic.ecl.ntt.co.jp/member/yoji-yamato/yoji-yamato.html)
 - [木村 功作（富士通研究所）](https://8card.net/p/39588542006)
 
-#### 幹事
-- [細野 繁（東京工科大学)](https://www.teu.ac.jp/info/lab/teacher/cs/index.html?id=1735)
-- [中村 匡秀 (神戸大学)](http://www27.cs.kobe-u.ac.jp/~masa-n/)
 
-#### 幹事補佐
-- 手塚 伸 （日立製作所）
+#### 副委員長
 - [中口 孝雄 （京都情報大学院大学）](https://www.kcg.edu/faculty/associate-professor/t-nakaguchi)
 
+#### 幹事
+- 北島 信哉（富士通研究所）
+- [干川 尚人 （筑波大学）](https://researchmap.jp/nhoshi_pub)
+
+#### 幹事補佐
+- [細野 繁（東京工科大学)](https://www.teu.ac.jp/info/lab/teacher/cs/index.html?id=1735)
+- 池川 航史 （日立製作所）
+
 #### 委員
-- [青山 幹雄 （南山大学）](http://www.nise.org/)
+
 - [井垣 宏（大阪工業大学）](https://www.oit.ac.jp/laboratory/room/230) 
 - [石川 冬樹（国立情報学研究所）](http://research.nii.ac.jp/~f-ishikawa/)
 - 浦本 直彦（株式会社三菱ケミカルホールディングス）
 - 川村 隆浩（国立研究開発法人　農業・食品産業技術総合研究機構）
-- 北島 信哉（富士通研究所）
-- 鈴村 豊太郎（IBM T.J. ワトソン研究所）
+- [菊地 伸治（NIMS）](https://samurai.nims.go.jp/profiles/kikuchi_shinji?locale=ja)
+- [小林 透 (長崎大学)](http://www.cis.nagasaki-u.ac.jp/~toru/src/)
 - 佐伯 幸郎（高知工科大学）
+- 鈴村 豊太郎（東京大学）
 - [須永 宏（大阪工業大学）](https://www.oit.ac.jp/laboratory/room/88)
+- [竹内 広宜 (武蔵大学)](https://researchmap.jp/h.takeuchi)
 - [田仲 正弘（NiCT）](http://www2.nict.go.jp/direct/member/mtnk/index.html)
+- [藤原 一毅 (国立情報学研究所)](http://ikki.fujiwa.la/)
 - [藤田 悟（法政大学）](https://cis.hosei.ac.jp/depts/dm/fujita/)
+
+
+
+
+
 - [Incheon Paik （会津大学）](http://ebiz.u-aizu.ac.jp/) 
 - [柗本 真佑（大阪大学）](http://sdl.ist.osaka-u.ac.jp/~shinsuke/)
 - [村上 陽平（立命館大学）](http://www.ritsumei.ac.jp/~yohei/)
-- 横山 重俊（群馬大学）
+
+- [中村 匡秀 (神戸大学)](http://www27.cs.kobe-u.ac.jp/~masa-n/)
+
+
+
 - [Donghui Lin（京都大学）](http://www.ai.soc.i.kyoto-u.ac.jp/~lindh/)
+
+
+
+
+
+
+
 - [山田 耕嗣 （大阪産業大学）](http://kenkyu.osaka-sandai.ac.jp/Profiles/19/0001885/profile.html)
-- [干川 尚人 （小山高専）](https://researchmap.jp/nhoshi_pub)
-- [竹内 広宜 (武蔵大学)](https://researchmap.jp/h.takeuchi)
-- [小林 透 (長崎大学)](http://www.cis.nagasaki-u.ac.jp/~toru/src/)
-- [藤原 一毅 (国立情報学研究所)](http://ikki.fujiwa.la/)
+- 山登 庸次（NTT）
+- 横山 重俊（群馬大学）
+
+
+- [青山 幹雄 （南山大学）](http://www.nise.org/)
+
+
 
 ## 関連リンク
 ### ジャーナル
