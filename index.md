@@ -254,36 +254,16 @@ RFIDタグによる園児登降園管理システムの可能性
 - [須永 宏（大阪工業大学）](https://www.oit.ac.jp/laboratory/room/88)
 - [竹内 広宜 (武蔵大学)](https://researchmap.jp/h.takeuchi)
 - [田仲 正弘（NiCT）](http://www2.nict.go.jp/direct/member/mtnk/index.html)
+- [中村 匡秀 (神戸大学)](http://www27.cs.kobe-u.ac.jp/~masa-n/)
 - [藤原 一毅 (国立情報学研究所)](http://ikki.fujiwa.la/)
 - [藤田 悟（法政大学）](https://cis.hosei.ac.jp/depts/dm/fujita/)
-
-
-
-
-
 - [Incheon Paik （会津大学）](http://ebiz.u-aizu.ac.jp/) 
 - [柗本 真佑（大阪大学）](http://sdl.ist.osaka-u.ac.jp/~shinsuke/)
 - [村上 陽平（立命館大学）](http://www.ritsumei.ac.jp/~yohei/)
-
-- [中村 匡秀 (神戸大学)](http://www27.cs.kobe-u.ac.jp/~masa-n/)
-
-
-
-- [Donghui Lin（京都大学）](http://www.ai.soc.i.kyoto-u.ac.jp/~lindh/)
-
-
-
-
-
-
-
 - [山田 耕嗣 （大阪産業大学）](http://kenkyu.osaka-sandai.ac.jp/Profiles/19/0001885/profile.html)
-- 山登 庸次（NTT）
+- [山登 庸次（NTT）](https://researchmap.jp/yamato_yoji)
 - 横山 重俊（群馬大学）
-
-
-- [青山 幹雄 （南山大学）](http://www.nise.org/)
-
+- [Donghui Lin（京都大学）](http://www.ai.soc.i.kyoto-u.ac.jp/~lindh/)
 
 
 ## 関連リンク
