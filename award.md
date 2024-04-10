@@ -1,5 +1,5 @@
 ---
-title: 表彰規定
+title: 選奨規程
 layout: post
 ---
 
