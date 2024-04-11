@@ -50,6 +50,3 @@ $ git push origin my-branch
 ```
 
 - こちらでレビュー後，マージします．
-
-
-
