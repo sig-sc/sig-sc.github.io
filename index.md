@@ -247,8 +247,8 @@ RFIDタグによる園児登降園管理システムの可能性
 - [石川 冬樹（国立情報学研究所）](http://research.nii.ac.jp/~f-ishikawa/)
 - 浦本 直彦（日本IBM）
 - 川村 隆浩（国立研究開発法人　農業・食品産業技術総合研究機構）
-- [菊地 伸治（理化学研究所）](https://samurai.nims.go.jp/profiles/kikuchi_shinji?locale=ja)
-- [小林 透 (長崎大学)](http://www.cis.nagasaki-u.ac.jp/~toru/src/)
+- 菊地 伸治（理化学研究所）
+- [小林 透 (長崎大学)](https://www.idsci.nagasaki-u.ac.jp/research_ac/facultylist/staff7)
 - 鈴村 豊太郎（東京工業大学）
 - [須永 宏（大阪学院大学）](https://www.ogu.ac.jp/faculty/teacher/info/sunaga.html)
 - [竹内 広宜 (武蔵大学)](https://researchmap.jp/h.takeuchi)
@@ -260,8 +260,8 @@ RFIDタグによる園児登降園管理システムの可能性
 - [細野 繁（東京工科大学)](https://www.teu.ac.jp/info/lab/teacher/cs/index.html?id=1735)
 - [柗本 真佑（大阪大学）](http://sdl.ist.osaka-u.ac.jp/~shinsuke/)
 - [村上 陽平（立命館大学）](http://www.ritsumei.ac.jp/~yohei/)
-- 山下　一寛（富士通研究所）
-- [山田 耕嗣 （大阪産業大学）](http://kenkyu.osaka-sandai.ac.jp/Profiles/19/0001885/profile.html)
+- 山下 一寛（富士通研究所）
+- [山田 耕嗣 （大阪産業大学）](https://kenkyu-s.osaka-sandai.ac.jp/cvclients/researchers/read0114110)
 - [山登 庸次（NTT）](https://researchmap.jp/yamato_yoji)
 - 横山 重俊（国立情報学研究所）
 - Donghui Lin（岡山大学）
