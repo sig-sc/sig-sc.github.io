@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "FIT2010 イベント企画「サービスコンピューティングへのアプローチ」 2010年9月7日(火)"
 date:   2010-09-07 21:00:00 +0900
 categories: seminar report update

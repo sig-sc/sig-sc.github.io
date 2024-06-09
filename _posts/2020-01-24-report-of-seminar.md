@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "ソフトウェア工学研究会ウィンターワークショップ「サービス指向セッション」 2020年1月24日(金), 25日(土)"
 date:   2020-01-25 21:00:00 +0900
 categories: seminar report update

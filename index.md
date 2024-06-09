@@ -1,61 +1,30 @@
 ---
 title: サービスコンピューティング研究会
-description: 電子情報通信学会 サービスコンピューティング研究会 (IEICE SIG-SC)
+description: 電子情報通信学会 サービスコンピューティング研究会 (IEICE/SC)
 layout: home
+---
+
+## <a id="cfp" name="cfp"></a>**★発表申し込み募集中★**
+### 第50回 サービスコンピューティング研究会 発表申し込み募集中
+
+- 日程：2024年 8月23日(金)
+- **申込締切：2024年6月21日(金)**
+- 開催地：[機械振興会館](https://www.jspmi.or.jp/kaigishitsu/access.html) 東京都港区芝公園３丁目５−８（ハイブリッド開催予定）
+- 共催：[SWIM研究会](https://www.ieice.org/iss/swim/jpn/)共催
+- その他： [研究会発表・参加方法，FAQ](http://www.ieice.org/jpn/toukou/kenkyukai.html)
+
+<a href="https://www.ieice.org/ken/program/index.php?tgid=IEICE-SC" class="btn_10">発表申し込み・詳細</a>
+<!-- <a href="https://www.ieice.org/ken/program/index.php?tgid=IEICE-SC" class="btn_28"><span>発表申し込み</span></a> -->
+
 ---
 
 ## 研究会の目的
 
-我が国が目指す未来社会の姿 [「Society 5.0 (超スマート社会)」](http://www8.cao.go.jp/cstp/society5_0/index.html)は，IoTやビッグデータ，AI，ロボット等の様々なシステムを横断的に連携・協調して，人々が必要なモノやサービスを必要なときに必要なだけ受けられる社会を目指すものです．
+我が国が目指す未来社会の姿「**Society 5.0 (超スマート社会)**」は，IoTやビッグデータ，AI，ロボット等の様々なシステムを横断的に連携・協調して，人々が必要なモノやサービスを必要なときに必要なだけ受けられる社会を目指すものです．
 
 あらゆるシステムの機能を __サービス__ と捉え，これらを __疎結合__ して更なるサービスを創るというサービスコンピューティングの考え方（ __Everything as a Service__ ）は，超スマート社会における異種分散システムをつなぐ糊（のり）として，重要な役割を果たします．本研究会では，そうしたサービスの実現や提供に求められる技術的基盤や方法論，プラクティスなどについて，研究発表および討論を行う機会を提供します．
 
-- [電子情報通信学会 研究会発表申込システムへ](https://www.ieice.org/ken/program/index.php?tgid=IEICE-SC)
-
-## 更新履歴
-
-- 2024-04-10 [表彰規定](award.md) を追加しました．
-- 2023-09-04 [第47回研究会の参加募集](#next_event) を追加しました．
-- 2022-05-30 [第41回研究会【オンライン開催】の報告](/seminar/report/update/2022/03/11/report-of-seminar.html)を書きました．
-- 2022-03-09 [第42回研究会の参加募集](#next_event) を追加しました．
-- 2022-03-08 [第41回研究会の参加登録，プログラム案内](#latest_event) を追加しました．
-- 2022-03-08 [第40回研究会【オンライン開催】の報告](/seminar/report/update/2021/11/06/report-of-seminar.html)を書きました．
-- 2021-08-30 [第40回研究会の参加募集](#latest_event) を追加しました．
-- 2021-08-30 [第39回研究会【オンライン開催】の報告](/seminar/report/update/2021/08/27/report-of-seminar.html)を書きました．
-- 2021-08-18 [第39回研究会の参加登録，プログラム案内](#latest_event) を追加しました．
-- 2021-08-18 [第38回研究会【オンライン開催】の報告](/seminar/report/update/2021/05/28/report-of-seminar.html)を書きました．
-- 2021-05-17 [第37回研究会【オンライン開催】の報告](/seminar/report/update/2021/03/19/report-of-seminar.html)を書きました．
-- 2021-05-12 [第38回研究会の参加登録，プログラム案内](#latest_event) を追加しました．
-- 2021-03-01 [第36回研究会【オンライン開催】の報告](/seminar/report/update/2020/11/13/report-of-seminar.html)を書きました．
-- 2021-02-24 第37回研究会の参加登録，プログラム案内を追加しました．
-- 2020-10-27 第36回研究会の参加登録をオープンしました．
-- 2020-10-23 [第36回研究会の参加案内，特別企画の詳細情報を更新](#latest_event)しました．
-- 2020-10-23 [野沢温泉村 as バーチャル開催地](virtual_venue.md) の情報を更新しました．
-- [More...](seminar_list.md)
-
-<!--
-- 2020-10-16 第36回研究会の参加登録，プログラム案内を追加しました．
-- 2020-10-16 [第35回研究会【オンライン開催】の報告](/seminar/report/update/2020/08/21/report-of-seminar.html)を書きました．
-- 2020-07-01 第35回研究会の参加登録，プログラム案内を追加しました．
-- 2020-07-01 [第34回研究会【オンライン開催】の報告](/seminar/report/update/2020/05/29/report-of-seminar.html)を書きました．
-- 2020-05-16 第34回研究会の参加登録，プログラム案内を追加しました．第35回研究会の開催案内を掲載しました．
-- 2020-04-07 [第33回研究会【オンライン開催】の報告](/seminar/report/update/2020/03/16/report-of-seminar.html)を書きました．
-- 2020-03-12 第34回研究会の参加募集案内を追加しました
-- 2020-03-12 第33回研究会の【オンライン開催】の告知を追加しました
-- 2020-03-12 [ウィンターワークショップ2020・イン・京都の報告](/seminar/report/update/2020/01/25/report-of-seminar.html)をアップしました．
-- 2020-03-12 [第32回研究会の報告](/seminar/report/update/2019/11/08/report-of-seminar.html)をアップしました．
-- 2020-02-27 第33回研究会の【現地開催中止】の告知を追加しました
-- 2019-12-27 第33回研究会の参加募集案内を追加しました
-- 2019-08-26 第32回研究会の参加募集案内を追加しました
-- 2019-08-26 [第31回研究会の報告](/seminar/report/update/2019/08/23/report-of-seminar.html)を書きました
-- 2019-08-26 [第30回研究会の報告](/seminar/report/update/2019/05/31/report-of-seminar.html)を書きました
-- 2019-06-11 第31回研究会の参加募集案内を追加しました
-- 2019-04-03 第30回研究会の参加募集案内を追加しました
-- 2019-04-03 [第29回研究会の報告](/seminar/report/update/2019/03/15/report-of-seminar.html)を書きました
-- 2018-12-17 第29回研究会の参加募集案内を追加しました
-- 2018-11-26 ウィンターワークショップの参加募集案内を追加しました
-- 2018-11-26 [第28回研究会の報告](/seminar/report/update/2018/11/10/report-of-seminar.html)を書きました
--->
+---
 
 ## <a id="keywords" name="keywords"></a>研究分野
 主に以下のような研究分野を想定していますが，これらに限らず，サービスに関わる話題であれば広く取り上げます．
@@ -92,8 +61,11 @@ layout: home
   - エッジコンピューティング
   - フォグコンピューティング
 
+---
 
 <!----------------------------- 参加案内　ここから  --------------------------------------->
+<!-- 
+
 ## <a id="latest" name="latest_event"></a>第46回サービスコンピューティング研究会 【8/25(金) オンライン】
 
 
@@ -150,12 +122,16 @@ RFIDタグによる園児登降園管理システムの可能性
 第46回研究会に参加するためには __オンライン登録が必要__ です．
 下記をご参照の上，登録ください．
 1. 【参加費の支払い】　[このページ](https://ken.ieice.org/ken/user/index.php?cmd=participation&tgs_regid=59982eba3afed073cd973a13a9bfcfc82cc39225945aeb316aebf454839d865e) を参照の上，参加費をお支払いください．__学生の方は聴講参加費が無料__ です．
+ -->
 
 <!----------------------------- 参加案内　ここまで  --------------------------------------->
 
 
 <!----------------------------- 開催案内(CFP)　ここから  --------------------------------------->
+<!-- 
 ## <a id="next_event" name="next_event"></a>【次回開催案内】第47回サービスコンピューティング研究会
+
+### 概要
 
 - __テーマ:__  一般
 - __日程：__ 2023年11月17日（金）- 18日（土）
@@ -211,6 +187,8 @@ RFIDタグによる園児登降園管理システムの可能性
 - 電子情報通信学会 サービスコンピューティング研究会 (IEICE/SC)
   - 北島 信哉（富士通）  E-mail: kitajima.shinya[at]fujitsu.com
 
+---
+ -->
 <!--
 以下より選択できます (※申込件数によって，発表時間が短くなる場合があります)
 	- ロング発表　: 口頭発表形式　45分(30分発表，15分質疑応答)
@@ -227,60 +205,73 @@ RFIDタグによる園児登降園管理システムの可能性
 <!----------------------------- 開催案内(CFP)　ここまで  --------------------------------------->
 
 
+
 ## これまでの研究会
 
-過去の研究会のプログラムは [「過去のイベント」](seminar_list.md) をご覧ください．
+過去の研究会のプログラムは [**「過去の研究会開催スケジュール」**](https://ken.ieice.org/ken/program/index.php?instsoc=IEICE-D&tgid=IEICE-SC&year=39&region=0&sch1=1&schkey=&pnum=0&psize=2&psort=1&layout=&lang=&term=&pskey=&ps1=1&ps2=1&ps3=1&ps4=1&ps5=1&search_mode=) をご覧ください．
+<!-- 過去の研究会のプログラムは [**「過去のイベント」**](seminar_list.md) をご覧ください． -->
 
-## 選奨規程
+---
 
-サービスコンピューティング研究会における表彰又は奨励規程に関しては、こちらの[「選奨規程」](award.md)をご覧ください．
+## 選奨規程および表彰受賞者
+
+サービスコンピューティング研究会における表彰又は奨励規程に関しては[**「選奨規程」**](award.md)をご覧ください．
+
+過去の受賞者に関しては[**「表彰受賞者」**](winner.md)をご覧ください．
+
+---
 
 ## 委員会構成
 
 #### 委員長
 
-- [木村 功作（富士通研究所）](https://8card.net/p/39588542006)
+- [中口 孝雄 （京都情報大学院大学）](https://www.kcg.edu/faculty/associate-professor/t-nakaguchi)
 
 #### 副委員長
 
-- [中口 孝雄 （京都情報大学院大学）](https://www.kcg.edu/faculty/associate-professor/t-nakaguchi)
+- 北島 信哉（富士通研究所）
 
 #### 幹事
 
-- 北島 信哉（富士通研究所）
-- [干川 尚人 （筑波大学）](https://researchmap.jp/nhoshi_pub)
+- [池川 航史 （日立製作所）](https://ikegawa-koshi.github.io/)
+- [佐伯 幸郎 （高知工科大学）](https://www.kochi-tech.ac.jp/profile/ja/saiki-sachio.html)
 
 #### 幹事補佐
 
-- [細野 繁（東京工科大学)](https://www.teu.ac.jp/info/lab/teacher/cs/index.html?id=1735)
-- [池川 航史 （日立製作所）](https://ikegawa-koshi.github.io/)
+- [木村 功作（富士通研究所）](https://8card.net/p/39588542006)
+- [干川 尚人 （筑波大学）](https://researchmap.jp/nhoshi_pub)
 
 #### 委員
 
 - [井垣 宏（大阪工業大学）](https://www.oit.ac.jp/laboratory/room/230)
 - [石川 冬樹（国立情報学研究所）](http://research.nii.ac.jp/~f-ishikawa/)
-- 浦本 直彦（株式会社三菱ケミカルホールディングス）
+- 浦本 直彦（日本IBM）
 - 川村 隆浩（国立研究開発法人　農業・食品産業技術総合研究機構）
-- [菊地 伸治（NIMS）](https://samurai.nims.go.jp/profiles/kikuchi_shinji?locale=ja)
+- [菊地 伸治（理化学研究所）](https://samurai.nims.go.jp/profiles/kikuchi_shinji?locale=ja)
 - [小林 透 (長崎大学)](http://www.cis.nagasaki-u.ac.jp/~toru/src/)
-- 佐伯 幸郎（高知工科大学）
-- 鈴村 豊太郎（東京大学）
-- [須永 宏（大阪工業大学）](https://www.oit.ac.jp/laboratory/room/88)
+- 鈴村 豊太郎（東京工業大学）
+- [須永 宏（大阪学院大学）](https://www.ogu.ac.jp/faculty/teacher/info/sunaga.html)
 - [竹内 広宜 (武蔵大学)](https://researchmap.jp/h.takeuchi)
-- [田仲 正弘（NiCT）](http://www2.nict.go.jp/direct/member/mtnk/index.html)
+- 田仲 正弘（Microsoft Research）
 - [中村 匡秀 (神戸大学)](http://www27.cs.kobe-u.ac.jp/~masa-n/)
 - [藤原 一毅 (国立情報学研究所)](http://ikki.fujiwa.la/)
 - [藤田 悟（法政大学）](https://cis.hosei.ac.jp/depts/dm/fujita/)
 - [Incheon Paik （会津大学）](http://ebiz.u-aizu.ac.jp/)
+- [細野 繁（東京工科大学)](https://www.teu.ac.jp/info/lab/teacher/cs/index.html?id=1735)
 - [柗本 真佑（大阪大学）](http://sdl.ist.osaka-u.ac.jp/~shinsuke/)
 - [村上 陽平（立命館大学）](http://www.ritsumei.ac.jp/~yohei/)
+- 山下　一寛（富士通研究所）
 - [山田 耕嗣 （大阪産業大学）](http://kenkyu.osaka-sandai.ac.jp/Profiles/19/0001885/profile.html)
 - [山登 庸次（NTT）](https://researchmap.jp/yamato_yoji)
-- 横山 重俊（群馬大学）
-- [Donghui Lin（京都大学）](http://www.ai.soc.i.kyoto-u.ac.jp/~lindh/)
+- 横山 重俊（国立情報学研究所）
+- Donghui Lin（岡山大学）
 
+※五十音順
+
+---
 
 ## 関連リンク
+
 ### ジャーナル
 - [IEEE Transactions on Services Computing](http://www.computer.org/tsc)
 - [International Journal of Web Services Research (JWSR)](http://www.servicescomputing.org/jwsr/)
@@ -296,5 +287,52 @@ RFIDタグによる園児登降園管理システムの可能性
 - [IEEE Services Computing Community](https://www.ieeecommunities.org/services)
 - [Technical Committee on Services Computing (TCSVC)](http://tab.computer.org/tcsc/)
 
+---
 
+## 更新履歴
 
+- 2023-06-09 [第50回研究会の参加募集](#cfp) を追加しました．
+- 2024-06-09 [表彰受賞者](winner.md) を追加しました．
+- 2024-06-06 [委員会構成](#委員会構成) を更新しました．
+- 2024-04-10 [表彰規定](award.md) を追加しました．
+- [More...](seminar_list.md)
+
+<!--
+- 2023-09-04 [第47回研究会の参加募集](#next_event) を追加しました．
+- 2022-05-30 [第41回研究会【オンライン開催】の報告](/seminar/report/update/2022/03/11/report-of-seminar.html)を書きました．
+- 2022-03-09 [第42回研究会の参加募集](#next_event) を追加しました．
+- 2022-03-08 [第41回研究会の参加登録，プログラム案内](#latest_event) を追加しました．
+- 2022-03-08 [第40回研究会【オンライン開催】の報告](/seminar/report/update/2021/11/06/report-of-seminar.html)を書きました．
+- 2021-08-30 [第40回研究会の参加募集](#latest_event) を追加しました．
+- 2021-08-30 [第39回研究会【オンライン開催】の報告](/seminar/report/update/2021/08/27/report-of-seminar.html)を書きました．
+- 2021-08-18 [第39回研究会の参加登録，プログラム案内](#latest_event) を追加しました．
+- 2021-08-18 [第38回研究会【オンライン開催】の報告](/seminar/report/update/2021/05/28/report-of-seminar.html)を書きました．
+- 2021-05-17 [第37回研究会【オンライン開催】の報告](/seminar/report/update/2021/03/19/report-of-seminar.html)を書きました．
+- 2021-05-12 [第38回研究会の参加登録，プログラム案内](#latest_event) を追加しました．
+- 2021-03-01 [第36回研究会【オンライン開催】の報告](/seminar/report/update/2020/11/13/report-of-seminar.html)を書きました．
+- 2021-02-24 第37回研究会の参加登録，プログラム案内を追加しました．
+- 2020-10-27 第36回研究会の参加登録をオープンしました．
+- 2020-10-23 [第36回研究会の参加案内，特別企画の詳細情報を更新](#latest_event)しました．
+- 2020-10-23 [野沢温泉村 as バーチャル開催地](virtual_venue.md) の情報を更新しました．
+- 2020-10-16 第36回研究会の参加登録，プログラム案内を追加しました．
+- 2020-10-16 [第35回研究会【オンライン開催】の報告](/seminar/report/update/2020/08/21/report-of-seminar.html)を書きました．
+- 2020-07-01 第35回研究会の参加登録，プログラム案内を追加しました．
+- 2020-07-01 [第34回研究会【オンライン開催】の報告](/seminar/report/update/2020/05/29/report-of-seminar.html)を書きました．
+- 2020-05-16 第34回研究会の参加登録，プログラム案内を追加しました．第35回研究会の開催案内を掲載しました．
+- 2020-04-07 [第33回研究会【オンライン開催】の報告](/seminar/report/update/2020/03/16/report-of-seminar.html)を書きました．
+- 2020-03-12 第34回研究会の参加募集案内を追加しました
+- 2020-03-12 第33回研究会の【オンライン開催】の告知を追加しました
+- 2020-03-12 [ウィンターワークショップ2020・イン・京都の報告](/seminar/report/update/2020/01/25/report-of-seminar.html)をアップしました．
+- 2020-03-12 [第32回研究会の報告](/seminar/report/update/2019/11/08/report-of-seminar.html)をアップしました．
+- 2020-02-27 第33回研究会の【現地開催中止】の告知を追加しました
+- 2019-12-27 第33回研究会の参加募集案内を追加しました
+- 2019-08-26 第32回研究会の参加募集案内を追加しました
+- 2019-08-26 [第31回研究会の報告](/seminar/report/update/2019/08/23/report-of-seminar.html)を書きました
+- 2019-08-26 [第30回研究会の報告](/seminar/report/update/2019/05/31/report-of-seminar.html)を書きました
+- 2019-06-11 第31回研究会の参加募集案内を追加しました
+- 2019-04-03 第30回研究会の参加募集案内を追加しました
+- 2019-04-03 [第29回研究会の報告](/seminar/report/update/2019/03/15/report-of-seminar.html)を書きました
+- 2018-12-17 第29回研究会の参加募集案内を追加しました
+- 2018-11-26 ウィンターワークショップの参加募集案内を追加しました
+- 2018-11-26 [第28回研究会の報告](/seminar/report/update/2018/11/10/report-of-seminar.html)を書きました
+-->

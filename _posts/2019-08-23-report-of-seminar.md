@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "サービスコンピューティング研究専門委員会 第31回研究会 2019年8月23日(金)"
 date:   2019-08-23 21:00:00 +0900
 categories: seminar report update

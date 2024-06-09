@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "サービスコンピューティング研究専門委員会 第26回研究会 2018年6月1日(金), 2日(土)"
 date:   2018-06-01 21:00:00 +0900
 categories: seminar report update

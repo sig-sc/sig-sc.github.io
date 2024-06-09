@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "サービスコンピューティング研究専門委員会 第11回研究会 2014年8月20日(水)"
 date:   2014-08-20 21:00:00 +0900
 categories: seminar report update

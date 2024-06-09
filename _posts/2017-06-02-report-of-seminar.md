@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "サービスコンピューティング研究専門委員会 第22回研究会 2017年6月2日(金),6月3日(土)"
 date:   2017-06-02 21:00:00 +0900
 categories: seminar report update

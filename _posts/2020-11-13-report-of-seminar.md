@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "サービスコンピューティング研究専門委員会 第36回研究会 2020年11月13日(金), 14日(土)"
 date:   2020-11-13 21:00:00 +0900
 categories: seminar report update

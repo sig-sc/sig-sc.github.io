@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "CEATEC 2010 特別企画 基調テーマ3：クラウドコンピューティング関連 2010年10月7日(木)"
 date:   2010-10-07 21:00:00 +0900
 categories: seminar report update
