@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "サービスコンピューティング研究専門委員会 第38回研究会 2021年5月28日(金)"
 date:   2021-05-28 21:00:00 +0900
 categories: seminar report update

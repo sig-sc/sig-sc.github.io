@@ -31,7 +31,7 @@ sub generate_post_file {
 	
 	#プリアンブル
 	print $out "---\n";
-	print $out "layout: default\n";
+	print $out "layout: post\n";
 	print $out "title:  \"$obj->{heading} $obj->{date}\"\n";
 	print $out "date:   $obj->{dateStr} 21:00:00 +0900\n";
 	print $out "categories: seminar report update\n";

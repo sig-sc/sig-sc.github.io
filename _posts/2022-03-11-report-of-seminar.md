@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "サービスコンピューティング研究専門委員会 第41回研究会 2022年3月11日(金) "
 date:   2022-03-11 21:00:00 +0900
 categories: seminar report update

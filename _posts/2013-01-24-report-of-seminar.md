@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "ソフトウェア工学研究会ウィンターワークショップ「サービス指向セッション」 2013年1月24日(木),25日(金)"
 date:   2013-01-24 21:00:00 +0900
 categories: seminar report update

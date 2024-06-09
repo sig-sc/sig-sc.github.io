@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "サービスコンピューティング研究専門委員会 第35回研究会 2020年8月21日(金)"
 date:   2020-08-21 21:00:00 +0900
 categories: seminar report update

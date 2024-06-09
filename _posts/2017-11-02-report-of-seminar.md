@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "サービスコンピューティング研究専門委員会 第24回研究会 2017年11月2日(木)"
 date:   2017-11-02 21:00:00 +0900
 categories: seminar report update

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "サービスコンピューティング研究専門委員会 第28回研究会 2018年11月9日(金)-10日(土)"
 date:   2018-11-10 21:00:00 +0900
 categories: seminar report update

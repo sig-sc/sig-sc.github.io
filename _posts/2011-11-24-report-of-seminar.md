@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "サービスコンピューティング時限研究専門委員会 第5回研究会 2011年11月24日(木)"
 date:   2011-11-24 21:00:00 +0900
 categories: seminar report update

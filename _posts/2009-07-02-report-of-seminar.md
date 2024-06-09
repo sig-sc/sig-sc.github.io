@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "サービスコンピューティング時限研究専門委員会 第1回研究会 2009年7月2日(木)-2009年7月3日(金)"
 date:   2009-07-02 21:00:00 +0900
 categories: seminar report update

@@ -1,0 +1,58 @@
+a.btn_10 {
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 300px;
+	margin: auto;
+	padding: 1rem 4rem;
+	font-weight: bold;
+	background-image: linear-gradient(to right, #27acd9 0%, #b4e12b 100%);
+	border-radius: 100vh;
+	color: #fff;
+	border: 2px solid #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	-webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	transition: 0.5s;
+}
+a.btn_10:hover {
+	color: #fff;
+	background-image: linear-gradient(to left, #27acd9 0%, #b4e12b 100%);
+}
+
+a.btn_28 {
+	margin: auto;
+	width: 300px;
+	padding: 3px;
+	align-items: center;
+	text-align: center;
+	background-image: linear-gradient(145deg,#27acd9 , #195892 50%,#b4e12b);
+	border: 0;
+	border-radius: 10px;
+	color: #fff;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	white-space: nowrap;
+	cursor: pointer;
+	transition: all .3s;
+}
+a.btn_28:active,a.btn_28:hover {
+ outline: 0;
+}
+a.btn_28 span {
+ background: #000;
+ padding: 1rem 4rem;
+ border-radius: 6px;
+ width: 100%;
+ height: 100%;
+ transition: 300ms;
+}
+a.btn_28:hover span {
+ background: none;
+	color: #fff;
+}

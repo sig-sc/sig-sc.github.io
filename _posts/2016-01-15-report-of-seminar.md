@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "サービスコンピューティング研究専門委員会 第16回研究会 2016年1月15日(金)13:05～16:10"
 date:   2016-01-15 21:00:00 +0900
 categories: seminar report update

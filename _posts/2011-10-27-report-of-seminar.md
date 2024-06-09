@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "JAWS2011特別セッション サービスコンピューティング 2011年10月27日(木)"
 date:   2011-10-27 21:00:00 +0900
 categories: seminar report update

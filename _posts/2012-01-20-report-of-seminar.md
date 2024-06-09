@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "サービスコンピューティング時限研究専門委員会 第6回研究会 2012年1月20日(木),21日(金)"
 date:   2012-01-20 21:00:00 +0900
 categories: seminar report update
