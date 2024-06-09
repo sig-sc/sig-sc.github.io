@@ -225,7 +225,7 @@ RFIDタグによる園児登降園管理システムの可能性
 
 #### 委員長
 
-- [中口 孝雄 （京都情報大学院大学）](https://www.kcg.edu/faculty/associate-professor/t-nakaguchi)
+- [中口 孝雄 （京都情報大学院大学）](https://www.kcg.edu/faculty/professor/t-nakaguchi)
 
 #### 副委員長
 
