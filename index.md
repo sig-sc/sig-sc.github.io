@@ -8,7 +8,7 @@ layout: home
 ### 第50回 サービスコンピューティング研究会 発表申し込み募集中
 
 - 日程：2024年 8月23日(金)
-- **申込締切：2024年6月21日(金)**
+- ~~申込締切：2024年6月21日(金)~~   **→【締切延長】：2024年6月28日(金)**
 - 開催地：[機械振興会館](https://www.jspmi.or.jp/kaigishitsu/access.html) 東京都港区芝公園３丁目５−８（ハイブリッド開催予定）
 - 共催：[SWIM研究会](https://www.ieice.org/iss/swim/jpn/)共催
 - その他： [研究会発表・参加方法，FAQ](http://www.ieice.org/jpn/toukou/kenkyukai.html)
