@@ -12,6 +12,7 @@ layout: home
 <!-- - ~~申込締切：2024年6月21日(金)~~   **→【締切延長】：2024年6月28日(金)** -->
 - 開催地：[高知市文化プラザかるぽーと（特別学習室）](https://www.bunkaplaza.or.jp/information/access/) 高知県高知市九反田２−１
 <!-- - 共催：[SWIM研究会](https://www.ieice.org/iss/swim/jpn/)共催 -->
+- 共催：KBSE研究会 共催
 - その他： [研究会発表・参加方法，FAQ](http://www.ieice.org/jpn/toukou/kenkyukai.html)
 
 <a href="https://www.ieice.org/ken/program/index.php?tgid=IEICE-SC" class="btn_10">発表申し込み・詳細</a>
