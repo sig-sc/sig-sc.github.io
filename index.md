@@ -4,13 +4,14 @@ description: 電子情報通信学会 サービスコンピューティング研
 layout: home
 ---
 
-## <a id="cfp" name="cfp"></a>**★発表申し込み募集中★**
-### 第50回 サービスコンピューティング研究会 発表申し込み募集中
+## <a id="cfp" name="cfp"></a>**発表申し込み募集**
+### 第52回 サービスコンピューティング研究会 発表申し込み募集中
 
-- 日程：2024年 8月23日(金)
-- ~~申込締切：2024年6月21日(金)~~   **→【締切延長】：2024年6月28日(金)**
-- 開催地：[機械振興会館](https://www.jspmi.or.jp/kaigishitsu/access.html) 東京都港区芝公園３丁目５−８（ハイブリッド開催予定）
-- 共催：[SWIM研究会](https://www.ieice.org/iss/swim/jpn/)共催
+- 日程：2024年 11月8日(金) ～ 9日(土)
+- 申込締切：2024年09月11日(水)
+<!-- - ~~申込締切：2024年6月21日(金)~~   **→【締切延長】：2024年6月28日(金)** -->
+- 開催地：[高知市文化プラザかるぽーと（特別学習室）](https://www.bunkaplaza.or.jp/information/access/) 高知県高知市九反田２−１
+<!-- - 共催：[SWIM研究会](https://www.ieice.org/iss/swim/jpn/)共催 -->
 - その他： [研究会発表・参加方法，FAQ](http://www.ieice.org/jpn/toukou/kenkyukai.html)
 
 <a href="https://www.ieice.org/ken/program/index.php?tgid=IEICE-SC" class="btn_10">発表申し込み・詳細</a>
@@ -246,7 +247,7 @@ RFIDタグによる園児登降園管理システムの可能性
 - [井垣 宏（大阪工業大学）](https://www.oit.ac.jp/laboratory/room/230)
 - [石川 冬樹（国立情報学研究所）](http://research.nii.ac.jp/~f-ishikawa/)
 - 浦本 直彦（花王）
-- 川村 隆浩（国立研究開発法人　農業・食品産業技術総合研究機構）
+- 川村 隆浩（農研機構）
 - 菊地 伸治（理化学研究所）
 - [小林 透 (長崎大学)](https://www.idsci.nagasaki-u.ac.jp/research_ac/facultylist/staff7)
 - [鈴村 豊太郎（東京大学）](https://sites.google.com/view/toyolab/suzumura-1)
@@ -291,7 +292,8 @@ RFIDタグによる園児登降園管理システムの可能性
 
 ## 更新履歴
 
-- 2023-06-09 [第50回研究会の参加募集](#cfp) を追加しました．
+- 2023-08-19 [第52回研究会(2024年11月)の参加募集](#cfp) を追加しました．
+- 2023-06-09 [第51回研究会(2024年08月)の参加募集](#cfp) を追加しました．
 - 2024-06-09 [表彰受賞者](winner.md) を追加しました．
 - 2024-06-06 [委員会構成](#委員会構成) を更新しました．
 - 2024-04-10 [表彰規定](award.md) を追加しました．
