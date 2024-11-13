@@ -5,18 +5,18 @@ layout: home
 ---
 
 ## <a id="cfp" name="cfp"></a>**発表申し込み募集**
-### 第52回 サービスコンピューティング研究会 発表申し込み募集中
 
-- 日程：2024年 11月8日(金) ～ 9日(土)
+### 第53回 サービスコンピューティング研究会 発表申し込み募集予定
+
+- 日程：2025年 3月7日(金) ～ 8日(土)
+- 募集開始前
 <!-- - 申込締切：2024年09月11日(水) -->
-- ~~申込締切：2024年09月11日(水)~~   **→【締切延長】：2024年09月18日(水)**
-- 開催地：[高知市文化プラザかるぽーと（特別学習室）](https://www.bunkaplaza.or.jp/information/access/) 高知県高知市九反田２−１
-<!-- - 共催：[SWIM研究会](https://www.ieice.org/iss/swim/jpn/)共催 -->
-- 共催：KBSE研究会 共催
+<!-- - ~~申込締切：2024年09月11日(水)~~   **→【締切延長】：2024年09月18日(水)** -->
+- 開催地：[京都情報大学院大学（百万遍本部棟301）](https://www.kcg.edu/facilities/hyakumanben-campus) 京都府京都市左京区田中門前町７
+<!-- - 共催：[xxx研究会]([URL])共催 -->
 - その他： [研究会発表・参加方法，FAQ](http://www.ieice.org/jpn/toukou/kenkyukai.html)
 
 <a href="https://www.ieice.org/ken/program/index.php?tgid=IEICE-SC" class="btn_10">発表申し込み・詳細</a>
-<!-- <a href="https://www.ieice.org/ken/program/index.php?tgid=IEICE-SC" class="btn_28"><span>発表申し込み</span></a> -->
 
 ---
 
