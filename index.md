@@ -248,7 +248,7 @@ RFIDタグによる園児登降園管理システムの可能性
 - [井垣 宏（大阪工業大学）](https://www.oit.ac.jp/laboratory/room/230)
 - [石川 冬樹（国立情報学研究所）](http://research.nii.ac.jp/~f-ishikawa/)
 - 浦本 直彦（花王）
-- 川村 隆浩（農研機構）
+- 川村 隆浩（東京大学）
 - 菊地 伸治（理化学研究所）
 - [小林 透 (長崎大学)](https://www.idsci.nagasaki-u.ac.jp/research_ac/facultylist/staff7)
 - [鈴村 豊太郎（東京大学）](https://sites.google.com/view/toyolab/suzumura-1)
