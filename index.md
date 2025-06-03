@@ -18,7 +18,7 @@ layout: home
 <!-- - 共催：[xxx研究会]([URL])共催 -->
 - その他： [研究会発表・参加方法，FAQ](http://www.ieice.org/jpn/toukou/kenkyukai.html)
 
-<a href="https://www.ieice.org/ken/program/index.php?tgid=IEICE-SC" class="btn_10">発表申し込み・詳細</a>
+<a href="https://ken.ieice.org/ken/program/index.php?tgid=IEICE-SC" class="btn_10">発表申し込み・詳細</a>
 
 ---
 
