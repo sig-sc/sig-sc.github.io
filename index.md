@@ -6,7 +6,7 @@ layout: home
 
 ## <a id="cfp" name="cfp"></a>**発表申し込み募集**
 
-### サービスコンピューティング研究会 発表申し込み・参加聴講 募集中
+サービスコンピューティング研究会の次回以降のスケジュール確認および発表申し込みは以下のリンクから「発表申込システム」へアクセスの上、ご確認ください。
 
 <!-- - 日程：2025年6月6日(金) - 6月7日(土) 開催 -->
 <!-- - 募集開始前 -->
@@ -18,7 +18,7 @@ layout: home
 <!-- - 共催：[xxx研究会]([URL])共催 -->
 <!-- - その他： [研究会発表・参加方法，FAQ](http://www.ieice.org/jpn/toukou/kenkyukai.html) -->
 
-<a href="https://ken.ieice.org/ken/program/index.php?tgid=IEICE-SC" class="btn_10">発表申し込み・詳細</a>
+<a href="https://ken.ieice.org/ken/program/index.php?tgid=IEICE-SC" class="btn_10">発表申込システム</a>
 
 ---
 
