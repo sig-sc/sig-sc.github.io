@@ -247,11 +247,13 @@ RFIDタグによる園児登降園管理システムの可能性
 #### 副委員長
 
 - 北島 信哉（富士通研究所）
+- 林 章浩（静岡理工科大学）
 
 #### 幹事
 
 - [池川 航史 （日立製作所）](https://ikegawa-koshi.github.io/)
 - [佐伯 幸郎 （高知工科大学）](https://www.kochi-tech.ac.jp/profile/ja/saiki-sachio.html)
+- [山田 耕嗣 （大阪産業大学）](https://kenkyu-s.osaka-sandai.ac.jp/cvclients/researchers/read0114110)
 
 #### 幹事補佐
 
@@ -278,7 +280,6 @@ RFIDタグによる園児登降園管理システムの可能性
 - [柗本 真佑（大阪大学）](http://sdl.ist.osaka-u.ac.jp/~shinsuke/)
 - [村上 陽平（立命館大学）](http://www.ritsumei.ac.jp/~yohei/)
 - 山下 一寛（富士通研究所）
-- [山田 耕嗣 （大阪産業大学）](https://kenkyu-s.osaka-sandai.ac.jp/cvclients/researchers/read0114110)
 - [山登 庸次（NTT）](https://researchmap.jp/yamato_yoji)
 - 横山 重俊（国立情報学研究所）
 - Donghui Lin（岡山大学）
