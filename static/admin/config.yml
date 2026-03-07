@@ -1,13 +1,11 @@
 # Decap CMS Configuration for SIG-SC GitHub Pages
-# OAuth: Use GitHub backend with Cloudflare Workers proxy
-# See: https://github.com/vencax/netlify-cms-github-oauth-provider
+# OAuth: Use Netlify Identity as OAuth proxy
 
 backend:
   name: github
   repo: sig-sc/sig-sc.github.io
   branch: master
-  auth_type: pkce
-  client_id: Ov23likz2SHJ3Tg6OCz7
+  base_url: https://NETLIFY-SITE-NAME.netlify.app
 
 # メディアファイルの保存先
 media_folder: "static/uploads"
