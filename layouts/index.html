@@ -106,7 +106,7 @@
       {{ $upcoming := gt $semDateStr $todayStr }}
       {{ $ongoing := or (eq $semDateStr $todayStr) (eq $semDateStr $tomorrowStr) }}
       <div class="flex flex-col sm:flex-row gap-1 sm:gap-4 px-5 py-3 {{ if $ongoing }}bg-green-50 dark:bg-green-950/30{{ else if $upcoming }}bg-blue-50 dark:bg-blue-950/30{{ else }}bg-white dark:bg-slate-800{{ end }}">
-        <div class="flex-shrink-0 flex items-baseline gap-2 sm:w-44">
+        <div class="flex-shrink-0 flex items-baseline gap-2 sm:w-36">
           {{ with .session }}
           <span class="text-xs font-bold text-primary dark:text-primary-light whitespace-nowrap">第{{ . }}回</span>
           {{ end }}
