@@ -10,15 +10,18 @@
     </p>
   </header>
 
-  {{ $seminars := index .Site.Data.seminars "seminars" }}
+  {{ $seminars := index .Site.Data.history "history" }}
   {{ $sorted := sort $seminars "date" "desc" }}
 
-  {{/* Collect unique fiscal years */}}
+  {{/* Collect unique fiscal years (derived from date: month<4 → prev year) */}}
   {{ $years := slice }}
   {{ range $sorted }}
-    {{ $fy := string .fiscal_year }}
-    {{ if not (in $years $fy) }}
-      {{ $years = $years | append $fy }}
+    {{ $d := time .date }}
+    {{ $fy := $d.Year }}
+    {{ if lt (int ($d.Format "1")) 4 }}{{ $fy = sub $fy 1 }}{{ end }}
+    {{ $fys := string $fy }}
+    {{ if not (in $years $fys) }}
+      {{ $years = $years | append $fys }}
     {{ end }}
   {{ end }}
 
@@ -29,7 +32,10 @@
     <h2 class="text-lg font-bold text-gray-900 dark:text-slate-100 border-b-2 border-accent pb-1.5 mb-3">{{ $fy }}年度</h2>
     <div class="divide-y divide-gray-100 dark:divide-slate-800 rounded-xl border border-gray-200 dark:border-slate-700 overflow-hidden">
       {{ range $sorted }}
-      {{ if eq (string .fiscal_year) $fy }}
+      {{ $d := time .date }}
+      {{ $semFY := $d.Year }}
+      {{ if lt (int ($d.Format "1")) 4 }}{{ $semFY = sub $semFY 1 }}{{ end }}
+      {{ if eq (string $semFY) $fy }}
       {{ $sem := . }}
       {{ $upcoming := gt (time $sem.date) now }}
       <div class="flex flex-col sm:flex-row gap-1 sm:gap-4 px-5 py-3 {{ if $upcoming }}bg-blue-50 dark:bg-blue-950/30{{ else }}bg-white dark:bg-slate-800{{ end }}">
@@ -52,15 +58,15 @@
               プログラム
             </a>
             {{ end }}
-            {{ with .venue }}
+            {{ if or .venue .prefecture }}
             <span class="flex items-center gap-1">
               <svg class="w-3 h-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
               </svg>
-              {{ if $sem.venue_url }}<a href="{{ $sem.venue_url }}" target="_blank" rel="noopener" class="hover:text-primary dark:hover:text-primary-light">{{ . }}</a>{{ else }}{{ . }}{{ end }}
+              {{ with $sem.prefecture }}{{ . }}{{ end }}{{ if and $sem.prefecture $sem.venue }}：{{ end }}{{ with $sem.venue }}{{ if $sem.venue_url }}<a href="{{ $sem.venue_url }}" target="_blank" rel="noopener" class="hover:text-primary dark:hover:text-primary-light">{{ . }}</a>{{ else }}{{ . }}{{ end }}{{ end }}
             </span>
             {{ end }}
-            {{ with .cosponsor }}<span>共催: {{ . }}</span>{{ end }}
+            {{ with .cosponsor }}<span>(共催: {{ . }})</span>{{ end }}
           </div>
         </div>
         {{ if $upcoming }}

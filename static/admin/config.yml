@@ -73,15 +73,15 @@ collections:
             widget: "markdown"
 
   # 開催履歴データ
-  - name: "seminars"
+  - name: "history"
     label: "開催履歴"
     files:
       - label: "研究会開催履歴"
-        name: "seminars"
-        file: "data/seminars.yaml"
+        name: "history"
+        file: "data/history.yaml"
         fields:
           - label: "研究会一覧"
-            name: "seminars"
+            name: "history"
             widget: "list"
             summary: "{{fields.date}} 第{{fields.session}}回 {{fields.topic}}"
             fields:
@@ -94,10 +94,6 @@ collections:
                 widget: "number"
                 required: false
                 hint: "第N回の番号（ナンバリング前は空欄）"
-              - label: "年度"
-                name: "fiscal_year"
-                widget: "number"
-                hint: "開催年度（例: 2025）"
               - label: "テーマ"
                 name: "topic"
                 widget: "string"
@@ -115,11 +111,6 @@ collections:
                 widget: "string"
                 required: false
                 hint: "例: 大阪府、東京都、オンライン"
-              - label: "都道府県コード"
-                name: "pref_code"
-                widget: "number"
-                required: false
-                hint: "JIS都道府県コード（例: 27=大阪府、13=東京都）。オンラインの場合は空欄"
               - label: "共催"
                 name: "cosponsor"
                 widget: "string"

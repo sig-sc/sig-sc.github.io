@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{- $seminars := index .Site.Data.seminars "seminars" -}}
+{{- $seminars := index .Site.Data.history "history" -}}
 {{- $semJSON := $seminars | jsonify -}}
 
 <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
@@ -19,13 +19,16 @@
   {{- range $seminars -}}
     {{- if le (time .date) $today -}}
       {{- $total = add $total 1 -}}
-      {{- if and .pref_code (ne .prefecture "オンライン") -}}
-        {{- $p := string .pref_code -}}
+      {{- if and .prefecture (ne .prefecture "オンライン") -}}
+        {{- $p := .prefecture -}}
         {{- if not (in $prefSet $p) -}}{{- $prefSet = $prefSet | append $p -}}{{- end -}}
       {{- end -}}
-      {{- $fy := string .fiscal_year -}}
+      {{- $d := time .date -}}
+      {{- $fyInt := $d.Year -}}
+      {{- if lt (int ($d.Format "1")) 4 -}}{{- $fyInt = sub $fyInt 1 -}}{{- end -}}
+      {{- $fy := string $fyInt -}}
       {{- if not (in $fySet $fy) -}}{{- $fySet = $fySet | append $fy -}}{{- end -}}
-      {{- if lt .fiscal_year $minFY -}}{{- $minFY = .fiscal_year -}}{{- end -}}
+      {{- if lt $fyInt $minFY -}}{{- $minFY = $fyInt -}}{{- end -}}
     {{- end -}}
   {{- end -}}
   {{- $anniversary := sub now.Year $minFY -}}
@@ -97,19 +100,37 @@
   const textColor = () => isDark() ? '#cbd5e1' : '#374151';
   const gridColor = () => isDark() ? 'rgba(148,163,184,0.15)' : 'rgba(0,0,0,0.08)';
 
+  // ── Prefecture name → JIS code lookup ────────────────────────────────
+  const PREF_CODE = {
+    '北海道':1,'青森県':2,'岩手県':3,'宮城県':4,'秋田県':5,'山形県':6,'福島県':7,
+    '茨城県':8,'栃木県':9,'群馬県':10,'埼玉県':11,'千葉県':12,'東京都':13,'神奈川県':14,
+    '新潟県':15,'富山県':16,'石川県':17,'福井県':18,'山梨県':19,'長野県':20,
+    '岐阜県':21,'静岡県':22,'愛知県':23,'三重県':24,'滋賀県':25,'京都府':26,
+    '大阪府':27,'兵庫県':28,'奈良県':29,'和歌山県':30,'鳥取県':31,'島根県':32,
+    '岡山県':33,'広島県':34,'山口県':35,'徳島県':36,'香川県':37,'愛媛県':38,
+    '高知県':39,'福岡県':40,'佐賀県':41,'長崎県':42,'熊本県':43,'大分県':44,
+    '宮崎県':45,'鹿児島県':46,'沖縄県':47
+  };
+
+  // Compute Japanese fiscal year from date string (month < 4 → prev year)
+  function getFiscalYear(dateStr) {
+    const d = new Date(dateStr);
+    return d.getMonth() < 3 ? d.getFullYear() - 1 : d.getFullYear();
+  }
+
   // ── Build aggregates ──────────────────────────────────────────────────
   const prefCount = {};      // pref_code -> {count, name}
   const fyCount = {};        // fiscal_year -> {online, physical}
 
   for (const s of seminars) {
-    const fy = s.fiscal_year;
+    const fy = getFiscalYear(s.date);
     if (!fyCount[fy]) fyCount[fy] = { online: 0, physical: 0 };
 
-    if (s.prefecture === 'オンライン' || !s.pref_code) {
+    const code = s.pref_code || PREF_CODE[s.prefecture];
+    if (s.prefecture === 'オンライン' || !code) {
       fyCount[fy].online++;
     } else {
       fyCount[fy].physical++;
-      const code = s.pref_code;
       if (!prefCount[code]) prefCount[code] = { count: 0, name: s.prefecture };
       prefCount[code].count++;
     }
