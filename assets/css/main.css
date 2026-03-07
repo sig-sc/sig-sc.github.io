@@ -32,6 +32,19 @@
   }
 }
 
+/* Responsive grid for research areas: 1col → 2col on md+ (same as committee page) */
+.research-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .research-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @layer components {
   /* Navigation link */
   .nav-link {

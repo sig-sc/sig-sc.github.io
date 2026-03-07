@@ -54,10 +54,10 @@
     </div>
     <div id="map-legend" class="mt-3 flex items-center gap-3 text-xs text-gray-500 dark:text-slate-400">
       <span>開催回数:</span>
-      <span class="flex items-center gap-1"><span class="inline-block w-4 h-4 rounded" style="background:#fecaca"></span>1回</span>
-      <span class="flex items-center gap-1"><span class="inline-block w-4 h-4 rounded" style="background:#f87171"></span>2–3回</span>
-      <span class="flex items-center gap-1"><span class="inline-block w-4 h-4 rounded" style="background:#dc2626"></span>4–6回</span>
-      <span class="flex items-center gap-1"><span class="inline-block w-4 h-4 rounded" style="background:#991b1b"></span>7回以上</span>
+      <span class="flex items-center gap-1"><span class="inline-block w-4 h-4 rounded" style="background:#bfdbfe"></span>1回</span>
+      <span class="flex items-center gap-1"><span class="inline-block w-4 h-4 rounded" style="background:#93c5fd"></span>2–3回</span>
+      <span class="flex items-center gap-1"><span class="inline-block w-4 h-4 rounded" style="background:#2563eb"></span>4–6回</span>
+      <span class="flex items-center gap-1"><span class="inline-block w-4 h-4 rounded" style="background:#1e3a8a"></span>7回以上</span>
       <span class="flex items-center gap-1"><span class="inline-block w-4 h-4 rounded" style="background:#dcfce7"></span>0回</span>
     </div>
   </section>
@@ -118,10 +118,10 @@
   // ── D3 choropleth Japan map ───────────────────────────────────────────
   function choroColor(count) {
     if (!count) return isDark() ? '#14532d' : '#dcfce7';
-    if (count >= 7) return '#991b1b';
-    if (count >= 4) return '#dc2626';
-    if (count >= 2) return '#f87171';
-    return '#fecaca';
+    if (count >= 7) return '#1e3a8a';
+    if (count >= 4) return '#2563eb';
+    if (count >= 2) return '#93c5fd';
+    return '#bfdbfe';
   }
 
   // Tooltip element
@@ -143,7 +143,7 @@
   // Main projection — scale W*2.0 + translate H*0.54 shows 宗谷岬上〜鹿児島下
   const mainCenterX = (INS_W + 20 + W) / 2;
   const mainProj = d3.geoMercator()
-    .center([139, 37.5])
+    .center([141, 37.5])
     .scale(W * 1.5)
     .translate([mainCenterX, H * 0.54]);
   const mainPath = d3.geoPath().projection(mainProj);
@@ -156,8 +156,8 @@
 
   // Okinawa inset projection (fixed, not affected by zoom)
   const insProj = d3.geoMercator()
-    .center([127.5, 26.5])
-    .scale(INS_W * 8)
+    .center([127.7, 26.5])
+    .scale(INS_W * 15)
     .translate([INS_X + INS_W / 2, INS_Y + INS_H / 2]);
   const insPath = d3.geoPath().projection(insProj);
 
@@ -253,9 +253,13 @@
   Chart.defaults.font.family = "'Noto Sans JP', ui-sans-serif, system-ui, sans-serif";
 
   // ── Chart 1: by fiscal year ───────────────────────────────────────────
-  const fySorted = Object.keys(fyCount).sort();
-  const fyPhysical = fySorted.map(y => fyCount[y].physical);
-  const fyOnline   = fySorted.map(y => fyCount[y].online);
+  // Fill in missing years (e.g. 2011) with 0 so they appear in the chart
+  const fyKeys = Object.keys(fyCount).map(Number);
+  const fyMin = Math.min(...fyKeys), fyMax = Math.max(...fyKeys);
+  const fySorted = [];
+  for (let y = fyMin; y <= fyMax; y++) fySorted.push(String(y));
+  const fyPhysical = fySorted.map(y => (fyCount[y] || {}).physical || 0);
+  const fyOnline   = fySorted.map(y => (fyCount[y] || {}).online   || 0);
 
   new Chart(document.getElementById('chart-by-year'), {
     type: 'bar',

@@ -8,7 +8,7 @@
         電子情報通信学会
       </p>
       <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-4">
-        サービスコンピューティング<wbr>研究会
+        <span class="inline-block">サービスコンピューティング</span><span class="inline-block">研究会</span>
       </h1>
       <p class="text-white/80 text-lg mb-8">
         IEICE | Special Interest Group - Services Computing (SIG-SC)
@@ -29,7 +29,7 @@
         </a>
         <a href="{{ "/history/" | relURL }}"
            class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border-2 border-white/60 text-white font-semibold text-sm hover:bg-white/10 transition">
-          開催履歴を見る
+          過去の開催履歴を見る
         </a>
       </div>
     </div>
@@ -146,7 +146,7 @@
     <p class="text-gray-600 dark:text-slate-400 mb-6 text-sm">
       以下のような研究分野を主に扱いますが，サービスに関わる話題であれば広く取り上げます．
     </p>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div class="research-grid">
       {{ range .Site.Data.keywords.categories }}
       <div class="card">
         <h3 class="font-bold text-primary dark:text-primary-light mb-3 flex items-center gap-2">
