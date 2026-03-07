@@ -1,0 +1,88 @@
+{{ define "main" }}
+{{- $awards := .Site.Data.awards -}}
+
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+  <header>
+    <h1 class="text-4xl font-bold text-gray-900 dark:text-slate-100">{{ .Title }}</h1>
+    <p class="mt-3 text-gray-500 dark:text-slate-400 text-sm">{{ .Description }}</p>
+  </header>
+
+  <!-- ── 年間表彰受賞者 ──────────────────────────────────────── -->
+  <section>
+    <h2 class="section-heading">年間表彰受賞者</h2>
+    <p class="text-sm text-gray-500 dark:text-slate-400 mb-6">
+      サービスコンピューティング研究会主催の定期研究会において、該当年の 1 月から 12 月の研究会にて発表されたものから若干数選出し表彰する。<strong class="text-gray-700 dark:text-slate-300">著者全員が受賞者となる。</strong>
+    </p>
+    <div class="space-y-4">
+      {{ range $awards.annual }}
+      <div class="bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-xl overflow-hidden">
+        <!-- Year header -->
+        <div class="flex items-center gap-3 px-5 py-2.5 bg-gray-50 dark:bg-slate-700/50 border-b border-gray-200 dark:border-slate-700">
+          <span class="text-sm font-bold text-primary dark:text-primary-light">{{ .year }}年</span>
+        </div>
+        <!-- Entries -->
+        <div class="divide-y divide-gray-100 dark:divide-slate-700">
+          {{ range .entries }}
+          <div class="px-5 py-3">
+            <p class="text-sm font-medium text-gray-900 dark:text-slate-100 leading-snug">{{ .title }}</p>
+            <p class="text-sm mt-1">
+              <span class="inline-flex items-center gap-1 text-primary dark:text-primary-light font-semibold">
+                <svg class="w-3.5 h-3.5 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                {{ .authors }}
+              </span>
+            </p>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  <!-- ── 若手奨励賞受賞者 ─────────────────────────────────────── -->
+  <section>
+    <h2 class="section-heading">若手奨励賞受賞者</h2>
+    <p class="text-sm text-gray-500 dark:text-slate-400 mb-6">
+      サービスコンピューティング研究会主催の定期研究会において、該当回にて発表された30歳以下の発表者を候補として若干数選出し表彰する。<strong class="text-gray-700 dark:text-slate-300">発表者（筆頭著者）が受賞者となる。</strong>
+    </p>
+    <div class="space-y-4">
+      {{ range $awards.encouragement }}
+      {{ $sem := . }}
+      <div class="bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-xl overflow-hidden">
+        <!-- Session header -->
+        <div class="flex items-center gap-3 px-5 py-2.5 bg-gray-50 dark:bg-slate-700/50 border-b border-gray-200 dark:border-slate-700">
+          <span class="text-sm font-bold text-primary dark:text-primary-light">第{{ .session }}回</span>
+          <span class="text-sm text-gray-500 dark:text-slate-400">{{ .year_month }}研究会</span>
+        </div>
+        <!-- Entries -->
+        <div class="divide-y divide-gray-100 dark:divide-slate-700">
+          {{ range .entries }}
+          <div class="px-5 py-3">
+            <p class="text-sm font-medium text-gray-900 dark:text-slate-100 leading-snug">{{ .title }}</p>
+            <p class="text-sm text-gray-500 dark:text-slate-400 mt-1">
+              <span class="inline-flex items-center gap-1 text-primary dark:text-primary-light font-semibold mr-2">
+                <svg class="w-3.5 h-3.5 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                {{ .winner }}
+              </span>{{ .authors }}
+            </p>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  <!-- ── 選奨規程 ───────────────────────────────────────────── -->
+  <section>
+    <h2 class="section-heading">選奨規程</h2>
+    <div class="card prose prose-sm dark:prose-invert max-w-none prose-p:text-gray-700 dark:prose-p:text-slate-300 prose-p:leading-relaxed prose-strong:text-gray-900 dark:prose-strong:text-slate-100">
+      {{ .Content }}
+    </div>
+  </section>
+</div>
+{{ end }}

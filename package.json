@@ -1,0 +1,15 @@
+{
+  "name": "sig-sc-website",
+  "version": "1.0.0",
+  "description": "IEICE Services Computing Research Group Website",
+  "scripts": {
+    "dev": "npm run build:css & hugo server -D",
+    "build": "npm run build:css && hugo --minify",
+    "build:css": "tailwindcss -i ./assets/css/main.css -o ./assets/css/styles.built.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.0.0",
+    "@tailwindcss/typography": "^0.5.15",
+    "tailwindcss": "^4.0.0"
+  }
+}

@@ -1,0 +1,158 @@
+chair:
+  - name: "中口 孝雄"
+    affiliation: "京都情報大学院大学"
+    url: "https://www.kcg.edu/faculty/professor/t-nakaguchi"
+
+vice_chair:
+  - name: "北島 信哉"
+    affiliation: "富士通"
+  - name: "林 章浩"
+    affiliation: "静岡理工科大学"
+
+secretary:
+  - name: "池川 航史"
+    affiliation: "日立製作所"
+    url: "https://ikegawa-koshi.github.io/"
+  - name: "佐伯 幸郎"
+    affiliation: "高知工科大学"
+    url: "https://www.kochi-tech.ac.jp/profile/ja/saiki-sachio.html"
+  - name: "山田 耕嗣"
+    affiliation: "大阪産業大学"
+    url: "https://kenkyu-s.osaka-sandai.ac.jp/cvclients/researchers/read0114110"
+
+assistant_secretary:
+  - name: "木村 功作"
+    affiliation: "富士通"
+    url: "https://8card.net/p/39588542006"
+  - name: "干川 尚人"
+    affiliation: "筑波大学"
+    url: "https://researchmap.jp/nhoshi_pub"
+
+members:
+  - name: "井垣 宏"
+    affiliation: "大阪工業大学"
+    url: "https://www.oit.ac.jp/laboratory/room/230"
+  - name: "石川 冬樹"
+    affiliation: "国立情報学研究所"
+    url: "http://research.nii.ac.jp/~f-ishikawa/"
+  - name: "浦本 直彦"
+    affiliation: "花王"
+  - name: "川村 隆浩"
+    affiliation: "東京大学"
+  - name: "菊地 伸治"
+    affiliation: "理化学研究所"
+  - name: "小林 透"
+    affiliation: "駒澤大学"
+  - name: "鈴村 豊太郎"
+    affiliation: "東京大学"
+    url: "https://sites.google.com/view/toyolab/suzumura-1"
+  - name: "須永 宏"
+    affiliation: "大阪学院大学"
+    url: "https://www.ogu.ac.jp/faculty/teacher/info/sunaga.html"
+  - name: "竹内 広宜"
+    affiliation: "武蔵大学"
+    url: "https://researchmap.jp/h.takeuchi"
+  - name: "田仲 正弘"
+    affiliation: "Microsoft Research"
+  - name: "中村 匡秀"
+    affiliation: "神戸大学"
+    url: "http://www27.cs.kobe-u.ac.jp/~masa-n/"
+  - name: "藤原 一毅"
+    affiliation: "国立情報学研究所"
+    url: "http://ikki.fujiwa.la/"
+  - name: "藤田 悟"
+    affiliation: "法政大学"
+    url: "https://cis.hosei.ac.jp/depts/dm/fujita/"
+  - name: "Incheon Paik"
+    affiliation: "会津大学"
+    url: "http://ebiz.u-aizu.ac.jp/"
+  - name: "細野 繁"
+    affiliation: "東京工科大学"
+    url: "https://www.teu.ac.jp/info/lab/teacher/cs/index.html?id=1735"
+  - name: "柗本 真佑"
+    affiliation: "大阪大学"
+    url: "http://sdl.ist.osaka-u.ac.jp/~shinsuke/"
+  - name: "村上 陽平"
+    affiliation: "立命館大学"
+    url: "http://www.ritsumei.ac.jp/~yohei/"
+  - name: "山下 一寛"
+    affiliation: "富士通"
+  - name: "山登 庸次"
+    affiliation: "NTT"
+    url: "https://researchmap.jp/yamato_yoji"
+  - name: "横山 重俊"
+    affiliation: "国立情報学研究所"
+  - name: "Donghui Lin"
+    affiliation: "岡山大学"
+
+history:
+  - year: 2025
+    chair: "中口孝雄"
+    vice_chair: ["北島信哉", "林章浩"]
+    secretary: ["池川航史", "佐伯幸郎", "山田耕嗣"]
+    assistant_secretary: ["木村功作", "干川尚人"]
+  - year: 2024
+    chair: "中口孝雄"
+    vice_chair: ["北島信哉"]
+    secretary: ["池川航史", "佐伯幸郎"]
+    assistant_secretary: ["木村功作", "干川尚人"]
+  - year: 2023
+    chair: "木村功作"
+    vice_chair: ["中口孝雄"]
+    secretary: ["干川尚人", "北島信哉"]
+    assistant_secretary: ["池川航史", "細野繁"]
+  - year: 2022
+    chair: "木村功作"
+    vice_chair: ["中口孝雄"]
+    secretary: ["中村匡秀", "干川尚人", "北島信哉"]
+    assistant_secretary: ["細野繁"]
+  - year: 2021
+    chair: "菊地伸治"
+    vice_chair: ["山登庸次", "木村功作"]
+    secretary: ["中村匡秀", "細野繁"]
+    assistant_secretary: ["手塚伸", "中口孝雄"]
+  - year: 2020
+    chair: "菊地伸治"
+    vice_chair: ["山登庸次", "木村功作"]
+    secretary: ["中村匡秀", "細野繁"]
+    assistant_secretary: []
+  - year: 2019
+    chair: "中村匡秀"
+    vice_chair: ["菊地伸治", "山登庸次"]
+    secretary: ["木村功作", "細野繁"]
+    assistant_secretary: []
+  - year: 2018
+    chair: "中村匡秀"
+    vice_chair: ["菊地伸治", "山登庸次"]
+    secretary: ["木村功作", "細野繁"]
+    assistant_secretary: []
+  - year: 2017
+    chair: "Incheon Paik"
+    vice_chair: ["中村匡秀"]
+    secretary: ["細野繁", "田仲正弘"]
+    assistant_secretary: []
+  - year: 2016
+    chair: "Incheon Paik"
+    vice_chair: ["中村匡秀"]
+    secretary: ["細野繁", "田仲正弘"]
+    assistant_secretary: []
+  - year: 2015
+    chair: "細野繁"
+    vice_chair: ["Incheon Paik"]
+    secretary: ["田仲正弘", "井垣宏"]
+    assistant_secretary: []
+  - year: 2014
+    chair: "細野繁"
+    vice_chair: ["Incheon Paik"]
+    secretary: ["田仲正弘", "井垣宏"]
+    assistant_secretary: []
+  - year: 2013
+    chair: "村上陽平"
+    vice_chair: ["石川冬樹", "細野繁"]
+    secretary: ["田仲正弘", "井垣宏"]
+    assistant_secretary: []
+  - year: 2012
+    chair: "村上陽平"
+    vice_chair: ["石川冬樹"]
+    secretary: ["田仲正弘"]
+    assistant_secretary: []

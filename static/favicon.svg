@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e4d80"/>
+      <stop offset="100%" stop-color="#0d2640"/>
+    </linearGradient>
+    <linearGradient id="text-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#93d6f0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="32" height="32" rx="8" fill="url(#bg)"/>
+
+  <!-- Accent corner decoration top-right -->
+  <circle cx="28" cy="4" r="5" fill="#b4e12b" opacity="0.25"/>
+  <circle cx="28" cy="4" r="2.5" fill="#b4e12b" opacity="0.6"/>
+
+  <!-- SC text -->
+  <text
+    x="15" y="21"
+    font-family="'Helvetica Neue', Arial, sans-serif"
+    font-size="15"
+    font-weight="800"
+    fill="url(#text-grad)"
+    text-anchor="middle"
+    letter-spacing="1"
+  >SC</text>
+
+  <!-- Accent underline -->
+  <rect x="5" y="24.5" width="22" height="2" rx="1" fill="#b4e12b"/>
+</svg>

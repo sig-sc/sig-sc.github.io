@@ -1,0 +1,203 @@
+# Decap CMS Configuration for SIG-SC GitHub Pages
+# OAuth: Use GitHub backend with Cloudflare Workers proxy
+# See: https://github.com/vencax/netlify-cms-github-oauth-provider
+
+backend:
+  name: github
+  repo: sig-sc/sig-sc.github.io
+  branch: master
+  auth_type: pkce
+
+# メディアファイルの保存先
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+# 日本語ロケール
+locale: ja
+
+collections:
+  # 研究会記事（過去の研究会記録）
+  - name: "posts"
+    label: "研究会記事"
+    label_singular: "研究会記事"
+    folder: "content/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-report-of-seminar"
+    fields:
+      - label: "タイトル"
+        name: "title"
+        widget: "string"
+        hint: "例: 第XX回サービスコンピューティング研究会 2025年MM月DD日"
+      - label: "日付"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD HH:mm:ss ZZ"
+        time_format: "HH:mm"
+        date_format: "YYYY-MM-DD"
+      - label: "タグ"
+        name: "tags"
+        widget: "list"
+        default: ["seminar", "report"]
+        hint: "seminar, report, update などのタグを追加"
+      - label: "本文"
+        name: "body"
+        widget: "markdown"
+
+  # 受賞者リスト
+  - name: "winner"
+    label: "受賞者"
+    files:
+      - label: "表彰受賞者ページ"
+        name: "winner"
+        file: "content/winner.md"
+        fields:
+          - label: "タイトル"
+            name: "title"
+            widget: "string"
+          - label: "本文"
+            name: "body"
+            widget: "markdown"
+
+  # 幹事団履歴
+  - name: "committee"
+    label: "幹事団"
+    files:
+      - label: "幹事団履歴ページ"
+        name: "committee"
+        file: "content/committee.md"
+        fields:
+          - label: "タイトル"
+            name: "title"
+            widget: "string"
+          - label: "本文"
+            name: "body"
+            widget: "markdown"
+
+  # 開催履歴データ
+  - name: "seminars"
+    label: "開催履歴"
+    files:
+      - label: "研究会開催履歴"
+        name: "seminars"
+        file: "data/seminars.yaml"
+        fields:
+          - label: "研究会一覧"
+            name: "seminars"
+            widget: "list"
+            summary: "{{fields.date}} 第{{fields.session}}回 {{fields.topic}}"
+            fields:
+              - label: "開催日"
+                name: "date"
+                widget: "string"
+                hint: "YYYY-MM-DD 形式"
+              - label: "回数"
+                name: "session"
+                widget: "number"
+                required: false
+                hint: "第N回の番号（ナンバリング前は空欄）"
+              - label: "年度"
+                name: "fiscal_year"
+                widget: "number"
+                hint: "開催年度（例: 2025）"
+              - label: "テーマ"
+                name: "topic"
+                widget: "string"
+                required: false
+              - label: "会場名"
+                name: "venue"
+                widget: "string"
+                required: false
+              - label: "会場URL"
+                name: "venue_url"
+                widget: "string"
+                required: false
+              - label: "都道府県"
+                name: "prefecture"
+                widget: "string"
+                required: false
+                hint: "例: 大阪府、東京都、オンライン"
+              - label: "都道府県コード"
+                name: "pref_code"
+                widget: "number"
+                required: false
+                hint: "JIS都道府県コード（例: 27=大阪府、13=東京都）。オンラインの場合は空欄"
+              - label: "共催"
+                name: "cosponsor"
+                widget: "string"
+                required: false
+              - label: "プログラムURL"
+                name: "program_url"
+                widget: "string"
+                required: false
+
+  # 表彰データ
+  - name: "awards"
+    label: "表彰情報"
+    files:
+      - label: "表彰情報"
+        name: "awards"
+        file: "data/awards.yaml"
+        fields:
+          - label: "年間表彰受賞者"
+            name: "annual"
+            widget: "list"
+            summary: "{{fields.year}}年"
+            fields:
+              - label: "年"
+                name: "year"
+                widget: "number"
+              - label: "受賞論文一覧"
+                name: "entries"
+                widget: "list"
+                fields:
+                  - label: "論文タイトル"
+                    name: "title"
+                    widget: "string"
+                  - label: "著者"
+                    name: "authors"
+                    widget: "string"
+          - label: "若手奨励賞受賞者"
+            name: "encouragement"
+            widget: "list"
+            summary: "第{{fields.session}}回 {{fields.year_month}}"
+            fields:
+              - label: "回数"
+                name: "session"
+                widget: "number"
+              - label: "開催年月"
+                name: "year_month"
+                widget: "string"
+                hint: "例: 2025年11月"
+              - label: "受賞者一覧"
+                name: "entries"
+                widget: "list"
+                fields:
+                  - label: "論文タイトル"
+                    name: "title"
+                    widget: "string"
+                  - label: "受賞者（筆頭著者）"
+                    name: "winner"
+                    widget: "string"
+                  - label: "著者全員"
+                    name: "authors"
+                    widget: "string"
+
+  # お知らせデータ
+  - name: "news"
+    label: "お知らせ更新"
+    files:
+      - label: "お知らせ・更新履歴"
+        name: "keywords"
+        file: "data/keywords.yaml"
+        fields:
+          - label: "お知らせ一覧"
+            name: "news"
+            widget: "list"
+            fields:
+              - label: "日付"
+                name: "date"
+                widget: "string"
+                hint: "YYYY-MM-DD 形式"
+              - label: "内容"
+                name: "content"
+                widget: "string"
