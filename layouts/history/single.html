@@ -37,8 +37,12 @@
       {{ if lt (int ($d.Format "1")) 4 }}{{ $semFY = sub $semFY 1 }}{{ end }}
       {{ if eq (string $semFY) $fy }}
       {{ $sem := . }}
-      {{ $upcoming := gt (time $sem.date) now }}
-      <div class="flex flex-col sm:flex-row gap-1 sm:gap-4 px-5 py-3 {{ if $upcoming }}bg-blue-50 dark:bg-blue-950/30{{ else }}bg-white dark:bg-slate-800{{ end }}">
+      {{ $todayStr := now | dateFormat "2006-01-02" }}
+      {{ $tomorrowStr := now.AddDate 0 0 1 | dateFormat "2006-01-02" }}
+      {{ $semDateStr := $sem.date | dateFormat "2006-01-02" }}
+      {{ $upcoming := gt $semDateStr $todayStr }}
+      {{ $ongoing := or (eq $semDateStr $todayStr) (eq $semDateStr $tomorrowStr) }}
+      <div class="flex flex-col sm:flex-row gap-1 sm:gap-4 px-5 py-3 {{ if $ongoing }}bg-green-50 dark:bg-green-950/30{{ else if $upcoming }}bg-blue-50 dark:bg-blue-950/30{{ else }}bg-white dark:bg-slate-800{{ end }}">
         <div class="flex-shrink-0 flex items-baseline gap-2 sm:w-44">
           {{ with .session }}
           <span class="text-xs font-bold text-primary dark:text-primary-light whitespace-nowrap">第{{ . }}回</span>
@@ -69,7 +73,11 @@
             {{ with .cosponsor }}<span>(共催: {{ . }})</span>{{ end }}
           </div>
         </div>
-        {{ if $upcoming }}
+        {{ if $ongoing }}
+        <div class="flex-shrink-0 flex items-center">
+          <span class="text-xs font-semibold px-2 py-0.5 rounded whitespace-nowrap" style="background-color:#dcfce7;color:#166534;">開催中</span>
+        </div>
+        {{ else if $upcoming }}
         <div class="flex-shrink-0 flex items-center">
           <span class="text-xs font-semibold px-2 py-0.5 rounded whitespace-nowrap" style="background-color:#dbeafe;color:#1d4ed8;">開催予定</span>
         </div>

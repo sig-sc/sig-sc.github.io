@@ -55,6 +55,7 @@ jobs:
         env:
           HUGO_BASEURL: ${{ steps.pages.outputs.base_url }}/
           HUGO_ENVIRONMENT: production
+          TZ: Asia/Tokyo
         run: |
           hugo \
             --minify \

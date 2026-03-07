@@ -99,7 +99,13 @@
     {{ $recent := first 5 (sort $seminars "date" "desc") }}
     <div class="divide-y divide-gray-100 dark:divide-slate-800 rounded-xl border border-gray-200 dark:border-slate-700 overflow-hidden">
       {{ range $recent }}
-      <div class="flex flex-col sm:flex-row gap-1 sm:gap-4 px-5 py-3 bg-white dark:bg-slate-800">
+      {{ $sem := . }}
+      {{ $todayStr := now | dateFormat "2006-01-02" }}
+      {{ $tomorrowStr := now.AddDate 0 0 1 | dateFormat "2006-01-02" }}
+      {{ $semDateStr := $sem.date | dateFormat "2006-01-02" }}
+      {{ $upcoming := gt $semDateStr $todayStr }}
+      {{ $ongoing := or (eq $semDateStr $todayStr) (eq $semDateStr $tomorrowStr) }}
+      <div class="flex flex-col sm:flex-row gap-1 sm:gap-4 px-5 py-3 {{ if $ongoing }}bg-green-50 dark:bg-green-950/30{{ else if $upcoming }}bg-blue-50 dark:bg-blue-950/30{{ else }}bg-white dark:bg-slate-800{{ end }}">
         <div class="flex-shrink-0 flex items-baseline gap-2 sm:w-44">
           {{ with .session }}
           <span class="text-xs font-bold text-primary dark:text-primary-light whitespace-nowrap">第{{ . }}回</span>
@@ -109,14 +115,6 @@
         <div class="flex-1 min-w-0">
           {{ with .topic }}<p class="text-sm text-gray-700 dark:text-slate-300 font-medium leading-snug">{{ . }}</p>{{ end }}
           <div class="flex flex-wrap gap-x-4 gap-y-0.5 mt-1 text-xs text-gray-500 dark:text-slate-400">
-            {{ with .venue }}
-            <span class="flex items-center gap-1">
-              <svg class="w-3 h-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-              </svg>
-              {{ . }}
-            </span>
-            {{ end }}
             {{ with .program_url }}
             <a href="{{ . }}" target="_blank" rel="noopener" class="text-primary-light hover:underline flex items-center gap-0.5">
               <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -125,8 +123,26 @@
               プログラム
             </a>
             {{ end }}
+            {{ if or .venue .prefecture }}
+            <span class="flex items-center gap-1">
+              <svg class="w-3 h-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+              {{ with $sem.prefecture }}{{ . }}{{ end }}{{ if and $sem.prefecture $sem.venue }}：{{ end }}{{ with $sem.venue }}{{ if $sem.venue_url }}<a href="{{ $sem.venue_url }}" target="_blank" rel="noopener" class="hover:text-primary dark:hover:text-primary-light">{{ . }}</a>{{ else }}{{ . }}{{ end }}{{ end }}
+            </span>
+            {{ end }}
+            {{ with .cosponsor }}<span>(共催: {{ . }})</span>{{ end }}
           </div>
         </div>
+        {{ if $ongoing }}
+        <div class="flex-shrink-0 flex items-center">
+          <span class="text-xs font-semibold px-2 py-0.5 rounded whitespace-nowrap" style="background-color:#dcfce7;color:#166534;">開催中</span>
+        </div>
+        {{ else if $upcoming }}
+        <div class="flex-shrink-0 flex items-center">
+          <span class="text-xs font-semibold px-2 py-0.5 rounded whitespace-nowrap" style="background-color:#dbeafe;color:#1d4ed8;">開催予定</span>
+        </div>
+        {{ end }}
       </div>
       {{ end }}
     </div>

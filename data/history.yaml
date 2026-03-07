@@ -1,479 +1,479 @@
 history:
-  - date: "2026-05-29"
-    session: 58
+  - session: 58
+    date: "2026-05-29"
     topic: 一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=72fb7819e647b224fe84f611936a103d242e9782c0990e597cc48393479de6b3&tgid=IEICE-SC"
     prefecture: 栃木県
     venue: ライトキューブ宇都宮
     venue_url: "https://light-cube.jp/"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=72fb7819e647b224fe84f611936a103d242e9782c0990e597cc48393479de6b3&tgid=IEICE-SC"
-  - date: "2026-03-13"
-    session: 57
+  - session: 57
+    date: "2026-03-13"
     topic: 学生・若手セッション＋一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=17dea012733794283903a8c65e79f937c3819e0ab7350eb14538325025800f8b&tgid=IEICE-SC"
     prefecture: 沖縄県
     venue: 石垣市民会館 中ホール
     venue_url: "https://www.city.ishigaki.okinawa.jp/soshiki/kanko_bunka/bunka_shinko/index.html"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=17dea012733794283903a8c65e79f937c3819e0ab7350eb14538325025800f8b&tgid=IEICE-SC"
-  - date: "2025-11-14"
-    session: 56
+  - session: 56
+    date: "2025-11-14"
     topic: 一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=a31679b30f0c33a0ba9c3478f5955cdd7dc20d9535fe2b8bfe02f3dfa60fe553&tgid=IEICE-SC"
     prefecture: 香川県
     venue: 情報通信交流館e-とぴあ・かがわ
     venue_url: "https://www.e-topia-kagawa.jp/"
     cosponsor: KBSE
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=a31679b30f0c33a0ba9c3478f5955cdd7dc20d9535fe2b8bfe02f3dfa60fe553&tgid=IEICE-SC"
-  - date: "2025-07-31"
-    session: 55
+  - session: 55
+    date: "2025-07-31"
     topic: エレメント管理，管理機能，理論・運用方法論，一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=d04c71042cf1e87de175ca363e1ff8efb60d655f75783a10df0452384db30e63&tgid=IEICE-SC"
     prefecture: 岩手県
     venue: アイーナ岩手 会議室804A
     venue_url: "https://www.aiina.jp/"
     cosponsor: ICM
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=d04c71042cf1e87de175ca363e1ff8efb60d655f75783a10df0452384db30e63&tgid=IEICE-SC"
-  - date: "2025-06-06"
-    session: 54
+  - session: 54
+    date: "2025-06-06"
     topic: 一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=b04594143ec059632e8de799f7f7230d43e07ac546f0ff3241937643a1f9d57c&tgid=IEICE-SC"
     prefecture: 石川県
     venue: ITビジネスプラザ武蔵 交流室2
     venue_url: "https://www.bp-musashi.jp/"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=b04594143ec059632e8de799f7f7230d43e07ac546f0ff3241937643a1f9d57c&tgid=IEICE-SC"
-  - date: "2025-03-07"
-    session: 53
+  - session: 53
+    date: "2025-03-07"
     topic: 学生・若手セッション＋一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=87c93a59c88a2e5900d1ebfe3ca9f1a44cfa63d2d0a48e775e66aa53aeb8d294&tgid=IEICE-SC"
     prefecture: 京都府
     venue: 京都情報大学院大学（百万遍本部棟301）
     venue_url: "https://www.kcg.edu/access"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=87c93a59c88a2e5900d1ebfe3ca9f1a44cfa63d2d0a48e775e66aa53aeb8d294&tgid=IEICE-SC"
-  - date: "2024-11-08"
-    session: 52
+  - session: 52
+    date: "2024-11-08"
     topic: 一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=d96e92b3c9c946da0e50af9a8e496146b7036dc413a6707b8d3eed8772d273e4&tgid=IEICE-SC"
     prefecture: 高知県
     venue: 高知市文化プラザかるぽーと（9F特別学習室）
     venue_url: "https://www.bunkaplaza.or.jp/"
     cosponsor: KBSE
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=d96e92b3c9c946da0e50af9a8e496146b7036dc413a6707b8d3eed8772d273e4&tgid=IEICE-SC"
-  - date: "2024-08-23"
-    session: 51
+  - session: 51
+    date: "2024-08-23"
     topic: "ソサエティ5.0に向けたサービスコンピューティングとインタプライズモデル化技術, 一般"
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=7e72e3325357f29ba31120af3eeb616c5825261613d42c5da9146196ccb4af58&tgid=IEICE-SC"
     prefecture: 東京都
     venue: 機械振興会館
     venue_url: "http://www.jspmi.or.jp/kaigishitsu/"
     cosponsor: SWIM
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=7e72e3325357f29ba31120af3eeb616c5825261613d42c5da9146196ccb4af58&tgid=IEICE-SC"
-  - date: "2024-06-07"
-    session: 50
+  - session: 50
+    date: "2024-06-07"
     topic: 一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=d528f5fb203abd11dc984c646c938821d26b148b1a423783c14ab57b73d8e23e&tgid=IEICE-SC"
     prefecture: 福島県
     venue: 会津大学
     venue_url: "http://www.u-aizu.ac.jp/access/"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=d528f5fb203abd11dc984c646c938821d26b148b1a423783c14ab57b73d8e23e&tgid=IEICE-SC"
-  - date: "2024-03-08"
-    session: 49
+  - session: 49
+    date: "2024-03-08"
     topic: 若手セッション＋一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=33fdb0965733df8333414843376e7764f314cef432dab08322aa6fa5e1d1c164&tgid=IEICE-SC"
     prefecture: 東京都
     venue: 国立情報学研究所
     venue_url: "https://www.nii.ac.jp/about/access/"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=33fdb0965733df8333414843376e7764f314cef432dab08322aa6fa5e1d1c164&tgid=IEICE-SC"
-  - date: "2023-11-17"
-    session: 48
+  - session: 48
+    date: "2023-11-17"
     topic: 一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=a2092bfaa77d6f9ce0f998fba061169bc6db3688a10ea97a8720968eca21e6f0&tgid=IEICE-SC"
     prefecture: 宮城県
     venue: 仙都会館
     venue_url: "http://www.sentokaikan.co.jp/access/"
     cosponsor: KBSE
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=a2092bfaa77d6f9ce0f998fba061169bc6db3688a10ea97a8720968eca21e6f0&tgid=IEICE-SC"
-  - date: "2023-08-25"
-    session: 47
+  - session: 47
+    date: "2023-08-25"
     topic: "ソサエティ5.0に向けたサービスコンピューティングとインタプライズモデル化技術, 一般"
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=59982eba3afed073cd973a13a9bfcfc82cc39225945aeb316aebf454839d865e&tgid=IEICE-SC"
     prefecture: 東京都
     venue: 機械振興会館
     venue_url: "http://www.jspmi.or.jp/kaigishitsu/"
     cosponsor: SWIM
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=59982eba3afed073cd973a13a9bfcfc82cc39225945aeb316aebf454839d865e&tgid=IEICE-SC"
-  - date: "2023-06-02"
-    session: 46
+  - session: 46
+    date: "2023-06-02"
     topic: "サービス化するAI技術とDX, 一般"
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=8db9950c70dcc175e4e4991c04bb15cd869ad5ac02903b0168c3024668a380df&tgid=IEICE-SC"
     prefecture: 福島県
     venue: 会津大学 UBIC 3D Theater
     venue_url: "http://www.u-aizu.ac.jp/access/"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=8db9950c70dcc175e4e4991c04bb15cd869ad5ac02903b0168c3024668a380df&tgid=IEICE-SC"
-  - date: "2023-03-17"
-    session: 45
+  - session: 45
+    date: "2023-03-17"
     topic: メタバースとサービスコンピューティングおよび一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=0a5f2d77800f6c959b1513a6ffbdb18b1d6ed08d3fbaff07d00ff390ff4ac379&tgid=IEICE-SC"
     prefecture: 東京都
     venue: 国立情報学研究所
     venue_url: "https://www.nii.ac.jp/about/access/"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=0a5f2d77800f6c959b1513a6ffbdb18b1d6ed08d3fbaff07d00ff390ff4ac379&tgid=IEICE-SC"
-  - date: "2022-11-04"
-    session: 44
+  - session: 44
+    date: "2022-11-04"
     topic: 一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=7d9e05cc884720c103933b6f7f0cbe80a2c19c7fa00f59023a0b20f8b1ac5f70&tgid=IEICE-SC"
     prefecture: 長野県
     venue: 野沢温泉 桐屋旅館
     venue_url: "https://kiriya.jp/"
     cosponsor: KBSE
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=7d9e05cc884720c103933b6f7f0cbe80a2c19c7fa00f59023a0b20f8b1ac5f70&tgid=IEICE-SC"
-  - date: "2022-08-26"
-    session: 43
+  - session: 43
+    date: "2022-08-26"
     topic: "ソサエティ5.0に向けたサービスコンピューティングとインタプライズモデル化技術,一般"
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=7ef764e1a237d220856f9983a3e1df2db69e67e14e6cad433ef56c6e9b036006&tgid=IEICE-SC"
     prefecture: オンライン
     venue: オンライン開催
     venue_url: ""
     cosponsor: SWIM
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=7ef764e1a237d220856f9983a3e1df2db69e67e14e6cad433ef56c6e9b036006&tgid=IEICE-SC"
-  - date: "2022-05-27"
-    session: 42
+  - session: 42
+    date: "2022-05-27"
     topic: "サービス化するAI技術とDX, 一般"
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=e05ca9ad364d3bb2e9638329921e4ff0da5f225ca6f9c15dd5bf8a34c878a6f6&tgid=IEICE-SC"
     prefecture: オンライン
     venue: オンライン開催
     venue_url: "https://www.u-aizu.ac.jp/"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=e05ca9ad364d3bb2e9638329921e4ff0da5f225ca6f9c15dd5bf8a34c878a6f6&tgid=IEICE-SC"
-  - date: "2022-03-11"
-    session: 41
+  - session: 41
+    date: "2022-03-11"
     topic: 「ＤＸとサービスコンピューティング」および一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=92dbe9bdb342696d9d44dc58efc144c9f812c01ccb10a77c7144474816db6873&tgid=IEICE-SC"
     prefecture: オンライン
     venue: オンライン開催 (機械振興会館から変更)
     venue_url: ""
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=92dbe9bdb342696d9d44dc58efc144c9f812c01ccb10a77c7144474816db6873&tgid=IEICE-SC"
-  - date: "2021-11-05"
-    session: 40
+  - session: 40
+    date: "2021-11-05"
     topic: 「社会変化に伴う際のサービスとソフトウェア・システム構築とその高度化」および一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=4307fdfa5ae66dfad7d72e605b072ee07929712e1dc15544b77af62eb6e1993f&tgid=IEICE-SC"
     prefecture: 岩手県
     venue: オンライン開催+現地（KBSE：盛岡市，SC：なし）
     venue_url: ""
     cosponsor: KBSE
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=4307fdfa5ae66dfad7d72e605b072ee07929712e1dc15544b77af62eb6e1993f&tgid=IEICE-SC"
-  - date: "2021-08-27"
-    session: 39
+  - session: 39
+    date: "2021-08-27"
     topic: "ソサエティ5.0に向けたサービスコンピューティングとインタプライズモデル化技術,一般"
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=a2d68c4cc0a9b6b59a4b7a05c5094a162439344ea4beb086714946105216b256&tgid=IEICE-SC"
     prefecture: オンライン
     venue: オンライン開催 (FIT2021との併催)
     venue_url: "https://www.ipsj.or.jp/event/fit/fit2021/"
     cosponsor: SWIM
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=a2d68c4cc0a9b6b59a4b7a05c5094a162439344ea4beb086714946105216b256&tgid=IEICE-SC"
-  - date: "2021-05-28"
-    session: 38
+  - session: 38
+    date: "2021-05-28"
     topic: "サイバーフィジカルシステム、IOT, 機械学習応用、および一般"
-    prefecture: オンライン
-    venue: オンライン開催
-    venue_url: ""
-    cosponsor: ""
     program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=794c9655354c6b6bc16133ea6b0b66def8f29d9ba704b62b364e7cbab72147eb&tgid=IEICE-SC"
-  - date: "2021-03-19"
-    session: 37
-    topic: サイバーフィジカルシステムを支えるサービスコンピューティング技術および一般
     prefecture: オンライン
     venue: オンライン開催
     venue_url: ""
     cosponsor: ""
+  - session: 37
+    date: "2021-03-19"
+    topic: サイバーフィジカルシステムを支えるサービスコンピューティング技術および一般
     program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=5d64fc3042ac6e460817996c37b0e847984d2aa041e2ff634c269d6ed2266fdf&tgid=IEICE-SC"
-  - date: "2020-11-13"
-    session: 36
+    prefecture: オンライン
+    venue: オンライン開催
+    venue_url: ""
+    cosponsor: ""
+  - session: 36
+    date: "2020-11-13"
     topic: 「ウィズコロナ／アフターコロナ時代の知能ソフトウエア工学とサービスコンピューティング」および一般（仮）
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=1d75051910a9405009d3a8d216e9a9e62ab0d0c997236fb3afec5984e9ff2ffa&tgid=IEICE-SC"
     prefecture: 東京都
     venue: 機械振興会館 (+ オンライン開催)
     venue_url: "https://www.ieice.org/jpn/about/syozai.html"
     cosponsor: KBSE
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=1d75051910a9405009d3a8d216e9a9e62ab0d0c997236fb3afec5984e9ff2ffa&tgid=IEICE-SC"
-  - date: "2020-08-21"
-    session: 35
+  - session: 35
+    date: "2020-08-21"
     topic: ソサエティ5.0に向けたサービスコンピューティングとインタプライズモデル化技術(仮)、一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=d13f19878876723a1fb8f864066f2fcf6b0db5d2723e65f6a703f33c81082a07&tgid=IEICE-SC"
     prefecture: オンライン
     venue: オンライン開催
     venue_url: ""
     cosponsor: SWIM
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=d13f19878876723a1fb8f864066f2fcf6b0db5d2723e65f6a703f33c81082a07&tgid=IEICE-SC"
-  - date: "2020-05-29"
-    session: 34
+  - session: 34
+    date: "2020-05-29"
     topic: "サービスコンピューティング環境に向けたAIとその応用,その他"
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=5af8dffb46d99cb1d85bf6af5a1508a7e6e11aa634912795a7e806638cd0816d&tgid=IEICE-SC"
     prefecture: オンライン
     venue: オンライン開催
     venue_url: ""
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=5af8dffb46d99cb1d85bf6af5a1508a7e6e11aa634912795a7e806638cd0816d&tgid=IEICE-SC"
-  - date: "2020-03-16"
-    session: 33
+  - session: 33
+    date: "2020-03-16"
     topic: 機械学習工学とサービスコンピューティングおよび一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=9a6809ce4d3b9e88f768fa5554056f0b9b9ecea6ce6683acec8df0643ccd18fd&tgid=IEICE-SC"
     prefecture: オンライン
     venue: 日立製作所 中央研究所 協創棟1F NEXPERIENCE (+ オンライン開催)
     venue_url: "https://www.hitachi.co.jp/rd/about/japan/index.html"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=9a6809ce4d3b9e88f768fa5554056f0b9b9ecea6ce6683acec8df0643ccd18fd&tgid=IEICE-SC"
-  - date: "2019-11-08"
-    session: 32
+  - session: 32
+    date: "2019-11-08"
     topic: 「ソフトウェア／サービスとAI」および一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=aee51e065ded917e58db18428ea339a224af32eee28619e895fd868244547d5a&tgid=IEICE-SC"
     prefecture: 長野県
     venue: 信州大学
     venue_url: "https://www.shinshu-u.ac.jp/guidance/guide/nagano_technology/#campusmap"
     cosponsor: KBSE
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=aee51e065ded917e58db18428ea339a224af32eee28619e895fd868244547d5a&tgid=IEICE-SC"
-  - date: "2019-08-23"
-    session: 31
+  - session: 31
+    date: "2019-08-23"
     topic: ソサイエティ5.0に向けたサービスコンピューティングとインタープライズモデル化技術および一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=c88731f84d932acb96d387b6c17747edb8f8519b53c96c6e5e138ab47daad9e7&tgid=IEICE-SC"
     prefecture: 大阪府
     venue: 大阪産業大学 梅田サテライトキャンパス
     venue_url: "http://www.umeda-osu.ne.jp/access.html"
     cosponsor: SWIM
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=c88731f84d932acb96d387b6c17747edb8f8519b53c96c6e5e138ab47daad9e7&tgid=IEICE-SC"
-  - date: "2019-05-31"
-    session: 30
+  - session: 30
+    date: "2019-05-31"
     topic: "サイエンス・サービスプラットフォーム/データサービスと機械学習, 一般"
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=bcb19a59ecb42d75eb1619786969c1db78c3a328e39af66e404800e755b622c0&tgid=IEICE-SC"
     prefecture: 茨城県
     venue: 物質・材料研究機構(千現地区)
     venue_url: "https://www.nims.go.jp/nims/office/tsukuba_sengen.html"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=bcb19a59ecb42d75eb1619786969c1db78c3a328e39af66e404800e755b622c0&tgid=IEICE-SC"
-  - date: "2019-03-15"
-    session: 29
+  - session: 29
+    date: "2019-03-15"
     topic: 「サービスと機械学習」および一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=3535390f293ec5bf9f05c65edba859170c8cbd844e57fbc3a329248d25a5cd22&tgid=IEICE-SC"
     prefecture: 東京都
     venue: 国立情報学研究所
     venue_url: "https://www.nii.ac.jp/about/access/"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=3535390f293ec5bf9f05c65edba859170c8cbd844e57fbc3a329248d25a5cd22&tgid=IEICE-SC"
-  - date: "2018-11-09"
-    session: 28
+  - session: 28
+    date: "2018-11-09"
     topic: "「ソフトウェア／サービスとAI」, 一般"
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=b013046336e3df6bcc11b105b6bf65d33b88b5fb3e139b51f21c0c75c9c9ec12&tgid=IEICE-SC"
     prefecture: 兵庫県
     venue: 神戸大学 瀧川記念学術交流会館
     venue_url: "http://www27.cs.kobe-u.ac.jp/~masa-n/data/takigawa_map.pdf"
     cosponsor: KBSE
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=b013046336e3df6bcc11b105b6bf65d33b88b5fb3e139b51f21c0c75c9c9ec12&tgid=IEICE-SC"
-  - date: "2018-08-24"
-    session: 27
+  - session: 27
+    date: "2018-08-24"
     topic: ソサイエティ5.0に向けたサービスコンピューティングとインタープライズモデル化技術および一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=0964837c02da4e08b2d163fca5e76f6a3ad2a664adaf3e8eb30c1a856343d0d0&tgid=IEICE-SC"
     prefecture: 東京都
     venue: 法政大学新一口坂校舎
     venue_url: "http://www.im.i.hosei.ac.jp/contact/access/"
     cosponsor: SWIM
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=0964837c02da4e08b2d163fca5e76f6a3ad2a664adaf3e8eb30c1a856343d0d0&tgid=IEICE-SC"
-  - date: "2018-06-01"
-    session: 26
+  - session: 26
+    date: "2018-06-01"
     topic: 「第4次産業革命のためのサービスコンピューティング」および一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=b5390370eb94fdcd2808b27254d31f2b9593dfc649ba08d22bc35c809e6c813b&tgid=IEICE-SC"
     prefecture: 福島県
     venue: 会津大学 UBIC 3D Theater
     venue_url: "http://www.u-aizu.ac.jp/access/"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=b5390370eb94fdcd2808b27254d31f2b9593dfc649ba08d22bc35c809e6c813b&tgid=IEICE-SC"
-  - date: "2018-03-16"
-    session: 25
+  - session: 25
+    date: "2018-03-16"
     topic: 「スマートサービスの実現基盤と応用」および一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=fa8330028bac713f9e62cfdde41d726bbbd24d4b33fbd23c293165e43130cc94&tgid=IEICE-SC"
     prefecture: 東京都
     venue: NII
     venue_url: "http://www.nii.ac.jp/about/access/"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=fa8330028bac713f9e62cfdde41d726bbbd24d4b33fbd23c293165e43130cc94&tgid=IEICE-SC"
-  - date: "2017-11-02"
-    session: 24
+  - session: 24
+    date: "2017-11-02"
     topic: 「IoTによるサービスイノベーション」および一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=448d515e0937fb7b2a64bde2c669c9d44c32b73f1a107099cc746a64785323ff&tgid=IEICE-SC"
     prefecture: 京都府
     venue: 京都大学（KRP拠点）
     venue_url: "http://www.design.kyoto-u.ac.jp/facilities/de_inn_center/"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=448d515e0937fb7b2a64bde2c669c9d44c32b73f1a107099cc746a64785323ff&tgid=IEICE-SC"
-  - date: "2017-08-25"
-    session: 23
+  - session: 23
+    date: "2017-08-25"
     topic: ソサエティ5.0に向けたサービスコンピューティングとインタプライズモデル化技術および一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=583ea94635a6bcdf82bcc60742e4bf151cdebe4507b587e35a2d22ad089e9d4e&tgid=IEICE-SC"
     prefecture: 東京都
     venue: 法政大学新一口坂校舎
     venue_url: "http://www.im.i.hosei.ac.jp/contact/access/"
     cosponsor: SWIM
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=583ea94635a6bcdf82bcc60742e4bf151cdebe4507b587e35a2d22ad089e9d4e&tgid=IEICE-SC"
-  - date: "2017-06-02"
-    session: 22
+  - session: 22
+    date: "2017-06-02"
     topic: "「IoT, ビッグデータ解析，知能システムのためのサービスコンピューティング」および一般"
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=3f3be82d1f18a4fc08fd001a3ccec0675200c620960b3855933add5b11957183&tgid=IEICE-SC"
     prefecture: 福島県
     venue: 会津大学(UBIC 3D)
     venue_url: "http://www.u-aizu.ac.jp/access/"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=3f3be82d1f18a4fc08fd001a3ccec0675200c620960b3855933add5b11957183&tgid=IEICE-SC"
-  - date: "2017-03-10"
-    session: 21
+  - session: 21
+    date: "2017-03-10"
     topic: 「スマートシステム応用」および一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=7679ab2d235a4b2167aa9750bc978c240682929fba975e63aa44a39b94dd18b1&tgid=IEICE-SC"
     prefecture: 東京都
     venue: 国立情報学研究所
     venue_url: "http://www.nii.ac.jp/about/access/"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=7679ab2d235a4b2167aa9750bc978c240682929fba975e63aa44a39b94dd18b1&tgid=IEICE-SC"
-  - date: "2016-11-04"
-    session: 20
+  - session: 20
+    date: "2016-11-04"
     topic: 「サービスデザインのアナリシスとシンセシス」および一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=5ef8f33298c8c6e45ba586ac7c16a2422d62a77f8ea7ade901ad33af488a83b7&tgid=IEICE-SC"
     prefecture: 兵庫県
     venue: 神戸大学・瀧川記念交流会館
     venue_url: "http://www.kobe-u.ac.jp/guid/access/"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=5ef8f33298c8c6e45ba586ac7c16a2422d62a77f8ea7ade901ad33af488a83b7&tgid=IEICE-SC"
-  - date: "2016-08-26"
-    session: 19
+  - session: 19
+    date: "2016-08-26"
     topic: "「実用期のService, Cloud Computingから学ぶIoTのフロンティア」および一般"
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=3122de0cee650185ac74b5425e7d53a293e70d9711f10e3c51f7e48321caa883&tgid=IEICE-SC"
     prefecture: 東京都
     venue: 機械振興会館 B2F 2号室
     venue_url: "http://www.jspmi.or.jp/"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=3122de0cee650185ac74b5425e7d53a293e70d9711f10e3c51f7e48321caa883&tgid=IEICE-SC"
-  - date: "2016-06-03"
-    session: 18
+  - session: 18
+    date: "2016-06-03"
     topic: 「クラウド・ビックデータ・知能コミュニケーションシステムに向けるサービスコンピューティング」および一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=d68d471599f00833c91e47dceb214c340ebef8b5494194d6143dbb8c4721b3d4&tgid=IEICE-SC"
     prefecture: 福島県
     venue: 会津大学
     venue_url: "http://www.u-aizu.ac.jp/access/"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=d68d471599f00833c91e47dceb214c340ebef8b5494194d6143dbb8c4721b3d4&tgid=IEICE-SC"
-  - date: "2016-03-25"
-    session: 17
+  - session: 17
+    date: "2016-03-25"
     topic: 「クラウド・サービスによる大規模データ処理」および一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=73a79c75142499d76d95318105feb2e1e813b55e67c799fc7e83da6964153eb1&tgid=IEICE-SC"
     prefecture: 東京都
     venue: 国立情報学研究所
     venue_url: "http://www.nii.ac.jp/about/access/"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=73a79c75142499d76d95318105feb2e1e813b55e67c799fc7e83da6964153eb1&tgid=IEICE-SC"
-  - date: "2016-01-15"
-    session: 16
+  - session: 16
+    date: "2016-01-15"
     topic: 「クラウドのIoT応用とサービスイノベーション」および一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=786be912ee9064ec1168162f34b520fbb601688a7babe5a5fdffed20b2cc7e69&tgid=IEICE-SC"
     prefecture: 京都府
     venue: 京都大学（KRP拠点）
     venue_url: "http://www.design.kyoto-u.ac.jp/facilities/de_inn_center/"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=786be912ee9064ec1168162f34b520fbb601688a7babe5a5fdffed20b2cc7e69&tgid=IEICE-SC"
-  - date: "2015-10-02"
-    session: 15
+  - session: 15
+    date: "2015-10-02"
     topic: 「クラウドの応用とサービスデザイン」および一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=7676ceb592643774434b59e55afc07e9101994968b5402c6957a6bc14038543e&tgid=IEICE-SC"
     prefecture: 東京都
     venue: 国立情報学研究所
     venue_url: "http://www.nii.ac.jp/about/access/"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=7676ceb592643774434b59e55afc07e9101994968b5402c6957a6bc14038543e&tgid=IEICE-SC"
-  - date: "2015-06-05"
-    session: 14
+  - session: 14
+    date: "2015-06-05"
     topic: 「Webサービスおよびクラウドの構築・運用・管理」および一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=dc188aae067f32b8acf36851e5f45eb1cb64b1f02a8e260ca689914fb4b391cf&tgid=IEICE-SC"
     prefecture: 東京都
     venue: 国立情報学研究所(NII) 12F会議室（1210/1208）
     venue_url: "http://www.nii.ac.jp/about/access/"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=dc188aae067f32b8acf36851e5f45eb1cb64b1f02a8e260ca689914fb4b391cf&tgid=IEICE-SC"
-  - date: "2015-03-27"
-    session: 13
+  - session: 13
+    date: "2015-03-27"
     topic: サービス・クラウドのQoS・SLA・ポリシー及び一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=3a0813f1a8b4bb30a99725ef4589347e8248ffedfbedbff823fdc2d51b5e5e7c&tgid=IEICE-SC"
     prefecture: 福島県
     venue: 会津大学UBIC
     venue_url: "http://www.u-aizu.ac.jp/access.html"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=3a0813f1a8b4bb30a99725ef4589347e8248ffedfbedbff823fdc2d51b5e5e7c&tgid=IEICE-SC"
-  - date: "2014-10-24"
-    session: 12
+  - session: 12
+    date: "2014-10-24"
     topic: サービス・クラウドの教育応用，一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=d0148b61a9d328bab139e659db3f2760dfdf84f0cb7fd92da89b227f4952e7ed&tgid=IEICE-SC"
     prefecture: 宮城県
     venue: 東北大学
     venue_url: "http://www.tohoku.ac.jp/japanese/profile/campus/01/kawauchi/index.html"
     cosponsor: IPSJ-CLE(連催)
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=d0148b61a9d328bab139e659db3f2760dfdf84f0cb7fd92da89b227f4952e7ed&tgid=IEICE-SC"
-  - date: "2014-08-20"
-    session: 11
+  - session: 11
+    date: "2014-08-20"
     topic: 「Linked Data，Linked Services」および一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=bb6ca3f1715af0e812c171c4eeb44c28e25050c0fddefacf16b8d7c264426fca&tgid=IEICE-SC"
     prefecture: 東京都
     venue: 国立情報学研究所
     venue_url: "http://www.nii.ac.jp/about/access/"
     cosponsor: AI
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=bb6ca3f1715af0e812c171c4eeb44c28e25050c0fddefacf16b8d7c264426fca&tgid=IEICE-SC"
-  - date: "2014-07-28"
-    session: 10
+  - session: 10
+    date: "2014-07-28"
     topic: 「ユビキタスコンピューティング技術とサービスコンピューティング」および一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=2a7b15c147795aa5663311ed03cf2c24b333bf1cbb0cb5f8af7b93657437adc6&tgid=IEICE-SC"
     prefecture: 東京都
     venue: 国立情報学研究所
     venue_url: "http://www.nii.ac.jp/access"
     cosponsor: IPSJ-UBI(連催)
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=2a7b15c147795aa5663311ed03cf2c24b333bf1cbb0cb5f8af7b93657437adc6&tgid=IEICE-SC"
-  - date: "2014-05-23"
-    session: 9
+  - session: 9
+    date: "2014-05-23"
     topic: 「Webサービスおよびクラウドの構築・運用・管理」および一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=c532a86b6f4f460d7b5887d786784a96e43b00e63141563b55183df10310e666&tgid=IEICE-SC"
     prefecture: 東京都
     venue: 国立情報学研究所
     venue_url: "http://www.nii.ac.jp/access"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=c532a86b6f4f460d7b5887d786784a96e43b00e63141563b55183df10310e666&tgid=IEICE-SC"
-  - date: "2014-03-14"
-    session: 8
+  - session: 8
+    date: "2014-03-14"
     topic: 「サービスおよびクラウドのQoS・SLA・ポリシー」および一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=513f180f6b0c2e19b3187ee380d6a5942964a3ff4dc8bac90b535455bef604c5&tgid=IEICE-SC"
     prefecture: 東京都
     venue: 国立情報学研究所
     venue_url: "http://www.nii.ac.jp/"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=513f180f6b0c2e19b3187ee380d6a5942964a3ff4dc8bac90b535455bef604c5&tgid=IEICE-SC"
-  - date: "2014-01-10"
-    session: 7
+  - session: 7
+    date: "2014-01-10"
     topic: 「Webサービスおよびクラウドの応用」および一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=1c322772d2228f1aed7b1d43012c143f5e7c2649ae63878bf6bcdeb7e9124188&tgid=IEICE-SC"
     prefecture: 東京都
     venue: 国立情報学研究所
     venue_url: "http://www.nii.ac.jp/about/access/"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=1c322772d2228f1aed7b1d43012c143f5e7c2649ae63878bf6bcdeb7e9124188&tgid=IEICE-SC"
-  - date: "2013-08-09"
-    session: 6
+  - session: 6
+    date: "2013-08-09"
     topic: Linked Data，Linked Service，一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=fd21c63fb6438e196dfe24f0c4215a3a6f25229bf4492be23ad66f136f98bac6&tgid=IEICE-SC"
     prefecture: 東京都
     venue: 国立情報学研究所
     venue_url: "http://www.nii.ac.jp/about/access/"
     cosponsor: AI
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=fd21c63fb6438e196dfe24f0c4215a3a6f25229bf4492be23ad66f136f98bac6&tgid=IEICE-SC"
-  - date: "2013-06-17"
-    session: 5
+  - session: 5
+    date: "2013-06-17"
     topic: 「Webサービスおよびクラウドの構築・運用・管理」および一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=5153d0239c12bf83a3d8eac73442cf02363e7e845df47e4df896036762a64f4f&tgid=IEICE-SC"
     prefecture: 東京都
     venue: 国立情報学研究所
     venue_url: "http://www.nii.ac.jp/"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=5153d0239c12bf83a3d8eac73442cf02363e7e845df47e4df896036762a64f4f&tgid=IEICE-SC"
-  - date: "2013-03-15"
-    session: 4
+  - session: 4
+    date: "2013-03-15"
     topic: 「サービスおよびクラウドのQoS・SLA・ポリシー」および一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=711292fbad63f5f191858ea79eba19d6758236270fdefc361305e11e4e7e3cfd&tgid=IEICE-SC"
     prefecture: 東京都
     venue: 国立情報学研究所 (NII)
     venue_url: "http://www.nii.ac.jp/access"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=711292fbad63f5f191858ea79eba19d6758236270fdefc361305e11e4e7e3cfd&tgid=IEICE-SC"
-  - date: "2012-11-16"
-    session: 3
+  - session: 3
+    date: "2012-11-16"
     topic: 「サービス・クラウドの応用およびマッシュアップ」および一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=b7bc6f3ee0c905f6aaab6679af60f20834d79dfe35ef3b7b4e1be8e2667fa9a0&tgid=IEICE-SC"
     prefecture: 京都府
     venue: 京大
     venue_url: "http://www.media.kyoto-u.ac.jp/"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=b7bc6f3ee0c905f6aaab6679af60f20834d79dfe35ef3b7b4e1be8e2667fa9a0&tgid=IEICE-SC"
-  - date: "2012-08-20"
-    session: 2
+  - session: 2
+    date: "2012-08-20"
     topic: 「サービス・クラウドにおけるAI応用」および一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=e49a7d2dcaf8f2766e2bf36c073fb4830fd143e46cea1fd3e761746bd50c8a3d&tgid=IEICE-SC"
     prefecture: 東京都
     venue: 国立情報学研究所(NII) 12F会議室
     venue_url: "http://www.nii.ac.jp/about/access/"
     cosponsor: AI
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=e49a7d2dcaf8f2766e2bf36c073fb4830fd143e46cea1fd3e761746bd50c8a3d&tgid=IEICE-SC"
-  - date: "2012-06-11"
-    session: 1
+  - session: 1
+    date: "2012-06-11"
     topic: 「Webサービスおよびクラウドの構築・運用・管理」および一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=774ce8fe982d010721d88f69734516de90865ab9ac6aa7a9cb60acf2b7f01913&tgid=IEICE-SC"
     prefecture: 東京都
     venue: 国立情報学研究所
     venue_url: "http://www.nii.ac.jp/"
     cosponsor: ""
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=774ce8fe982d010721d88f69734516de90865ab9ac6aa7a9cb60acf2b7f01913&tgid=IEICE-SC"
   - date: "2010-10-07"
     topic: クラウドコンピューティング CEATECの一環として開催
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=a8400d4afc1e6de0250f139368475d0bc6138ad154e1761665b7b22e8711e792&tgid=IEICE-SC"
     prefecture: 千葉県
     venue: 幕張メッセ 国際会議場 3F-304
     venue_url: "http://www.m-messe.co.jp/access/index.html"
     cosponsor: SWIM(第二種研究会)
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=a8400d4afc1e6de0250f139368475d0bc6138ad154e1761665b7b22e8711e792&tgid=IEICE-SC"
   - date: "2010-08-23"
     topic: 「Webサービス・クラウド」および一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=a78dc62a9ab5b534c5c3fe493b01963d8159c892f4dc00f3dc0476ee6f7fe080&tgid=IEICE-SC"
     prefecture: 東京都
     venue: 国立情報学研究所
     venue_url: "http://www.nii.ac.jp/access/"
     cosponsor: AI
-    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=a78dc62a9ab5b534c5c3fe493b01963d8159c892f4dc00f3dc0476ee6f7fe080&tgid=IEICE-SC"
