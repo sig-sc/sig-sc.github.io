@@ -7,6 +7,7 @@ backend:
   repo: sig-sc/sig-sc.github.io
   branch: master
   auth_type: pkce
+  client_id: Ov23likz2SHJ3Tg6OCz7
 
 # メディアファイルの保存先
 media_folder: "static/uploads"
