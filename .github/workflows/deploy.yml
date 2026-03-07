@@ -9,6 +9,8 @@ on:
   pull_request:
     branches:
       - master
+  # 手動実行
+  workflow_dispatch:
 
 # GitHub Pages デプロイに必要な権限
 permissions:
