@@ -1,0 +1,57 @@
+<footer class="bg-slate-900 dark:bg-slate-950 text-white mt-auto">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- About -->
+      <div>
+        <h3 class="font-bold text-lg text-accent mb-3">SIG-SC</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">
+          電子情報通信学会<br>
+          サービスコンピューティング研究会<br>
+          の公式ウェブサイトです。<br>
+          どなたでもご覧いただけます。
+        </p>
+      </div>
+
+      <!-- Links -->
+      <div>
+        <h3 class="font-bold text-sm uppercase tracking-wider text-slate-400 mb-3">リンク</h3>
+        <ul class="space-y-2 text-sm">
+          <li>
+            <a href="https://www.ieice.org/iss/sc/" target="_blank" rel="noopener"
+               class="text-slate-300 hover:text-accent transition-colors">
+              IEICE 研究会システム
+            </a>
+          </li>
+          <li>
+            <a href="https://ken.ieice.org/ken/program/index.php?tgid=IEICE-SC" target="_blank" rel="noopener"
+               class="text-slate-300 hover:text-accent transition-colors">
+              発表申し込みシステム
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/sig-sc" target="_blank" rel="noopener"
+               class="text-slate-300 hover:text-accent transition-colors">
+              GitHub
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Pages -->
+      <div>
+        <h3 class="font-bold text-sm uppercase tracking-wider text-slate-400 mb-3">ページ</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="{{ "/" | relURL }}" class="text-slate-300 hover:text-accent transition-colors">ホーム</a></li>
+          <li><a href="{{ "/history/" | relURL }}" class="text-slate-300 hover:text-accent transition-colors">開催履歴</a></li>
+          <li><a href="{{ "/statistics/" | relURL }}" class="text-slate-300 hover:text-accent transition-colors">開催統計</a></li>
+          <li><a href="{{ "/committee/" | relURL }}" class="text-slate-300 hover:text-accent transition-colors">専門委員</a></li>
+          <li><a href="{{ "/award/" | relURL }}" class="text-slate-300 hover:text-accent transition-colors">表彰</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-slate-800 mt-8 pt-6 text-center text-slate-500 text-xs">
+      &copy; {{ now.Year }} 電子情報通信学会 サービスコンピューティング研究会 (IEICE SIG-SC). All rights reserved.
+    </div>
+  </div>
+</footer>

@@ -1,2 +1,44 @@
-archive
-_site
+# Hugo build output
+public/
+resources/
+.hugo_build.lock
+hugo_stats.json
+
+# Node.js
+node_modules/
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+
+# OS - macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# OS - Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# OS - Linux
+.directory
+.Trash-*
+.nfs*
+
+# Editor - Vim/Emacs
+*~
+*.swp
+*.swo
+\#*\#
+
+# Editor
+.idea/
+
+# Claude Code
+.claude/

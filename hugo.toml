@@ -1,0 +1,29 @@
+baseURL = "https://sig-sc.org/"
+languageCode = "ja-JP"
+defaultContentLanguage = "ja"
+title = "サービスコンピューティング研究会"
+
+[params]
+  description = "電子情報通信学会 サービスコンピューティング研究会 (IEICE SIG-SC)"
+  googleAnalytics = "UA-120806941-1"
+  author = "IEICE SIG-SC"
+
+[permalinks]
+  posts = "/posts/:year/:month/:day/:slug/"
+
+[pagination]
+  pagerSize = 20
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "github"
+
+[build]
+  writeStats = true

@@ -1,0 +1,54 @@
+{{ define "main" }}
+<article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+  <!-- Breadcrumb -->
+  <nav class="text-sm text-gray-500 dark:text-slate-400 mb-6" aria-label="パンくずリスト">
+    <a href="{{ "/" | relURL }}" class="hover:text-primary dark:hover:text-primary-light">ホーム</a>
+    <span class="mx-2">/</span>
+    {{ if .Section }}
+    <a href="{{ .Section | relURL }}" class="hover:text-primary dark:hover:text-primary-light">{{ .Section }}</a>
+    <span class="mx-2">/</span>
+    {{ end }}
+    <span class="text-gray-700 dark:text-slate-300">{{ .Title }}</span>
+  </nav>
+
+  <!-- Post header -->
+  <header class="mb-8">
+    {{ with .Date }}
+    <time datetime="{{ .Format "2006-01-02" }}" class="text-sm text-gray-500 dark:text-slate-400 font-mono">
+      {{ .Format "2006年01月02日" }}
+    </time>
+    {{ end }}
+    <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-slate-100 mt-2 leading-tight">
+      {{ .Title }}
+    </h1>
+    {{ with .Params.tags }}
+    <div class="flex flex-wrap gap-2 mt-4">
+      {{ range . }}
+      <span class="tag">{{ . }}</span>
+      {{ end }}
+    </div>
+    {{ end }}
+  </header>
+
+  <!-- Content -->
+  <div class="prose prose-lg dark:prose-invert max-w-none
+              prose-headings:font-bold
+              prose-h2:border-b-2 prose-h2:border-accent prose-h2:pb-2
+              prose-a:text-primary-light prose-a:no-underline hover:prose-a:underline
+              prose-table:border prose-table:border-gray-200 dark:prose-table:border-slate-700
+              prose-th:bg-primary prose-th:text-white prose-th:px-4 prose-th:py-2
+              prose-td:px-4 prose-td:py-2 prose-td:border prose-td:border-gray-200 dark:prose-td:border-slate-700">
+    {{ .Content }}
+  </div>
+
+  <!-- Back button -->
+  <div class="mt-12 pt-6 border-t border-gray-200 dark:border-slate-700">
+    <a href="{{ "/" | relURL }}" class="btn-outline">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+      </svg>
+      トップページへ戻る
+    </a>
+  </div>
+</article>
+{{ end }}

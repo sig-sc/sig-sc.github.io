@@ -1,6 +1,12 @@
-.PHONY: serve
+.PHONY: serve build install
+
+install:
+	npm install
 
 serve:
-	bundle exec jekyll serve
+	hugo server -D
+
+build:
+	npm run build
 
 default: serve

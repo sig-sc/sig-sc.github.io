@@ -1,0 +1,73 @@
+{{ define "main" }}
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+  <header>
+    <h1 class="text-4xl font-bold text-gray-900 dark:text-slate-100">{{ .Title }}</h1>
+    <p class="mt-3 text-gray-500 dark:text-slate-400 text-sm">
+      データソース:
+      <a href="https://ken.ieice.org/ken/program/index.php?tgid=IEICE-SC" target="_blank" rel="noopener">
+        IEICE 研究会発表申込システム
+      </a>
+    </p>
+  </header>
+
+  {{ $seminars := index .Site.Data.seminars "seminars" }}
+  {{ $sorted := sort $seminars "date" "desc" }}
+
+  {{/* Collect unique fiscal years */}}
+  {{ $years := slice }}
+  {{ range $sorted }}
+    {{ $fy := string .fiscal_year }}
+    {{ if not (in $years $fy) }}
+      {{ $years = $years | append $fy }}
+    {{ end }}
+  {{ end }}
+
+  <section class="space-y-8">
+  {{ range $years }}
+  {{ $fy := . }}
+  <div>
+    <h2 class="text-lg font-bold text-gray-900 dark:text-slate-100 border-b-2 border-accent pb-1.5 mb-3">{{ $fy }}年度</h2>
+    <div class="divide-y divide-gray-100 dark:divide-slate-800 rounded-xl border border-gray-200 dark:border-slate-700 overflow-hidden">
+      {{ range $sorted }}
+      {{ if eq (string .fiscal_year) $fy }}
+      {{ $sem := . }}
+      <div class="flex flex-col sm:flex-row gap-1 sm:gap-4 px-5 py-3 bg-white dark:bg-slate-800">
+        <div class="flex-shrink-0 flex items-baseline gap-2 sm:w-44">
+          {{ with .session }}
+          <span class="text-xs font-bold text-primary dark:text-primary-light whitespace-nowrap">第{{ . }}回</span>
+          {{ end }}
+          <time class="text-xs text-gray-500 dark:text-slate-400 font-mono">{{ $sem.date }}</time>
+        </div>
+        <div class="flex-1 min-w-0">
+          {{ with .topic }}
+          <p class="text-sm text-gray-700 dark:text-slate-300 font-medium leading-snug">{{ . }}</p>
+          {{ end }}
+          <div class="flex flex-wrap gap-x-4 gap-y-0.5 mt-1 text-xs text-gray-500 dark:text-slate-400">
+            {{ with .venue }}
+            <span class="flex items-center gap-1">
+              <svg class="w-3 h-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+              {{ if $sem.venue_url }}<a href="{{ $sem.venue_url }}" target="_blank" rel="noopener" class="hover:text-primary dark:hover:text-primary-light">{{ . }}</a>{{ else }}{{ . }}{{ end }}
+            </span>
+            {{ end }}
+            {{ with .cosponsor }}<span>共催: {{ . }}</span>{{ end }}
+            {{ with .program_url }}
+            <a href="{{ . }}" target="_blank" rel="noopener" class="text-primary-light hover:underline flex items-center gap-0.5">
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              </svg>
+              プログラム
+            </a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+  </section>
+</div>
+{{ end }}

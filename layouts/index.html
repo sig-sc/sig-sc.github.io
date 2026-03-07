@@ -1,0 +1,279 @@
+{{ define "main" }}
+
+<!-- Hero Section -->
+<section class="bg-gradient-to-br from-primary to-primary-light text-white py-16 sm:py-20">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl">
+      <p class="text-accent font-semibold text-sm uppercase tracking-wider mb-3">
+        電子情報通信学会
+      </p>
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-4">
+        サービスコンピューティング研究会
+      </h1>
+      <p class="text-white/80 text-lg mb-8">
+        IEICE | Special Interest Group - Services Computing (SIG-SC)
+      </p>
+      <!-- <p class="text-white/70 text-sm mb-8 max-w-3xl leading-relaxed">
+        あらゆるシステムの機能を<strong class="text-white">サービス</strong>と捉え，
+        疎結合して更なるサービスを創る <strong class="text-white">Everything as a Service</strong> の考え方のもと，
+        Society 5.0 を支える技術的基盤・方法論・プラクティスについて研究発表・討論を行います．
+      </p> -->
+      <div class="flex flex-wrap gap-3">
+        <a href="https://ken.ieice.org/ken/program/index.php?tgid=IEICE-SC"
+           target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-accent text-gray-900 font-bold text-sm hover:brightness-110 transition shadow-md">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+          </svg>
+          発表申し込みシステム
+        </a>
+        <a href="{{ "/history/" | relURL }}"
+           class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border-2 border-white/60 text-white font-semibold text-sm hover:bg-white/10 transition">
+          開催履歴を見る
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+
+  <!-- 研究会の目的 -->
+  <section id="about">
+    <h2 class="section-heading">研究会の目的</h2>
+    <div class="card prose prose-sm dark:prose-invert max-w-none prose-p:text-gray-700 dark:prose-p:text-slate-300 prose-p:leading-relaxed prose-strong:text-gray-900 dark:prose-strong:text-slate-100">
+      <p>
+        我が国が目指す未来社会の姿「Society 5.0（超スマート社会）」は，IoTやビッグデータ，AI，ロボット等の様々なシステムを横断的に連携・協調して，人々が必要なモノやサービスを必要なときに必要なだけ受けられる社会を目指すものです．
+      </p>
+      <p>
+        あらゆるシステムの機能を<strong>サービス</strong>と捉え，これらを<strong>疎結合</strong>して更なるサービスを創るというサービスコンピューティングの考え方（<strong>Everything as a Service</strong>）は，超スマート社会における異種分散システムをつなぐ糊（のり）として，重要な役割を果たします．本研究会では，そうしたサービスの実現や提供に求められる技術的基盤や方法論，プラクティスなどについて，研究発表および討論を行う機会を提供します．
+      </p>
+    </div>
+  </section>
+
+  <!-- News / お知らせ -->
+  <section id="news">
+    <h2 class="section-heading">お知らせ・更新履歴</h2>
+
+    <!-- Important announcement (SWIM merger) -->
+    <div class="mb-6 p-5 rounded-xl bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800">
+      <div class="flex gap-3">
+        <div class="flex-shrink-0">
+          <svg class="w-5 h-5 text-blue-500 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="font-bold text-gray-900 dark:text-slate-100 mb-1">SWIM研との合併について</h3>
+          <p class="text-sm text-gray-700 dark:text-slate-300 leading-relaxed">
+            <a href="https://www.ieice.org/iss/swim/jpn/" target="_blank" rel="noopener">ソフトウェアインタプライズモデリング研究会（SWIM研）</a>と当研究会は，
+            <strong>2025年度より合併</strong>することとなりました．合併後のウェブサイトはSC研のサイトになります．
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- News list from data -->
+    <div class="divide-y divide-gray-100 dark:divide-slate-800 rounded-xl border border-gray-200 dark:border-slate-700 overflow-hidden">
+      {{ range first 5 .Site.Data.news.items }}
+      <div class="flex gap-4 px-5 py-3 bg-white dark:bg-slate-800 hover:bg-gray-50 dark:hover:bg-slate-700/50 transition-colors">
+        <time class="flex-shrink-0 text-xs text-gray-500 dark:text-slate-400 font-mono pt-0.5 w-24">{{ .date }}</time>
+        <p class="text-sm text-gray-700 dark:text-slate-300">{{ .content | markdownify }}</p>
+      </div>
+      {{ end }}
+    </div>
+    <div class="mt-4 text-right">
+      <a href="{{ "/news/" | relURL }}" class="btn-outline text-sm">
+        お知らせをすべて見る
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- 直近の開催 -->
+  <section id="recent-seminars">
+    <h2 class="section-heading">直近の開催</h2>
+    {{ $seminars := index .Site.Data.seminars "seminars" }}
+    {{ $recent := first 5 (sort $seminars "date" "desc") }}
+    <div class="divide-y divide-gray-100 dark:divide-slate-800 rounded-xl border border-gray-200 dark:border-slate-700 overflow-hidden">
+      {{ range $recent }}
+      <div class="flex flex-col sm:flex-row gap-1 sm:gap-4 px-5 py-3 bg-white dark:bg-slate-800">
+        <div class="flex-shrink-0 flex items-baseline gap-2 sm:w-44">
+          {{ with .session }}
+          <span class="text-xs font-bold text-primary dark:text-primary-light whitespace-nowrap">第{{ . }}回</span>
+          {{ end }}
+          <time class="text-xs text-gray-500 dark:text-slate-400 font-mono">{{ .date }}</time>
+        </div>
+        <div class="flex-1 min-w-0">
+          {{ with .topic }}<p class="text-sm text-gray-700 dark:text-slate-300 font-medium leading-snug">{{ . }}</p>{{ end }}
+          <div class="flex flex-wrap gap-x-4 gap-y-0.5 mt-1 text-xs text-gray-500 dark:text-slate-400">
+            {{ with .venue }}
+            <span class="flex items-center gap-1">
+              <svg class="w-3 h-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+              {{ . }}
+            </span>
+            {{ end }}
+            {{ with .program_url }}
+            <a href="{{ . }}" target="_blank" rel="noopener" class="text-primary-light hover:underline flex items-center gap-0.5">
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              </svg>
+              プログラム
+            </a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    <div class="mt-4 text-right">
+      <a href="{{ "/history/" | relURL }}" class="btn-outline text-sm">
+        開催履歴をすべて見る
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- 研究分野 -->
+  <section id="keywords">
+    <h2 class="section-heading">研究分野</h2>
+    <p class="text-gray-600 dark:text-slate-400 mb-6 text-sm">
+      以下のような研究分野を主に扱いますが，サービスに関わる話題であれば広く取り上げます．
+    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {{ range .Site.Data.keywords.categories }}
+      <div class="card">
+        <h3 class="font-bold text-primary dark:text-primary-light mb-3 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-accent inline-block"></span>
+          {{ .name }}
+        </h3>
+        <ul class="space-y-1">
+          {{ range .items }}
+          <li class="text-sm text-gray-600 dark:text-slate-400 flex items-start gap-1.5">
+            <span class="text-primary-light mt-1 flex-shrink-0">›</span>
+            {{ . }}
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  <!-- 委員会構成 -->
+  <section id="committee">
+    <h2 class="section-heading">委員会構成</h2>
+    <p class="text-sm text-gray-500 dark:text-slate-400 mb-6">
+      過去の幹事団については <a href="{{ "/committee/" | relURL }}">専門委員</a> ページをご覧ください．
+    </p>
+
+    {{ $committee := index .Site.Data "committee" }}
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- 委員長 -->
+      <div class="card">
+        <h3 class="font-bold text-primary dark:text-primary-light mb-3 text-sm uppercase tracking-wider">委員長</h3>
+        {{ range $committee.chair }}
+        <div class="flex items-center gap-2">
+          {{ if .url }}
+          <a href="{{ .url }}" target="_blank" rel="noopener" class="font-semibold text-gray-900 dark:text-slate-100 hover:text-primary dark:hover:text-primary-light">{{ .name }}</a>
+          {{ else }}
+          <span class="font-semibold text-gray-900 dark:text-slate-100">{{ .name }}</span>
+          {{ end }}
+          <span class="text-sm text-gray-500 dark:text-slate-400">（{{ .affiliation }}）</span>
+        </div>
+        {{ end }}
+      </div>
+
+      <!-- 副委員長 -->
+      <div class="card">
+        <h3 class="font-bold text-primary dark:text-primary-light mb-3 text-sm uppercase tracking-wider">副委員長</h3>
+        {{ range $committee.vice_chair }}
+        <div class="flex items-center gap-2 mb-1">
+          <span class="font-medium text-gray-900 dark:text-slate-100">{{ .name }}</span>
+          <span class="text-sm text-gray-500 dark:text-slate-400">（{{ .affiliation }}）</span>
+        </div>
+        {{ end }}
+      </div>
+
+      <!-- 幹事 -->
+      <div class="card">
+        <h3 class="font-bold text-primary dark:text-primary-light mb-3 text-sm uppercase tracking-wider">幹事</h3>
+        {{ range $committee.secretary }}
+        <div class="flex items-center gap-2 mb-1">
+          {{ if .url }}
+          <a href="{{ .url }}" target="_blank" rel="noopener" class="font-medium text-gray-900 dark:text-slate-100 hover:text-primary dark:hover:text-primary-light">{{ .name }}</a>
+          {{ else }}
+          <span class="font-medium text-gray-900 dark:text-slate-100">{{ .name }}</span>
+          {{ end }}
+          <span class="text-sm text-gray-500 dark:text-slate-400">（{{ .affiliation }}）</span>
+        </div>
+        {{ end }}
+      </div>
+
+      <!-- 幹事補佐 -->
+      <div class="card">
+        <h3 class="font-bold text-primary dark:text-primary-light mb-3 text-sm uppercase tracking-wider">幹事補佐</h3>
+        {{ range $committee.assistant_secretary }}
+        <div class="flex items-center gap-2 mb-1">
+          {{ if .url }}
+          <a href="{{ .url }}" target="_blank" rel="noopener" class="font-medium text-gray-900 dark:text-slate-100 hover:text-primary dark:hover:text-primary-light">{{ .name }}</a>
+          {{ else }}
+          <span class="font-medium text-gray-900 dark:text-slate-100">{{ .name }}</span>
+          {{ end }}
+          <span class="text-sm text-gray-500 dark:text-slate-400">（{{ .affiliation }}）</span>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+
+    <!-- 委員一覧 -->
+    <div class="card mt-4">
+      <h3 class="font-bold text-primary dark:text-primary-light mb-3 text-sm uppercase tracking-wider">委員（五十音順）</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-1">
+        {{ range $committee.members }}
+        <div class="text-sm py-1 border-b border-gray-100 dark:border-slate-700">
+          {{ if .url }}
+          <a href="{{ .url }}" target="_blank" rel="noopener" class="font-medium text-gray-900 dark:text-slate-100 hover:text-primary dark:hover:text-primary-light">{{ .name }}</a>
+          {{ else }}
+          <span class="font-medium text-gray-900 dark:text-slate-100">{{ .name }}</span>
+          {{ end }}
+          <span class="text-gray-500 dark:text-slate-400 ml-1">（{{ .affiliation }}）</span>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <!-- 関連リンク -->
+  <section id="links">
+    <h2 class="section-heading">関連リンク</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div class="card">
+        <h3 class="font-bold text-gray-700 dark:text-slate-300 mb-3 text-sm">ジャーナル</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="http://www.computer.org/tsc" target="_blank" rel="noopener">IEEE Transactions on Services Computing</a></li>
+          <li><a href="http://www.servicescomputing.org/jwsr/" target="_blank" rel="noopener">International Journal of Web Services Research (JWSR)</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 class="font-bold text-gray-700 dark:text-slate-300 mb-3 text-sm">国際会議</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="http://conferences.computer.org/icws/" target="_blank" rel="noopener">IEEE ICWS</a></li>
+          <li><a href="http://conferences.computer.org/scc/" target="_blank" rel="noopener">IEEE SCC</a></li>
+          <li><a href="http://conferences.computer.org/cloud/" target="_blank" rel="noopener">IEEE CLOUD</a></li>
+          <li><a href="http://www.icsoc.org/" target="_blank" rel="noopener">ICSOC</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+{{ end }}

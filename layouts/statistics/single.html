@@ -1,0 +1,343 @@
+{{ define "main" }}
+{{- $seminars := index .Site.Data.seminars "seminars" -}}
+{{- $semJSON := $seminars | jsonify -}}
+
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+  <header>
+    <h1 class="text-4xl font-bold text-gray-900 dark:text-slate-100">{{ .Title }}</h1>
+    <p class="mt-3 text-gray-500 dark:text-slate-400 text-sm">
+      SIG-SC 研究会の開催データ（{{ len $seminars }}件）を集計・可視化したものです。
+    </p>
+  </header>
+
+  <!-- Summary stats (past sessions only) -->
+  {{- $today := now -}}
+  {{- $total := 0 -}}
+  {{- $prefSet := slice -}}
+  {{- $fySet := slice -}}
+  {{- $minFY := 9999 -}}
+  {{- range $seminars -}}
+    {{- if le (time .date) $today -}}
+      {{- $total = add $total 1 -}}
+      {{- if and .pref_code (ne .prefecture "オンライン") -}}
+        {{- $p := string .pref_code -}}
+        {{- if not (in $prefSet $p) -}}{{- $prefSet = $prefSet | append $p -}}{{- end -}}
+      {{- end -}}
+      {{- $fy := string .fiscal_year -}}
+      {{- if not (in $fySet $fy) -}}{{- $fySet = $fySet | append $fy -}}{{- end -}}
+      {{- if lt .fiscal_year $minFY -}}{{- $minFY = .fiscal_year -}}{{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $anniversary := sub now.Year $minFY -}}
+
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem">
+    <div class="bg-white dark:bg-slate-800 rounded-xl border border-gray-200 dark:border-slate-700 p-5 text-center">
+      <div class="text-3xl font-bold text-primary dark:text-primary-light">{{ sub $total 2 }}<span class="text-lg ml-0.5">回</span></div>
+      <div class="text-xs text-gray-500 dark:text-slate-400 mt-1">総開催回数</div>
+    </div>
+    <div class="bg-white dark:bg-slate-800 rounded-xl border border-gray-200 dark:border-slate-700 p-5 text-center">
+      <div class="text-3xl font-bold text-primary dark:text-primary-light">{{ $anniversary }}<span class="text-lg ml-0.5">周年</span></div>
+      <div class="text-xs text-gray-500 dark:text-slate-400 mt-1">開催年度数</div>
+    </div>
+    <div class="bg-white dark:bg-slate-800 rounded-xl border border-gray-200 dark:border-slate-700 p-5 text-center">
+      <div class="text-3xl font-bold text-primary dark:text-primary-light">{{ len $prefSet }}<span class="text-sm font-normal text-gray-400 dark:text-slate-500 ml-0.5">/47</span></div>
+      <div class="text-xs text-gray-500 dark:text-slate-400 mt-1">開催都道府県数</div>
+    </div>
+  </div>
+
+  <!-- Japan map -->
+  <section>
+    <h2 class="text-2xl font-bold text-gray-900 dark:text-slate-100 border-b-2 border-accent pb-2 mb-2">開催地マップ</h2>
+    <p class="text-xs text-gray-500 dark:text-slate-400 mb-4">都道府県の上にカーソルを合わせると開催回数が表示されます（オンライン開催を除く）。スクロールで拡大縮小、ドラッグで移動できます。</p>
+    <div class="rounded-xl border border-gray-200 dark:border-slate-700 overflow-hidden bg-white dark:bg-slate-800">
+      <div id="japan-map"></div>
+    </div>
+    <div id="map-legend" class="mt-3 flex items-center gap-3 text-xs text-gray-500 dark:text-slate-400">
+      <span>開催回数:</span>
+      <span class="flex items-center gap-1"><span class="inline-block w-4 h-4 rounded" style="background:#fecaca"></span>1回</span>
+      <span class="flex items-center gap-1"><span class="inline-block w-4 h-4 rounded" style="background:#f87171"></span>2–3回</span>
+      <span class="flex items-center gap-1"><span class="inline-block w-4 h-4 rounded" style="background:#dc2626"></span>4–6回</span>
+      <span class="flex items-center gap-1"><span class="inline-block w-4 h-4 rounded" style="background:#991b1b"></span>7回以上</span>
+      <span class="flex items-center gap-1"><span class="inline-block w-4 h-4 rounded" style="background:#dcfce7"></span>0回</span>
+    </div>
+  </section>
+
+  <!-- Charts grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Seminars per year -->
+    <section>
+      <h2 class="section-heading">年度別開催回数</h2>
+      <div class="bg-white dark:bg-slate-800 rounded-xl border border-gray-200 dark:border-slate-700 p-5">
+        <canvas id="chart-by-year" height="260"></canvas>
+      </div>
+    </section>
+
+    <!-- Prefecture distribution -->
+    <section>
+      <h2 class="section-heading">開催地内訳（上位）</h2>
+      <div class="bg-white dark:bg-slate-800 rounded-xl border border-gray-200 dark:border-slate-700 p-5">
+        <canvas id="chart-by-pref" height="260"></canvas>
+      </div>
+    </section>
+  </div>
+
+</div>
+
+<!-- D3.js -->
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+
+<script>
+(function() {
+  const seminars = {{ $semJSON | safeJS }};
+
+  // ── Helper: detect dark mode ──────────────────────────────────────────
+  const isDark = () => document.documentElement.classList.contains('dark');
+  const textColor = () => isDark() ? '#cbd5e1' : '#374151';
+  const gridColor = () => isDark() ? 'rgba(148,163,184,0.15)' : 'rgba(0,0,0,0.08)';
+
+  // ── Build aggregates ──────────────────────────────────────────────────
+  const prefCount = {};      // pref_code -> {count, name}
+  const fyCount = {};        // fiscal_year -> {online, physical}
+
+  for (const s of seminars) {
+    const fy = s.fiscal_year;
+    if (!fyCount[fy]) fyCount[fy] = { online: 0, physical: 0 };
+
+    if (s.prefecture === 'オンライン' || !s.pref_code) {
+      fyCount[fy].online++;
+    } else {
+      fyCount[fy].physical++;
+      const code = s.pref_code;
+      if (!prefCount[code]) prefCount[code] = { count: 0, name: s.prefecture };
+      prefCount[code].count++;
+    }
+  }
+
+  // ── D3 choropleth Japan map ───────────────────────────────────────────
+  function choroColor(count) {
+    if (!count) return isDark() ? '#14532d' : '#dcfce7';
+    if (count >= 7) return '#991b1b';
+    if (count >= 4) return '#dc2626';
+    if (count >= 2) return '#f87171';
+    return '#fecaca';
+  }
+
+  // Tooltip element
+  const tooltip = document.createElement('div');
+  tooltip.style.cssText = 'position:fixed;background:rgba(0,0,0,.75);color:#fff;padding:5px 9px;border-radius:5px;font-size:12px;pointer-events:none;display:none;z-index:9999;white-space:nowrap;';
+  document.body.appendChild(tooltip);
+
+  const mapEl = document.getElementById('japan-map');
+  const W = mapEl.clientWidth || 640;
+  const H = 540;
+  // Okinawa inset box dimensions
+  const INS_X = 10, INS_Y = 10, INS_W = 220, INS_H = 130;
+
+  const svg = d3.select('#japan-map').append('svg')
+    .attr('viewBox', `0 0 ${W} ${H}`)
+    .style('width', '100%').style('height', H + 'px').style('display', 'block')
+    .style('cursor', 'grab');
+
+  // Main projection — scale W*2.0 + translate H*0.54 shows 宗谷岬上〜鹿児島下
+  const mainCenterX = (INS_W + 20 + W) / 2;
+  const mainProj = d3.geoMercator()
+    .center([139, 37.5])
+    .scale(W * 1.5)
+    .translate([mainCenterX, H * 0.54]);
+  const mainPath = d3.geoPath().projection(mainProj);
+
+  // Clip path to prevent Okinawa inset from overflowing its box
+  svg.append('defs').append('clipPath').attr('id', 'ins-clip')
+    .append('rect')
+      .attr('x', INS_X).attr('y', INS_Y)
+      .attr('width', INS_W).attr('height', INS_H);
+
+  // Okinawa inset projection (fixed, not affected by zoom)
+  const insProj = d3.geoMercator()
+    .center([127.5, 26.5])
+    .scale(INS_W * 8)
+    .translate([INS_X + INS_W / 2, INS_Y + INS_H / 2]);
+  const insPath = d3.geoPath().projection(insProj);
+
+  // Inset border + dashed connector line (fixed layer, rendered last = on top)
+  const insDecor = svg.append('g').attr('id', 'ins-decor');
+  insDecor.append('rect')
+    .attr('x', INS_X).attr('y', INS_Y)
+    .attr('width', INS_W).attr('height', INS_H)
+    .attr('fill', isDark() ? '#1e293b' : '#fff')
+    .attr('stroke', isDark() ? '#475569' : '#cbd5e1')
+    .attr('stroke-width', 1)
+    .attr('rx', 4);
+  insDecor.append('line')
+    .attr('x1', INS_X + INS_W).attr('y1', INS_Y + INS_H / 2)
+    .attr('x2', INS_X + INS_W + 20).attr('y2', INS_Y + INS_H / 2)
+    .attr('stroke', isDark() ? '#475569' : '#cbd5e1')
+    .attr('stroke-width', 1)
+    .attr('stroke-dasharray', '3,3');
+
+  // GeoJSON has {id: <pref_code>, name: '<pref>府/県/都/道'}
+  const getCount = f => (prefCount[f.properties.id] || {}).count || 0;
+  const getName  = f => f.properties.name || '';
+
+  // zoomG wraps mainG — only the main map is zoomed/panned
+  const zoomG = svg.append('g').attr('id', 'zoom-g');
+  const mainG = zoomG.append('g').attr('id', 'main-g');
+  // insG is outside zoomG — Okinawa inset stays fixed, clipped to inset box
+  const insG = svg.append('g').attr('id', 'ins-g').attr('clip-path', 'url(#ins-clip)');
+
+  fetch('/japan.geojson').then(r => r.json()).then(geoData => {
+    const features = geoData.features || [];
+    const isOkinawa = f => f.properties.id === 47;
+
+    function drawFeatures(g, path, feats) {
+      g.selectAll('path')
+        .data(feats)
+        .join('path')
+        .attr('d', path)
+        .attr('fill', f => choroColor(getCount(f)))
+        .attr('stroke', isDark() ? '#334155' : '#94a3b8')
+        .attr('stroke-width', 0.5)
+        .on('mouseover', function(event, f) {
+          const count = getCount(f);
+          tooltip.textContent = `${getName(f)}: ${count > 0 ? count + '回' : '未開催'}`;
+          tooltip.style.display = 'block';
+          d3.select(this).attr('fill-opacity', 0.7);
+        })
+        .on('mousemove', event => {
+          tooltip.style.left = (event.clientX + 12) + 'px';
+          tooltip.style.top  = (event.clientY - 32) + 'px';
+        })
+        .on('mouseout', function(event, f) {
+          tooltip.style.display = 'none';
+          d3.select(this).attr('fill', choroColor(getCount(f))).attr('fill-opacity', 1);
+        });
+    }
+
+    drawFeatures(mainG, mainPath, features.filter(f => !isOkinawa(f)));
+    drawFeatures(insG,  insPath,  features.filter(f =>  isOkinawa(f)));
+
+    // Zoom & pan — applied after features are rendered
+    const zoom = d3.zoom()
+      .scaleExtent([1, 8])
+      .on('zoom', event => {
+        zoomG.attr('transform', event.transform);
+        // Keep stroke width visually consistent
+        const k = event.transform.k;
+        mainG.selectAll('path').attr('stroke-width', 0.5 / k);
+        tooltip.style.display = 'none';
+        svg.style('cursor', event.transform.k > 1 ? 'grabbing' : 'grab');
+      });
+    svg.call(zoom);
+    // Double-click resets zoom to initial view
+    svg.on('dblclick.zoom', () => {
+      svg.transition().duration(400).call(zoom.transform, d3.zoomIdentity);
+    });
+  });
+
+  // Re-color on dark mode toggle
+  const observer = new MutationObserver(() => {
+    svg.selectAll('#main-g path, #ins-g path')
+      .attr('fill', f => choroColor(getCount(f)))
+      .attr('stroke', isDark() ? '#334155' : '#94a3b8');
+    insDecor.select('rect')
+      .attr('fill', isDark() ? '#1e293b' : '#fff')
+      .attr('stroke', isDark() ? '#475569' : '#cbd5e1');
+    insDecor.select('line')
+      .attr('stroke', isDark() ? '#475569' : '#cbd5e1');
+  });
+  observer.observe(document.documentElement, { attributeFilter: ['class'] });
+
+  // ── Chart.js shared defaults ──────────────────────────────────────────
+  Chart.defaults.font.family = "'Noto Sans JP', ui-sans-serif, system-ui, sans-serif";
+
+  // ── Chart 1: by fiscal year ───────────────────────────────────────────
+  const fySorted = Object.keys(fyCount).sort();
+  const fyPhysical = fySorted.map(y => fyCount[y].physical);
+  const fyOnline   = fySorted.map(y => fyCount[y].online);
+
+  new Chart(document.getElementById('chart-by-year'), {
+    type: 'bar',
+    data: {
+      labels: fySorted.map(y => y + '年度'),
+      datasets: [
+        {
+          label: '対面',
+          data: fyPhysical,
+          backgroundColor: '#3b82f6',
+          borderRadius: 3,
+        },
+        {
+          label: 'オンライン',
+          data: fyOnline,
+          backgroundColor: '#93c5fd',
+          borderRadius: 3,
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: true,
+      plugins: {
+        legend: { labels: { color: textColor(), font: { size: 11 } } },
+        tooltip: { mode: 'index' },
+      },
+      scales: {
+        x: {
+          stacked: true,
+          ticks: { color: textColor(), font: { size: 10 }, maxRotation: 45 },
+          grid: { color: gridColor() },
+        },
+        y: {
+          stacked: true,
+          ticks: { color: textColor(), font: { size: 11 }, stepSize: 1 },
+          grid: { color: gridColor() },
+        },
+      },
+    },
+  });
+
+  // ── Chart 2: prefecture top-N ─────────────────────────────────────────
+  const prefEntries = Object.entries(prefCount)
+    .map(([code, v]) => ({ name: v.name, count: v.count }))
+    .sort((a, b) => b.count - a.count)
+    .slice(0, 10);
+  prefEntries.push({ name: 'オンライン', count: seminars.filter(s => s.prefecture === 'オンライン').length });
+
+  new Chart(document.getElementById('chart-by-pref'), {
+    type: 'bar',
+    data: {
+      labels: prefEntries.map(p => p.name),
+      datasets: [{
+        label: '開催回数',
+        data: prefEntries.map(p => p.count),
+        backgroundColor: prefEntries.map(p =>
+          p.name === 'オンライン' ? '#93c5fd' : '#195892'
+        ),
+        borderRadius: 4,
+      }],
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: true,
+      plugins: {
+        legend: { display: false },
+      },
+      scales: {
+        x: {
+          ticks: { color: textColor(), font: { size: 11 }, stepSize: 1 },
+          grid: { color: gridColor() },
+        },
+        y: {
+          ticks: { color: textColor(), font: { size: 11 } },
+          grid: { display: false },
+        },
+      },
+    },
+  });
+
+})();
+</script>
+{{ end }}
