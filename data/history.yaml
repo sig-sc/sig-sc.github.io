@@ -203,7 +203,7 @@ history:
     date: "2020-03-16"
     topic: 機械学習工学とサービスコンピューティングおよび一般
     program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=9a6809ce4d3b9e88f768fa5554056f0b9b9ecea6ce6683acec8df0643ccd18fd&tgid=IEICE-SC"
-    prefecture: オンライン
+    prefecture: 東京都
     venue: 日立製作所 中央研究所 協創棟1F NEXPERIENCE (+ オンライン開催)
     venue_url: "https://www.hitachi.co.jp/rd/about/japan/index.html"
     cosponsor: ""
@@ -444,7 +444,7 @@ history:
     topic: 「サービス・クラウドの応用およびマッシュアップ」および一般
     program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=b7bc6f3ee0c905f6aaab6679af60f20834d79dfe35ef3b7b4e1be8e2667fa9a0&tgid=IEICE-SC"
     prefecture: 京都府
-    venue: 京大
+    venue: 京都大学
     venue_url: "http://www.media.kyoto-u.ac.jp/"
     cosponsor: ""
   - session: 2
