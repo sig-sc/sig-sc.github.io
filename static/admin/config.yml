@@ -149,15 +149,15 @@ collections:
           - label: "若手奨励賞受賞者"
             name: "encouragement"
             widget: "list"
-            summary: "第{{fields.session}}回 {{fields.year_month}}"
+            summary: "第{{fields.session}}回 {{fields.date}}"
             fields:
               - label: "回数"
                 name: "session"
                 widget: "number"
               - label: "開催年月"
-                name: "year_month"
+                name: "date"
                 widget: "string"
-                hint: "例: 2025年11月"
+                hint: "例: 2025-11"
               - label: "受賞者一覧"
                 name: "entries"
                 widget: "list"
@@ -176,7 +176,7 @@ collections:
   - name: "news"
     label: "お知らせ更新"
     files:
-      - label: "お知らせ・更新履歴"
+      - label: "お知らせ"
         name: "keywords"
         file: "data/keywords.yaml"
         fields:

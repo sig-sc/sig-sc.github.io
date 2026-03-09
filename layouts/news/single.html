@@ -1,37 +1,175 @@
 {{ define "main" }}
-<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+{{- $today := now | dateFormat "2006-01-02" -}}
+
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-8">
   <header>
     <h1 class="text-4xl font-bold text-gray-900 dark:text-slate-100">{{ .Title }}</h1>
     <p class="mt-3 text-gray-500 dark:text-slate-400 text-sm">{{ .Description }}</p>
   </header>
 
-  <!-- Important announcement (SWIM merger) -->
-  <section>
-    <div class="mb-6 p-5 rounded-xl bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800">
-      <div class="flex gap-3">
-        <div class="flex-shrink-0">
-          <svg class="w-5 h-5 text-blue-500 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-          </svg>
-        </div>
-        <div>
-          <h3 class="font-bold text-gray-900 dark:text-slate-100 mb-1">SWIM研との合併について</h3>
-          <p class="text-sm text-gray-700 dark:text-slate-300 leading-relaxed">
-            <a href="https://www.ieice.org/iss/swim/jpn/" target="_blank" rel="noopener">ソフトウェアインタプライズモデリング研究会（SWIM研）</a>と当研究会は，
-            <strong>2025年度より合併</strong>することとなりました．合併後のウェブサイトはSC研のサイトになります．
-          </p>
-        </div>
+  <!-- Pinned announcements -->
+  {{ range .Site.Data.news.pinned }}
+  <div class="p-5 rounded-xl bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800">
+    <div class="flex gap-3">
+      <div class="flex-shrink-0">
+        <svg class="w-5 h-5 text-blue-500 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+      </div>
+      <div>
+        <h3 class="font-bold text-gray-900 dark:text-slate-100 mb-1">{{ .title }}</h3>
+        <p class="text-sm text-gray-700 dark:text-slate-300 leading-relaxed">
+          {{ .content | markdownify }}
+        </p>
       </div>
     </div>
+  </div>
+  {{ end }}
 
-    <div class="divide-y divide-gray-100 dark:divide-slate-800 rounded-xl border border-gray-200 dark:border-slate-700 overflow-hidden">
-      {{ range .Site.Data.news.items }}
-      <div class="flex gap-4 px-5 py-3 bg-white dark:bg-slate-800">
-        <time class="flex-shrink-0 text-xs text-gray-500 dark:text-slate-400 font-mono pt-0.5 w-24">{{ .date }}</time>
-        <p class="text-sm text-gray-700 dark:text-slate-300">{{ .content | markdownify }}</p>
+  <!-- Filter buttons -->
+  <div class="flex flex-wrap gap-2" id="news-filters">
+    <button type="button" data-filter="all" class="news-filter-btn active" aria-pressed="true">すべて</button>
+    <button type="button" data-filter="seminar" class="news-filter-btn" aria-pressed="false">研究会</button>
+    <button type="button" data-filter="award" class="news-filter-btn" aria-pressed="false">表彰</button>
+    <button type="button" data-filter="other" class="news-filter-btn" aria-pressed="false">その他</button>
+  </div>
+
+  <!-- News list -->
+  <div id="news-list" class="divide-y divide-gray-100 dark:divide-slate-800 rounded-xl border border-gray-200 dark:border-slate-700 overflow-hidden">
+
+    {{/* ── Build unified list ── */}}
+    {{- $items := slice -}}
+
+    {{/* 1. History items (past seminars) */}}
+    {{- range (index .Site.Data.history "history") -}}
+      {{- $dateStr := .date | dateFormat "2006-01-02" -}}
+      {{- if le $dateStr $today -}}
+        {{- $label := "研究会を開催しました。" -}}
+        {{- with .session }}{{ $label = printf "第%d回研究会を開催しました。" . }}{{ end -}}
+        {{- $dateShort := .date | dateFormat "2006-01" -}}
+        {{- $items = $items | append (dict "date" $dateStr "date_short" $dateShort "content" $label "category" "seminar") -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{/* 2. Award items — annual awards */}}
+    {{- range .Site.Data.awards.annual -}}
+      {{- $year := .year -}}
+      {{- $dateStr := printf "%d-04-01" $year -}}
+      {{- $dateShort := printf "%d" $year -}}
+      {{- if .date -}}
+        {{- $dateStr = .date -}}
+        {{- $dateShort = .date -}}
+      {{- end -}}
+      {{- range .entries -}}
+        {{- $label := printf "%d年 年間表彰「%s」（%s）" $year .title .authors -}}
+        {{- $items = $items | append (dict "date" $dateStr "date_short" $dateShort "content" $label "category" "award") -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{/* 3. Award items — encouragement awards */}}
+    {{- range .Site.Data.awards.encouragement -}}
+      {{- $session := .session -}}
+      {{- $ym := .date -}}
+      {{/* Find the date from history for this session */}}
+      {{- $dateStr := "" -}}
+      {{- range (index $.Site.Data.history "history") -}}
+        {{- if eq .session $session -}}
+          {{- $dateStr = .date | dateFormat "2006-01-02" -}}
+        {{- end -}}
+      {{- end -}}
+      {{- if and $dateStr (le $dateStr $today) -}}
+        {{- range .entries -}}
+          {{- $label := printf "第%d回研究会 若手奨励賞「%s」（%s）" $session .title .winner -}}
+          {{- $items = $items | append (dict "date" $dateStr "date_short" ($dateStr | dateFormat "2006-01") "content" $label "category" "award") -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{/* 4. News items (other) */}}
+    {{- range .Site.Data.news.items -}}
+      {{- $dateStr := printf "%s-01" .date -}}
+      {{- $items = $items | append (dict "date" $dateStr "date_short" .date "content" .content "category" "other") -}}
+    {{- end -}}
+
+    {{/* Sort by date descending */}}
+    {{- $sorted := sort $items "date" "desc" -}}
+
+    {{- range $sorted }}
+    <div class="news-item flex gap-4 px-5 py-3 bg-white dark:bg-slate-800" data-category="{{ .category }}">
+      <time class="flex-shrink-0 text-xs text-gray-500 dark:text-slate-400 font-mono pt-0.5 w-24">{{ .date_short }}</time>
+      <div class="flex-1 min-w-0">
+        <div class="flex items-center gap-2">
+          {{- if eq .category "seminar" -}}
+          <span style="display:inline-block;font-size:0.625rem;font-weight:600;padding:1px 0;border-radius:9999px;background:#dbeafe;color:#1d4ed8;white-space:nowrap;width:3rem;text-align:center">研究会</span>
+          {{- else if eq .category "award" -}}
+          <span style="display:inline-block;font-size:0.625rem;font-weight:600;padding:1px 0;border-radius:9999px;background:#fef3c7;color:#92400e;white-space:nowrap;width:3rem;text-align:center">表彰</span>
+          {{- else -}}
+          <span style="display:inline-block;font-size:0.625rem;font-weight:600;padding:1px 0;border-radius:9999px;background:#e5e7eb;color:#374151;white-space:nowrap;width:3rem;text-align:center">その他</span>
+          {{- end -}}
+          <p class="text-sm text-gray-700 dark:text-slate-300">{{ .content | markdownify }}</p>
+        </div>
       </div>
-      {{ end }}
     </div>
-  </section>
+    {{- end }}
+
+  </div>
 </div>
+
+<style>
+  .news-filter-btn {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    padding: 0.375rem 1rem;
+    border-radius: 9999px;
+    border: 1px solid #d1d5db;
+    background: transparent;
+    color: #6b7280;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .dark .news-filter-btn {
+    border-color: #475569;
+    color: #94a3b8;
+  }
+  .news-filter-btn:hover {
+    background: #f3f4f6;
+  }
+  .dark .news-filter-btn:hover {
+    background: #1e293b;
+  }
+  .news-filter-btn.active {
+    background: #195892;
+    border-color: #195892;
+    color: #fff;
+  }
+  .dark .news-filter-btn.active {
+    background: #27acd9;
+    border-color: #27acd9;
+    color: #0f172a;
+  }
+</style>
+
+<script>
+(function() {
+  const buttons = document.querySelectorAll('.news-filter-btn');
+  const items = document.querySelectorAll('.news-item');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed', 'false'); });
+      btn.classList.add('active');
+      btn.setAttribute('aria-pressed', 'true');
+
+      const filter = btn.dataset.filter;
+      items.forEach(item => {
+        if (filter === 'all' || item.dataset.category === filter) {
+          item.style.display = '';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+})();
+</script>
 {{ end }}

@@ -1,0 +1,18 @@
+categories:
+  - name: "ジャーナル"
+    items:
+      - title: "IEEE Transactions on Services Computing"
+        url: "http://www.computer.org/tsc"
+      - title: "International Journal of Web Services Research (JWSR)"
+        url: "http://www.servicescomputing.org/jwsr/"
+
+  - name: "国際会議"
+    items:
+      - title: "IEEE ICWS"
+        url: "http://conferences.computer.org/icws/"
+      - title: "IEEE SCC"
+        url: "http://conferences.computer.org/scc/"
+      - title: "IEEE CLOUD"
+        url: "http://conferences.computer.org/cloud/"
+      - title: "ICSOC"
+        url: "http://www.icsoc.org/"

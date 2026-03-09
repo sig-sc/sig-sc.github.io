@@ -6,7 +6,7 @@
   <header>
     <h1 class="text-4xl font-bold text-gray-900 dark:text-slate-100">{{ .Title }}</h1>
     <p class="mt-3 text-gray-500 dark:text-slate-400 text-sm">
-      SIG-SC 研究会の開催データ（{{ len $seminars }}件）を集計・可視化したものです。
+      サービスコンピューティング研究会の開催データを集計・可視化したものです。
     </p>
   </header>
 
@@ -51,17 +51,25 @@
   <!-- Japan map -->
   <section>
     <h2 class="text-2xl font-bold text-gray-900 dark:text-slate-100 border-b-2 border-accent pb-2 mb-2">開催地マップ</h2>
-    <p class="text-xs text-gray-500 dark:text-slate-400 mb-4">都道府県の上にカーソルを合わせると開催回数が表示されます（オンライン開催を除く）。スクロールで拡大縮小、ドラッグで移動できます。</p>
-    <div class="rounded-xl border border-gray-200 dark:border-slate-700 overflow-hidden bg-white dark:bg-slate-800">
+    <p class="text-xs text-gray-500 dark:text-slate-400 mb-4">都道府県の上にカーソルを合わせると開催回数が表示されます（オンライン開催を除く）。Ctrl+スクロール（macOSはCmd+スクロール）で拡大縮小、ドラッグで移動できます。</p>
+    <div style="position:relative" class="rounded-xl border border-gray-200 dark:border-slate-700 overflow-hidden bg-white dark:bg-slate-800">
       <div id="japan-map"></div>
+      <div style="position:absolute;bottom:1rem;left:1rem;display:flex;flex-direction:column;gap:0.375rem;z-index:10">
+        <button id="map-zoom-in" type="button" style="width:2.25rem;height:2.25rem;display:flex;align-items:center;justify-content:center;border-radius:9999px;background:rgba(255,255,255,0.9);box-shadow:0 2px 6px rgba(0,0,0,0.15);border:none;cursor:pointer;color:#4b5563" aria-label="拡大">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <button id="map-zoom-out" type="button" style="width:2.25rem;height:2.25rem;display:flex;align-items:center;justify-content:center;border-radius:9999px;background:rgba(255,255,255,0.9);box-shadow:0 2px 6px rgba(0,0,0,0.15);border:none;cursor:pointer;color:#4b5563" aria-label="縮小">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14"/></svg>
+        </button>
+      </div>
     </div>
     <div id="map-legend" class="mt-3 flex items-center gap-3 text-xs text-gray-500 dark:text-slate-400">
       <span>開催回数:</span>
-      <span class="flex items-center gap-1"><span class="inline-block w-4 h-4 rounded" style="background:#bfdbfe"></span>1回</span>
-      <span class="flex items-center gap-1"><span class="inline-block w-4 h-4 rounded" style="background:#93c5fd"></span>2–3回</span>
-      <span class="flex items-center gap-1"><span class="inline-block w-4 h-4 rounded" style="background:#2563eb"></span>4–6回</span>
-      <span class="flex items-center gap-1"><span class="inline-block w-4 h-4 rounded" style="background:#1e3a8a"></span>7回以上</span>
-      <span class="flex items-center gap-1"><span class="inline-block w-4 h-4 rounded" style="background:#dcfce7"></span>0回</span>
+      <span class="flex items-center gap-1"><span class="legend-swatch inline-block w-4 h-4 rounded" data-light="#bfdbfe" data-dark="#1d4ed8"></span>1回</span>
+      <span class="flex items-center gap-1"><span class="legend-swatch inline-block w-4 h-4 rounded" data-light="#93c5fd" data-dark="#2563eb"></span>2–3回</span>
+      <span class="flex items-center gap-1"><span class="legend-swatch inline-block w-4 h-4 rounded" data-light="#2563eb" data-dark="#3b82f6"></span>4–6回</span>
+      <span class="flex items-center gap-1"><span class="legend-swatch inline-block w-4 h-4 rounded" data-light="#1e3a8a" data-dark="#60a5fa"></span>7回以上</span>
+      <span class="flex items-center gap-1"><span class="legend-swatch inline-block w-4 h-4 rounded" data-light="#dcfce7" data-dark="#14532d"></span>0回</span>
     </div>
   </section>
 
@@ -139,6 +147,12 @@
   // ── D3 choropleth Japan map ───────────────────────────────────────────
   function choroColor(count) {
     if (!count) return isDark() ? '#14532d' : '#dcfce7';
+    if (isDark()) {
+      if (count >= 7) return '#60a5fa';
+      if (count >= 4) return '#3b82f6';
+      if (count >= 2) return '#2563eb';
+      return '#1d4ed8';
+    }
     if (count >= 7) return '#1e3a8a';
     if (count >= 4) return '#2563eb';
     if (count >= 2) return '#93c5fd';
@@ -239,23 +253,53 @@
     drawFeatures(mainG, mainPath, features.filter(f => !isOkinawa(f)));
     drawFeatures(insG,  insPath,  features.filter(f =>  isOkinawa(f)));
 
-    // Zoom & pan — applied after features are rendered
+    // Zoom & pan — Ctrl/Cmd+scroll only for wheel zoom
     const zoom = d3.zoom()
       .scaleExtent([1, 8])
+      .filter(event => {
+        if (event.type === 'wheel') return event.ctrlKey || event.metaKey;
+        return true;
+      })
       .on('zoom', event => {
         zoomG.attr('transform', event.transform);
-        // Keep stroke width visually consistent
         const k = event.transform.k;
         mainG.selectAll('path').attr('stroke-width', 0.5 / k);
         tooltip.style.display = 'none';
-        svg.style('cursor', event.transform.k > 1 ? 'grabbing' : 'grab');
+        svg.style('cursor', k > 1 ? 'grabbing' : 'grab');
       });
     svg.call(zoom);
+    // Prevent default browser zoom when Ctrl/Cmd+wheel over map
+    mapEl.addEventListener('wheel', e => {
+      if (e.ctrlKey || e.metaKey) e.preventDefault();
+    }, { passive: false });
     // Double-click resets zoom to initial view
     svg.on('dblclick.zoom', () => {
       svg.transition().duration(400).call(zoom.transform, d3.zoomIdentity);
     });
+    // Zoom buttons
+    d3.select('#map-zoom-in').on('click', () => {
+      svg.transition().duration(300).call(zoom.scaleBy, 1.5);
+    });
+    d3.select('#map-zoom-out').on('click', () => {
+      svg.transition().duration(300).call(zoom.scaleBy, 1 / 1.5);
+    });
   });
+
+  // Update legend swatch colors and zoom button styles based on dark mode
+  function updateLegendSwatches() {
+    document.querySelectorAll('.legend-swatch').forEach(el => {
+      el.style.backgroundColor = isDark() ? el.dataset.dark : el.dataset.light;
+    });
+  }
+  function updateZoomButtons() {
+    const dark = isDark();
+    document.querySelectorAll('#map-zoom-in, #map-zoom-out').forEach(btn => {
+      btn.style.background = dark ? 'rgba(51,65,85,0.9)' : 'rgba(255,255,255,0.9)';
+      btn.style.color = dark ? '#cbd5e1' : '#4b5563';
+    });
+  }
+  updateLegendSwatches();
+  updateZoomButtons();
 
   // Re-color on dark mode toggle
   const observer = new MutationObserver(() => {
@@ -267,6 +311,8 @@
       .attr('stroke', isDark() ? '#475569' : '#cbd5e1');
     insDecor.select('line')
       .attr('stroke', isDark() ? '#475569' : '#cbd5e1');
+    updateLegendSwatches();
+    updateZoomButtons();
   });
   observer.observe(document.documentElement, { attributeFilter: ['class'] });
 

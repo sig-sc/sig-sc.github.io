@@ -1,5 +1,5 @@
 ---
-title: "お知らせ・更新履歴"
+title: "お知らせ"
 description: "SIG-SC からのお知らせおよびサイト更新履歴です。"
 type: news
 ---

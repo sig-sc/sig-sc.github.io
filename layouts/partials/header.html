@@ -1,4 +1,14 @@
-<header class="bg-primary sticky top-0 z-50 shadow-lg">
+<style>
+  #desktop-nav { display: none; }
+  #mobile-menu-btn { display: block; }
+  #mobile-menu:not(.hidden) { display: block; }
+  @media (min-width: 896px) {
+    #desktop-nav { display: flex; }
+    #mobile-menu-btn { display: none; }
+    #mobile-menu { display: none !important; }
+  }
+</style>
+<header class="bg-primary dark:bg-[#0f2d4a] sticky top-0 z-50 shadow-lg">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center h-16">
       <!-- Logo / Site title -->
@@ -13,12 +23,13 @@
 
       <!-- Desktop navigation + right controls (pushed to the right) -->
       <div class="ml-auto flex items-center gap-1">
-      <nav class="hidden md:flex items-center gap-1" aria-label="メインナビゲーション">
+      <nav id="desktop-nav" class="items-center gap-1" aria-label="メインナビゲーション">
         <a href="{{ "/" | relURL }}" class="nav-link {{ if .IsHome }}bg-white/20 text-white{{ end }}">ホーム</a>
         <a href="{{ "/history/" | relURL }}" class="nav-link {{ if eq .RelPermalink "/history/" }}bg-white/20 text-white{{ end }}">開催履歴</a>
         <a href="{{ "/statistics/" | relURL }}" class="nav-link {{ if eq .RelPermalink "/statistics/" }}bg-white/20 text-white{{ end }}">統計情報</a>
         <a href="{{ "/committee/" | relURL }}" class="nav-link {{ if eq .RelPermalink "/committee/" }}bg-white/20 text-white{{ end }}">専門委員</a>
         <a href="{{ "/award/" | relURL }}" class="nav-link {{ if eq .RelPermalink "/award/" }}bg-white/20 text-white{{ end }}">表彰</a>
+        <a href="{{ "/news/" | relURL }}" class="nav-link {{ if eq .RelPermalink "/news/" }}bg-white/20 text-white{{ end }}">お知らせ</a>
       </nav>
 
       <!-- Right controls -->
@@ -46,7 +57,7 @@
           id="mobile-menu-btn"
           aria-label="メニューを開く"
           aria-expanded="false"
-          class="md:hidden p-2 rounded-lg text-white/80 hover:text-white hover:bg-white/10 transition-colors"
+          class="p-2 rounded-lg text-white/80 hover:text-white hover:bg-white/10 transition-colors"
         >
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
@@ -57,13 +68,14 @@
     </div>
 
     <!-- Mobile menu (hidden by default) -->
-    <nav id="mobile-menu" class="md:hidden hidden pb-4 border-t border-white/20 mt-2 pt-2" aria-label="モバイルナビゲーション">
+    <nav id="mobile-menu" class="hidden pb-4 border-t border-white/20 mt-2 pt-2" aria-label="モバイルナビゲーション">
       <div class="flex flex-col gap-1">
         <a href="{{ "/" | relURL }}" class="nav-link">ホーム</a>
         <a href="{{ "/history/" | relURL }}" class="nav-link">開催履歴</a>
         <a href="{{ "/statistics/" | relURL }}" class="nav-link">統計情報</a>
         <a href="{{ "/committee/" | relURL }}" class="nav-link">専門委員</a>
         <a href="{{ "/award/" | relURL }}" class="nav-link">表彰</a>
+        <a href="{{ "/news/" | relURL }}" class="nav-link">お知らせ</a>
       </div>
     </nav>
   </div>

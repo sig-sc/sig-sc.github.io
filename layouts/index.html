@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <!-- Hero Section -->
-<section class="bg-gradient-to-br from-primary to-primary-light text-white py-16 sm:py-20">
+<section class="bg-gradient-to-br from-primary to-primary-light dark:from-[#0f2d4a] dark:to-[#143a5c] text-white py-16 sm:py-20">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="max-w-3xl">
       <p class="text-accent font-semibold text-sm uppercase tracking-wider mb-3">
@@ -42,20 +42,16 @@
   <section id="about">
     <h2 class="section-heading">研究会の目的</h2>
     <div class="card prose prose-sm dark:prose-invert max-w-none prose-p:text-gray-700 dark:prose-p:text-slate-300 prose-p:leading-relaxed prose-strong:text-gray-900 dark:prose-strong:text-slate-100">
-      <p>
-        我が国が目指す未来社会の姿「Society 5.0（超スマート社会）」は，IoTやビッグデータ，AI，ロボット等の様々なシステムを横断的に連携・協調して，人々が必要なモノやサービスを必要なときに必要なだけ受けられる社会を目指すものです．
-      </p>
-      <p>
-        あらゆるシステムの機能を<strong>サービス</strong>と捉え，これらを<strong>疎結合</strong>して更なるサービスを創るというサービスコンピューティングの考え方（<strong>Everything as a Service</strong>）は，超スマート社会における異種分散システムをつなぐ糊（のり）として，重要な役割を果たします．本研究会では，そうしたサービスの実現や提供に求められる技術的基盤や方法論，プラクティスなどについて，研究発表および討論を行う機会を提供します．
-      </p>
+      {{ .Content }}
     </div>
   </section>
 
   <!-- News / お知らせ -->
   <section id="news">
-    <h2 class="section-heading">お知らせ・更新履歴</h2>
+    <h2 class="section-heading">お知らせ</h2>
 
-    <!-- Important announcement (SWIM merger) -->
+    <!-- Pinned announcements from data -->
+    {{ range .Site.Data.news.pinned }}
     <div class="mb-6 p-5 rounded-xl bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800">
       <div class="flex gap-3">
         <div class="flex-shrink-0">
@@ -64,21 +60,85 @@
           </svg>
         </div>
         <div>
-          <h3 class="font-bold text-gray-900 dark:text-slate-100 mb-1">SWIM研との合併について</h3>
+          <h3 class="font-bold text-gray-900 dark:text-slate-100 mb-1">{{ .title }}</h3>
           <p class="text-sm text-gray-700 dark:text-slate-300 leading-relaxed">
-            <a href="https://www.ieice.org/iss/swim/jpn/" target="_blank" rel="noopener">ソフトウェアインタプライズモデリング研究会（SWIM研）</a>と当研究会は，
-            <strong>2025年度より合併</strong>することとなりました．合併後のウェブサイトはSC研のサイトになります．
+            {{ .content | markdownify }}
           </p>
         </div>
       </div>
     </div>
+    {{ end }}
 
-    <!-- News list from data -->
+    <!-- News list (integrated: history + awards + news) -->
+    {{- $today := now | dateFormat "2006-01-02" -}}
+    {{- $items := slice -}}
+
+    {{/* History items (past seminars) */}}
+    {{- range (index .Site.Data.history "history") -}}
+      {{- $dateStr := .date | dateFormat "2006-01-02" -}}
+      {{- if le $dateStr $today -}}
+        {{- $label := "研究会を開催しました。" -}}
+        {{- with .session }}{{ $label = printf "第%d回研究会を開催しました。" . }}{{ end -}}
+        {{- $dateShort := .date | dateFormat "2006-01" -}}
+        {{- $items = $items | append (dict "date" $dateStr "date_short" $dateShort "content" $label "category" "seminar") -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{/* Award items — annual */}}
+    {{- range .Site.Data.awards.annual -}}
+      {{- $year := .year -}}
+      {{- $dateStr := printf "%d-04-01" $year -}}
+      {{- $dateShort := printf "%d" $year -}}
+      {{- if .date -}}
+        {{- $dateStr = .date -}}
+        {{- $dateShort = .date -}}
+      {{- end -}}
+      {{- range .entries -}}
+        {{- $label := printf "%d年 年間表彰「%s」（%s）" $year .title .authors -}}
+        {{- $items = $items | append (dict "date" $dateStr "date_short" $dateShort "content" $label "category" "award") -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{/* Award items — encouragement */}}
+    {{- range .Site.Data.awards.encouragement -}}
+      {{- $session := .session -}}
+      {{- $ym := .date -}}
+      {{- $dateStr := "" -}}
+      {{- range (index $.Site.Data.history "history") -}}
+        {{- if eq .session $session -}}
+          {{- $dateStr = .date | dateFormat "2006-01-02" -}}
+        {{- end -}}
+      {{- end -}}
+      {{- if and $dateStr (le $dateStr $today) -}}
+        {{- range .entries -}}
+          {{- $label := printf "第%d回研究会 若手奨励賞「%s」（%s）" $session .title .winner -}}
+          {{- $items = $items | append (dict "date" $dateStr "date_short" ($dateStr | dateFormat "2006-01") "content" $label "category" "award") -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{/* News items (other) */}}
+    {{- range .Site.Data.news.items -}}
+      {{- $dateStr := printf "%s-01" .date -}}
+      {{- $items = $items | append (dict "date" $dateStr "date_short" .date "content" .content "category" "other") -}}
+    {{- end -}}
+
+    {{- $sorted := sort $items "date" "desc" -}}
+
     <div class="divide-y divide-gray-100 dark:divide-slate-800 rounded-xl border border-gray-200 dark:border-slate-700 overflow-hidden">
-      {{ range first 5 .Site.Data.news.items }}
+      {{ range first 8 $sorted }}
       <div class="flex gap-4 px-5 py-3 bg-white dark:bg-slate-800 hover:bg-gray-50 dark:hover:bg-slate-700/50 transition-colors">
-        <time class="flex-shrink-0 text-xs text-gray-500 dark:text-slate-400 font-mono pt-0.5 w-24">{{ .date }}</time>
-        <p class="text-sm text-gray-700 dark:text-slate-300">{{ .content | markdownify }}</p>
+        <time class="flex-shrink-0 text-xs text-gray-500 dark:text-slate-400 font-mono pt-0.5 w-24">{{ .date_short }}</time>
+        <div class="flex items-center gap-2">
+          {{- if eq .category "seminar" -}}
+          <span style="display:inline-block;font-size:0.625rem;font-weight:600;padding:1px 0;border-radius:9999px;background:#dbeafe;color:#1d4ed8;white-space:nowrap;width:3rem;text-align:center">研究会</span>
+          {{- else if eq .category "award" -}}
+          <span style="display:inline-block;font-size:0.625rem;font-weight:600;padding:1px 0;border-radius:9999px;background:#fef3c7;color:#92400e;white-space:nowrap;width:3rem;text-align:center">表彰</span>
+          {{- else -}}
+          <span style="display:inline-block;font-size:0.625rem;font-weight:600;padding:1px 0;border-radius:9999px;background:#e5e7eb;color:#374151;white-space:nowrap;width:3rem;text-align:center">その他</span>
+          {{- end -}}
+          <p class="text-sm text-gray-700 dark:text-slate-300">{{ .content | markdownify }}</p>
+        </div>
       </div>
       {{ end }}
     </div>
@@ -271,22 +331,16 @@
   <section id="links">
     <h2 class="section-heading">関連リンク</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      {{ range .Site.Data.links.categories }}
       <div class="card">
-        <h3 class="font-bold text-gray-700 dark:text-slate-300 mb-3 text-sm">ジャーナル</h3>
+        <h3 class="font-bold text-gray-700 dark:text-slate-300 mb-3 text-sm">{{ .name }}</h3>
         <ul class="space-y-2 text-sm">
-          <li><a href="http://www.computer.org/tsc" target="_blank" rel="noopener">IEEE Transactions on Services Computing</a></li>
-          <li><a href="http://www.servicescomputing.org/jwsr/" target="_blank" rel="noopener">International Journal of Web Services Research (JWSR)</a></li>
+          {{ range .items }}
+          <li><a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a></li>
+          {{ end }}
         </ul>
       </div>
-      <div class="card">
-        <h3 class="font-bold text-gray-700 dark:text-slate-300 mb-3 text-sm">国際会議</h3>
-        <ul class="space-y-2 text-sm">
-          <li><a href="http://conferences.computer.org/icws/" target="_blank" rel="noopener">IEEE ICWS</a></li>
-          <li><a href="http://conferences.computer.org/scc/" target="_blank" rel="noopener">IEEE SCC</a></li>
-          <li><a href="http://conferences.computer.org/cloud/" target="_blank" rel="noopener">IEEE CLOUD</a></li>
-          <li><a href="http://www.icsoc.org/" target="_blank" rel="noopener">ICSOC</a></li>
-        </ul>
-      </div>
+      {{ end }}
     </div>
   </section>
 

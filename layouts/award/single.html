@@ -19,6 +19,7 @@
         <!-- Year header -->
         <div class="flex items-center gap-3 px-5 py-2.5 bg-gray-50 dark:bg-slate-700/50 border-b border-gray-200 dark:border-slate-700">
           <span class="text-sm font-bold text-primary dark:text-primary-light">{{ .year }}年</span>
+          {{ with .date }}<span class="text-xs text-gray-500 dark:text-slate-400">（表彰日: {{ . }}）</span>{{ end }}
         </div>
         <!-- Entries -->
         <div class="divide-y divide-gray-100 dark:divide-slate-700">
@@ -54,7 +55,7 @@
         <!-- Session header -->
         <div class="flex items-center gap-3 px-5 py-2.5 bg-gray-50 dark:bg-slate-700/50 border-b border-gray-200 dark:border-slate-700">
           <span class="text-sm font-bold text-primary dark:text-primary-light">第{{ .session }}回</span>
-          <span class="text-sm text-gray-500 dark:text-slate-400">{{ .year_month }}研究会</span>
+          <span class="text-sm text-gray-500 dark:text-slate-400">{{ .date }}  研究会</span>
         </div>
         <!-- Entries -->
         <div class="divide-y divide-gray-100 dark:divide-slate-700">

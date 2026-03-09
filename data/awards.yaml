@@ -1,10 +1,12 @@
 # 年間表彰受賞者
 annual:
   - year: 2024
+    date: "2025-03"
     entries:
       - title: "ChatGPTとLinked Open Dataを用いた試験問題の作成支援手法の提案"
         authors: "廣瀬友美・中口孝雄・孫宜蒙・今井正治（京都情報大）"
   - year: 2023
+    date: "2024-03"
     entries:
       - title: "RFIDタグによる園児登降園管理システムの可能性"
         authors: "岩井嶺弥・森岡耕大・山田耕嗣（阪産大）"
@@ -12,19 +14,19 @@ annual:
 # 若手奨励賞受賞者
 encouragement:
   - session: 56
-    year_month: "2025年11月"
+    date: "2025-11"
     entries:
       - title: "園児の自主性を育む保育者支援システムの実装"
         winner: "高木優依"
         authors: "高木優依・前田拓海・黒田健太朗・山田耕嗣（阪産大）"
   - session: 55
-    year_month: "2025年07-08月"
+    date: "2025-08"
     entries:
       - title: "浴室の清潔度評価に向けた自動ふろ配管洗浄ログによる最終入浴後清掃行動の推定"
         winner: "中田匠哉"
         authors: "中田匠哉・長谷碧（神戸大）・橋爪二郎（ノーリツ）・中村匡秀（神戸大）"
   - session: 54
-    year_month: "2025年06月"
+    date: "2025-06"
     entries:
       - title: "自然言語スタイルのオントロジーとLLMの統合による産業機器ドメインでの推薦"
         winner: "瓜生敦也"
@@ -33,7 +35,7 @@ encouragement:
         winner: "小川諒一郎"
         authors: "小川諒一郎・林冬惠（岡山大）"
   - session: 53
-    year_month: "2025年03月"
+    date: "2025-03"
     entries:
       - title: "時系列データを用いた注文時間と回数を考慮した追加商品推薦システム"
         winner: "吉田直矢"
@@ -42,7 +44,7 @@ encouragement:
         winner: "松本賢司"
         authors: "松本賢司・村上陽平（立命館大）"
   - session: 52
-    year_month: "2024年11月"
+    date: "2024-11"
     entries:
       - title: "音声対話エージェントが在宅高齢者の孤独に与える影響：対話ログと孤独感尺度による分析"
         winner: "松川晃徳"
@@ -57,13 +59,13 @@ encouragement:
         winner: "淺井孝斗"
         authors: "淺井孝斗・中田匠哉・陳思楠（神戸大）・佐伯幸郎（高知工科大）・中村匡秀（神戸大）"
   - session: 51
-    year_month: "2024年08月"
+    date: "2024-08"
     entries:
       - title: "省エネ行動推進のためのサービス改良に向けた研究"
         winner: "平井駿"
         authors: "平井駿・中田匠哉（神戸大）・佐伯幸郎（高知工科大）・陳思楠・中村匡秀（神戸大）"
   - session: 50
-    year_month: "2024年06月"
+    date: "2024-06"
     entries:
       - title: "Enhancing Fire and Smoke Detection Performance through Hybrid Model Integration: YOLOv4, Swin Transformer, and CLIP"
         winner: "Chen Han Peng"
@@ -72,13 +74,13 @@ encouragement:
         winner: "児玉桂子"
         authors: "児玉桂子・寺田努・中村匡秀（神戸大）"
   - session: 49
-    year_month: "2024年03月"
+    date: "2024-03"
     entries:
       - title: "3D描画ライブラリThree.js学習アプリケーション ～ ChatGPTによる支援 ～"
         winner: "田渕宣行"
         authors: "田渕宣行・須永宏（阪工大）"
   - session: 48
-    year_month: "2023年11月"
+    date: "2023-11"
     entries:
       - title: "テストシナリオ設計の自動化における大規模言語モデルの応用"
         winner: "竹澤小径"
@@ -87,13 +89,13 @@ encouragement:
         winner: "堀江寛"
         authors: "堀江寛・陳思楠・中村匡秀（神戸大）・安田清（阪工大）"
   - session: 47
-    year_month: "2023年08月"
+    date: "2023-08"
     entries:
       - title: "地方自治体のオープンデータ公開プロセスを支援するアプリケーションの検討"
         winner: "渡邊輔"
         authors: "渡邊輔・陳思楠（神戸大）・佐伯幸朗（高知工科大）・中村匡秀（神戸大）"
   - session: 46
-    year_month: "2023年06月"
+    date: "2023-06"
     entries:
       - title: "ゲーミフィケーションを活用したゼロカーボン運動推進のためのWebアプリケーション開発"
         winner: "長谷碧"
@@ -102,7 +104,7 @@ encouragement:
         winner: "Dao Ngoc Hong"
         authors: "Dao Ngoc Hong・Paik Incheon（UoA）"
   - session: 45
-    year_month: "2023年03月"
+    date: "2023-03"
     entries:
       - title: "仮想現実と移動ロボットを用いた移動感覚の再現"
         winner: "浅賀海輝"
