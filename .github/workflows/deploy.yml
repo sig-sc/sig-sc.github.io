@@ -11,9 +11,9 @@ on:
       - master
   # 手動実行
   workflow_dispatch:
-  # 毎日 JST 6:00 (UTC 21:00) に自動実行
+  # 毎週月曜 JST 6:00 (UTC 日曜 21:00) に自動実行
   schedule:
-    - cron: "0 21 * * *"
+    - cron: "0 21 * * 0"
 
 # GitHub Pages デプロイに必要な権限
 permissions:
