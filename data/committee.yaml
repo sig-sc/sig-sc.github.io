@@ -1,11 +1,11 @@
 chair:
-  - name: "中口 孝雄"
-    affiliation: "京都情報大学院大学"
-    url: "https://www.kcg.edu/faculty/professor/t-nakaguchi"
-
-vice_chair:
   - name: "北島 信哉"
     affiliation: "富士通"
+
+vice_chair:
+  - name: "佐伯 幸郎"
+    affiliation: "高知工科大学"
+    url: "https://www.kochi-tech.ac.jp/profile/ja/saiki-sachio.html"
   - name: "林 章浩"
     affiliation: "静岡理工科大学"
 
@@ -13,9 +13,9 @@ secretary:
   - name: "池川 航史"
     affiliation: "日立製作所"
     url: "https://ikegawa-koshi.github.io/"
-  - name: "佐伯 幸郎"
-    affiliation: "高知工科大学"
-    url: "https://www.kochi-tech.ac.jp/profile/ja/saiki-sachio.html"
+  - name: "干川 尚人"
+    affiliation: "筑波大学"
+    url: "https://researchmap.jp/nhoshi_pub"
   - name: "山田 耕嗣"
     affiliation: "大阪産業大学"
     url: "https://kenkyu-s.osaka-sandai.ac.jp/cvclients/researchers/read0114110"
@@ -24,9 +24,13 @@ assistant_secretary:
   - name: "木村 功作"
     affiliation: "富士通"
     url: "https://8card.net/p/39588542006"
-  - name: "干川 尚人"
-    affiliation: "筑波大学"
-    url: "https://researchmap.jp/nhoshi_pub"
+  - name: "栃折 泰史"
+    affiliation: "富士通"
+  - name: "中口 孝雄"
+    affiliation: "京都情報大学院大学"
+    url: "https://www.kcg.edu/faculty/professor/t-nakaguchi"
+  - name: "中田 匠哉"
+    affiliation: "神戸大学"
 
 members:
   - name: "井垣 宏"
@@ -35,16 +39,20 @@ members:
   - name: "石川 冬樹"
     affiliation: "国立情報学研究所"
     url: "http://research.nii.ac.jp/~f-ishikawa/"
-  - name: "浦本 直彦"
-    affiliation: "花王"
+  - name: "川越 敏昌"
+    affiliation: "Rivercrotech"
   - name: "川村 隆浩"
     affiliation: "東京大学"
   - name: "菊地 伸治"
     affiliation: "理化学研究所"
+  - name: "熊野 達夫"
+    affiliation: "富士通"
   - name: "小林 透"
     affiliation: "駒澤大学"
+  - name: "須栗 裕樹"
+    affiliation: "宮城大学"
   - name: "鈴村 豊太郎"
-    affiliation: "東京大学"
+    affiliation: "東京工業大学"
     url: "https://sites.google.com/view/toyolab/suzumura-1"
   - name: "須永 宏"
     affiliation: "大阪学院大学"
@@ -53,7 +61,7 @@ members:
     affiliation: "武蔵大学"
     url: "https://researchmap.jp/h.takeuchi"
   - name: "田仲 正弘"
-    affiliation: "Microsoft Research"
+    affiliation: "Anyscale"
   - name: "中村 匡秀"
     affiliation: "神戸大学"
     url: "http://www27.cs.kobe-u.ac.jp/~masa-n/"
@@ -83,6 +91,11 @@ members:
     affiliation: "岡山大学"
 
 history:
+  - year: 2026
+    chair: "北島信哉"
+    vice_chair: ["佐伯幸郎", "林章浩"]
+    secretary: ["池川航史", "干川尚人", "山田耕嗣"]
+    assistant_secretary: ["木村功作", "栃折泰史", "中口孝雄", "中田匠哉"]
   - year: 2025
     chair: "中口孝雄"
     vice_chair: ["北島信哉", "林章浩"]

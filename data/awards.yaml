@@ -20,6 +20,12 @@ annual:
 
 # 若手奨励賞受賞者
 encouragement:
+  - session: 58
+    date: "2026-05"
+    entries:
+      - title: "Constraint-Aware IoT Service Design with LLM Agents"
+        winner: "Nanami Takita"
+        authors: "Nanami Takita・Donghui Lin（Okayama Univ.）"
   - session: 57
     date: "2026-03"
     entries:
