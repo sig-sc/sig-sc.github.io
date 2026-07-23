@@ -1,4 +1,12 @@
 history:
+  - session: 60
+    date: "2026-11-19"
+    topic: 一般
+    program_url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=fbfcf9cab0283f86ab3d6f35f620a1200cb902292e0a17078cfc14465ff8ccc0&tgid=IEICE-SC"
+    prefecture: 愛媛県
+    venue: 愛媛大学 校友会館
+    venue_url: "https://www.ehime-u.ac.jp/"
+    cosponsor: KBSE
   - session: 59
     date: "2026-07-23"
     topic: サービスコンピューティング，サービス管理，運用管理技術，一般
