@@ -1,6 +1,6 @@
 ---
 title: 表彰
-description: "SIG-SC の受賞者一覧および表彰・奨励規程です。"
+description: "SIG-SC の受賞者一覧、表彰・奨励規程、および論文誌への推薦論文制度のご案内です。"
 type: award
 aliases:
   - /winner/

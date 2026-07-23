@@ -1,8 +1,12 @@
 pinned:
+  - title: "論文誌への推薦論文制度を開始しました"
+    content: "研究会で発表された優秀な論文を，電子情報通信学会論文誌へ**推薦論文**として推薦する制度を開始しました．詳細は[表彰ページ](/award/)をご覧ください．"
   - title: "SWIM研との合併について"
     content: "[ソフトウェアインタプライズモデリング研究会（SWIM研）](https://ken.ieice.org/ken/program/index.php?instsoc=IEICE-D&tgid=IEICE-SWIM&year=22&region=0&sch1=1&schkey=&pnum=0&psize=2&psort=0&layout=&lang=&term=&pskey=&ps1=1&ps2=1&ps3=1&ps4=1&ps5=1&search_mode=)と当研究会は，**2025年度より合併**することとなりました．合併後のウェブサイトはSC研のサイトになります．"
 
 items:
+  - date: "2026-07"
+    content: "電子情報通信学会論文誌への[推薦論文制度](/award/)を開始しました。"
   - date: "2025-03"
     content: "ソフトウェアインタプライズモデリング研究会(SWIM研)との合併のお知らせを記載しました。"
   - date: "2024-06"
