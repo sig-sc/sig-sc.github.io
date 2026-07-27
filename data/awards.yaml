@@ -20,6 +20,12 @@ annual:
 
 # 若手奨励賞受賞者
 encouragement:
+  - session: 59
+    date: "2026-07"
+    entries:
+      - title: "クロックスキューとCPU情報を用いた決定木ベース機械学習によるIoT機器識別アルゴリズム"
+        winner: "杉本大樹"
+        authors: "杉本大樹・干川尚人（筑波大）"
   - session: 58
     date: "2026-05"
     entries:
