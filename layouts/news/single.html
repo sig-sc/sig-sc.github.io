@@ -8,7 +8,7 @@
   </header>
 
   <!-- Pinned announcements -->
-  {{ range .Site.Data.news.pinned }}
+  {{ range hugo.Data.news.pinned }}
   <div class="p-5 rounded-xl bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800">
     <div class="flex gap-3">
       <div class="flex-shrink-0">
@@ -41,7 +41,7 @@
     {{- $items := slice -}}
 
     {{/* 1. History items (past seminars) */}}
-    {{- range (index .Site.Data.history "history") -}}
+    {{- range (index hugo.Data.history "history") -}}
       {{- $dateStr := .date | dateFormat "2006-01-02" -}}
       {{- if le $dateStr $today -}}
         {{- $label := "研究会を開催しました。" -}}
@@ -52,7 +52,7 @@
     {{- end -}}
 
     {{/* 2. Award items — annual awards */}}
-    {{- range .Site.Data.awards.annual -}}
+    {{- range hugo.Data.awards.annual -}}
       {{- $year := .year -}}
       {{- $dateStr := printf "%d-04-01" $year -}}
       {{- $dateShort := printf "%d" $year -}}
@@ -67,12 +67,12 @@
     {{- end -}}
 
     {{/* 3. Award items — encouragement awards */}}
-    {{- range .Site.Data.awards.encouragement -}}
+    {{- range hugo.Data.awards.encouragement -}}
       {{- $session := .session -}}
       {{- $ym := .date -}}
       {{/* Find the date from history for this session */}}
       {{- $dateStr := "" -}}
-      {{- range (index $.Site.Data.history "history") -}}
+      {{- range (index hugo.Data.history "history") -}}
         {{- if eq .session $session -}}
           {{- $dateStr = .date | dateFormat "2006-01-02" -}}
         {{- end -}}
@@ -86,7 +86,7 @@
     {{- end -}}
 
     {{/* 4. News items (other) */}}
-    {{- range .Site.Data.news.items -}}
+    {{- range hugo.Data.news.items -}}
       {{- $dateStr := printf "%s-01" .date -}}
       {{- $items = $items | append (dict "date" $dateStr "date_short" .date "content" .content "category" "other") -}}
     {{- end -}}

@@ -10,7 +10,7 @@
     </p>
   </header>
 
-  {{ $seminars := index .Site.Data.history "history" }}
+  {{ $seminars := index hugo.Data.history "history" }}
   {{ $sorted := sort $seminars "date" "desc" }}
 
   {{/* Collect unique fiscal years (derived from date: month<4 → prev year) */}}
