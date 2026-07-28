@@ -1,0 +1,22 @@
+version: 2
+updates:
+  # npm 依存パッケージ（Tailwind CLI など）
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      timezone: "Asia/Tokyo"
+
+  # GitHub Actions（deploy.yml で使用する actions）
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      timezone: "Asia/Tokyo"
+
+  # devcontainer（Node イメージ・Hugo feature。CI もここからバージョンを読む）
+  - package-ecosystem: "devcontainers"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      timezone: "Asia/Tokyo"
