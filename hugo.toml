@@ -3,6 +3,9 @@ locale = "ja-JP"
 defaultContentLanguage = "ja"
 title = "サービスコンピューティング研究会"
 
+# タグ・カテゴリページは使用していないため生成しない
+disableKinds = ["taxonomy", "term"]
+
 [params]
   description = "電子情報通信学会 サービスコンピューティング研究会 (IEICE SIG-SC)"
   author = "IEICE SIG-SC"
@@ -13,16 +16,9 @@ title = "サービスコンピューティング研究会"
 [pagination]
   pagerSize = 20
 
-[taxonomies]
-  tag = "tags"
-  category = "categories"
-
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
   [markup.highlight]
     style = "github"
-
-[build]
-  writeStats = true
