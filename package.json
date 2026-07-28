@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "IEICE Services Computing Research Group Website",
   "scripts": {
-    "dev": "npm run build:css & hugo server -D",
-    "build": "npm run build:css && hugo --minify",
-    "build:css": "tailwindcss -i ./assets/css/main.css -o ./assets/css/styles.built.css --minify"
+    "dev": "hugo server -D",
+    "build": "hugo --minify"
+  },
+  "engines": {
+    "node": ">=22.13"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.0.0",
