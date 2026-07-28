@@ -5,7 +5,7 @@ on:
     branches:
       - master
       - ikegawa-patch
-  # Decap CMS からの PR をマージした際も自動デプロイ
+  # PR ではビルド検証のみ実行（デプロイは master のみ）
   pull_request:
     branches:
       - master
@@ -35,10 +35,19 @@ jobs:
         with:
           fetch-depth: 0  # Hugo の .GitInfo と lastmod に必要
 
+      # ツールバージョンは .devcontainer/devcontainer.json を単一の情報源とする
+      - name: Read tool versions from devcontainer
+        id: versions
+        run: |
+          {
+            echo "hugo=$(jq -r '.features["ghcr.io/devcontainers/features/hugo:1"].version' .devcontainer/devcontainer.json)"
+            echo "node=$(jq -r '.image | capture("node:(?<v>[0-9]+)").v' .devcontainer/devcontainer.json)"
+          } >> "$GITHUB_OUTPUT"
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "24"
+          node-version: ${{ steps.versions.outputs.node }}
           cache: "npm"
 
       - name: Install npm dependencies
@@ -47,22 +56,17 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "0.164.0"
+          hugo-version: ${{ steps.versions.outputs.hugo }}
           extended: true
 
       - name: Setup Pages
-        id: pages
         uses: actions/configure-pages@v5
 
       - name: Build site
         env:
-          HUGO_BASEURL: ${{ steps.pages.outputs.base_url }}/
           HUGO_ENVIRONMENT: production
           TZ: Asia/Tokyo
-        run: |
-          hugo \
-            --minify \
-            --baseURL "$HUGO_BASEURL"
+        run: hugo --minify
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
