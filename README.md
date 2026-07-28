@@ -12,7 +12,6 @@
 |------|------|
 | SSG | Hugo (extended) |
 | CSS | Tailwind CSS v4 + `@tailwindcss/typography` |
-| CMS | Decap CMS (`static/admin/`) |
 | デプロイ | GitHub Actions → GitHub Pages |
 | フォント | Noto Sans JP + JetBrains Mono |
 
@@ -22,6 +21,8 @@
 npm install
 hugo server
 ```
+
+Hugo と Node.js のバージョンは `.devcontainer/devcontainer.json` を基準とし、CI もここから読み取ります。バージョンを上げる際は devcontainer.json のみ変更してください。
 
 ---
 
