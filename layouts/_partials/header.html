@@ -25,7 +25,7 @@
       <div class="ml-auto flex items-center gap-1">
       <nav id="desktop-nav" class="items-center gap-1" aria-label="メインナビゲーション">
         <a href="{{ "/" | relURL }}" class="nav-link {{ if .IsHome }}bg-white/20 text-white{{ end }}">ホーム</a>
-        <a href="{{ "/history/" | relURL }}" class="nav-link {{ if eq .RelPermalink "/history/" }}bg-white/20 text-white{{ end }}">開催履歴</a>
+        <a href="{{ "/seminars/" | relURL }}" class="nav-link {{ if eq .RelPermalink "/seminars/" }}bg-white/20 text-white{{ end }}">開催履歴</a>
         <a href="{{ "/statistics/" | relURL }}" class="nav-link {{ if eq .RelPermalink "/statistics/" }}bg-white/20 text-white{{ end }}">統計情報</a>
         <a href="{{ "/committee/" | relURL }}" class="nav-link {{ if eq .RelPermalink "/committee/" }}bg-white/20 text-white{{ end }}">専門委員</a>
         <a href="{{ "/award/" | relURL }}" class="nav-link {{ if eq .RelPermalink "/award/" }}bg-white/20 text-white{{ end }}">表彰</a>
@@ -71,7 +71,7 @@
     <nav id="mobile-menu" class="hidden pb-4 border-t border-white/20 mt-2 pt-2" aria-label="モバイルナビゲーション">
       <div class="flex flex-col gap-1">
         <a href="{{ "/" | relURL }}" class="nav-link">ホーム</a>
-        <a href="{{ "/history/" | relURL }}" class="nav-link">開催履歴</a>
+        <a href="{{ "/seminars/" | relURL }}" class="nav-link">開催履歴</a>
         <a href="{{ "/statistics/" | relURL }}" class="nav-link">統計情報</a>
         <a href="{{ "/committee/" | relURL }}" class="nav-link">専門委員</a>
         <a href="{{ "/award/" | relURL }}" class="nav-link">表彰</a>

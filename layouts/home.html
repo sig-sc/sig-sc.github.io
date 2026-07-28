@@ -27,7 +27,7 @@
           </svg>
           発表申し込みシステム
         </a>
-        <a href="{{ "/history/" | relURL }}"
+        <a href="{{ "/seminars/" | relURL }}"
            class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border-2 border-white/60 text-white font-semibold text-sm hover:bg-white/10 transition">
           過去の開催履歴を見る
         </a>
@@ -96,7 +96,7 @@
   <!-- 直近の開催 -->
   <section id="recent-seminars">
     <h2 class="section-heading">直近の開催</h2>
-    {{ $seminars := index hugo.Data.history "history" }}
+    {{ $seminars := hugo.Data.seminars }}
     {{ $recent := first 5 (sort $seminars "date" "desc") }}
     <div class="divide-y divide-gray-100 dark:divide-slate-800 rounded-xl border border-gray-200 dark:border-slate-700 overflow-hidden">
       {{ range $recent }}
@@ -148,7 +148,7 @@
       {{ end }}
     </div>
     <div class="mt-4 text-right">
-      <a href="{{ "/history/" | relURL }}" class="btn-outline text-sm">
+      <a href="{{ "/seminars/" | relURL }}" class="btn-outline text-sm">
         開催履歴をすべて見る
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>

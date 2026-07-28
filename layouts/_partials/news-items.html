@@ -1,13 +1,13 @@
 {{- /*
   お知らせ項目リストを構築して返す（ホームとお知らせページで共用）。
-  history / awards / news の3データソースを統合し、日付降順でソート済みの
+  seminars / awards / news の3データソースを統合し、日付降順でソート済みの
   dict のスライス（date, date_short, content, category）を返す。
 */ -}}
 {{- $today := now | dateFormat "2006-01-02" -}}
 {{- $items := slice -}}
 
-{{/* 1. 研究会開催（history） */}}
-{{- range (index hugo.Data.history "history") -}}
+{{/* 1. 研究会開催（seminars） */}}
+{{- range hugo.Data.seminars -}}
   {{- $dateStr := .date | dateFormat "2006-01-02" -}}
   {{- if le $dateStr $today -}}
     {{- $label := "研究会を開催しました。" -}}
@@ -32,11 +32,11 @@
   {{- end -}}
 {{- end -}}
 
-{{/* 3. 若手奨励賞（awards.encouragement、開催日は history から照合） */}}
+{{/* 3. 若手奨励賞（awards.encouragement、開催日は seminars から照合） */}}
 {{- range hugo.Data.awards.encouragement -}}
   {{- $session := .session -}}
   {{- $dateStr := "" -}}
-  {{- range (index hugo.Data.history "history") -}}
+  {{- range hugo.Data.seminars -}}
     {{- if eq .session $session -}}
       {{- $dateStr = .date | dateFormat "2006-01-02" -}}
     {{- end -}}
