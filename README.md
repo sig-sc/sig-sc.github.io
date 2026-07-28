@@ -30,34 +30,34 @@ Hugo と Node.js のバージョンは `.devcontainer/devcontainer.json` を基�
 
 | ページ | URL | データソース | レイアウト |
 |--------|-----|-------------|-----------|
-| ホーム | `/` | `content/_index.md`, `data/news.yaml`, `data/links.yaml`, `data/keywords.yaml`, `data/committee.yaml`, `data/history.yaml`, `data/awards.yaml` | `layouts/home.html` |
-| 開催履歴 | `/history/` | `data/history.yaml` | `layouts/history/page.html` |
-| 開催統計 | `/statistics/` | `data/history.yaml` | `layouts/statistics/page.html` |
+| ホーム | `/` | `content/_index.md`, `data/news.yaml`, `data/links.yaml`, `data/keywords.yaml`, `data/committee.yaml`, `data/seminars.yaml`, `data/awards.yaml` | `layouts/home.html` |
+| 開催履歴 | `/seminars/` | `data/seminars.yaml` | `layouts/seminars/page.html` |
+| 開催統計 | `/statistics/` | `data/seminars.yaml` | `layouts/statistics/page.html` |
 | 専門委員 | `/committee/` | `data/committee.yaml` | `layouts/committee/page.html` |
-| 表彰 | `/award/` | `data/awards.yaml` | `layouts/award/page.html` |
-| お知らせ | `/news/` | `data/news.yaml`, `data/history.yaml`, `data/awards.yaml` | `layouts/news/page.html` |
+| 表彰（受賞者一覧） | `/award/` | `data/awards.yaml` | `layouts/award/page.html` |
+| 規程・制度 | `/regulations/` | `content/regulations.md` | `layouts/regulations/page.html` |
+| お知らせ | `/news/` | `data/news.yaml`, `data/seminars.yaml`, `data/awards.yaml` | `layouts/news/page.html` |
 | 研究会記録 | `/posts/...` | `content/posts/*.md` | `layouts/page.html` |
 
-**お知らせ**ページとホームの「お知らせ」セクションは、`news.yaml`・`history.yaml`・`awards.yaml` の3つのデータソースを統合して表示しています。
+**お知らせ**ページとホームの「お知らせ」セクションは、`news.yaml`・`seminars.yaml`・`awards.yaml` の3つのデータソースを統合して表示しています。
 
 ---
 
 ## データファイル（`data/`）
 
-### `data/history.yaml` — 研究会開催データ
+### `data/seminars.yaml` — 研究会開催データ
 
 開催履歴・統計・お知らせの研究会項目に使用されます。
 
 ```yaml
-history:
-  - session: 56            # 研究会回数（省略可）
-    date: "2025-11-14"
-    topic: "一般"
-    program_url: "https://ken.ieice.org/..."
-    prefecture: "東京都"
-    venue: "〇〇大学"
-    venue_url: "https://..."
-    cosponsor: ""          # 共催があれば記載
+- session: 56              # 研究会回数（省略可）
+  date: "2025-11-14"       # 開催予定の回も先頭に追加してよい（開催予定バッジ付きで表示される）
+  topic: "一般"
+  program_url: "https://ken.ieice.org/..."
+  prefecture: "東京都"
+  venue: "〇〇大学"
+  venue_url: "https://..."
+  cosponsor: ""            # 共催があれば記載
 ```
 
 ### `data/awards.yaml` — 受賞者データ
@@ -141,10 +141,11 @@ categories:
 | ファイル | 役割 |
 |----------|------|
 | `content/_index.md` | ホームの「研究会の目的」本文（Markdown） |
-| `content/history.md` | 開催履歴ページの front matter |
+| `content/seminars.md` | 開催履歴（研究会一覧）ページの front matter |
 | `content/statistics.md` | 統計ページの front matter |
 | `content/committee.md` | 専門委員ページの front matter |
-| `content/award.md` | 表彰ページの front matter |
+| `content/award.md` | 表彰（受賞者一覧）ページの front matter |
+| `content/regulations.md` | 規程・制度ページ（選奨規程の本文を含む） |
 | `content/news.md` | お知らせページの front matter |
 | `content/posts/*.md` | 研究会記録（ブログ記事） |
 
@@ -155,10 +156,11 @@ categories:
 | ファイル | 対象 |
 |----------|------|
 | `layouts/home.html` | ホーム |
-| `layouts/history/page.html` | 開催履歴 |
+| `layouts/seminars/page.html` | 開催履歴 |
 | `layouts/statistics/page.html` | 開催統計（D3.js 地図） |
 | `layouts/committee/page.html` | 専門委員 |
-| `layouts/award/page.html` | 表彰 |
+| `layouts/award/page.html` | 表彰（受賞者一覧） |
+| `layouts/regulations/page.html` | 規程・制度（選奨規程・推薦論文制度） |
 | `layouts/news/page.html` | お知らせ |
 | `layouts/page.html` | 研究会記録（各記事） |
 | `layouts/section.html` | 記事一覧 |
