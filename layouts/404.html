@@ -1,0 +1,10 @@
+{{ define "main" }}
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+  <p class="text-6xl font-bold text-primary dark:text-primary-light mb-4">404</p>
+  <h1 class="text-2xl font-bold text-gray-900 dark:text-slate-100 mb-3">ページが見つかりません</h1>
+  <p class="text-gray-600 dark:text-slate-400 mb-8">
+    お探しのページは移動または削除された可能性があります。
+  </p>
+  <a href="{{ "/" | relURL }}" class="btn-primary">ホームへ戻る</a>
+</div>
+{{ end }}
