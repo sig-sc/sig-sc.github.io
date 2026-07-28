@@ -45,7 +45,7 @@ jobs:
           } >> "$GITHUB_OUTPUT"
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: ${{ steps.versions.outputs.node }}
           cache: "npm"
