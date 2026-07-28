@@ -30,13 +30,13 @@ Hugo と Node.js のバージョンは `.devcontainer/devcontainer.json` を基�
 
 | ページ | URL | データソース | レイアウト |
 |--------|-----|-------------|-----------|
-| ホーム | `/` | `content/_index.md`, `data/news.yaml`, `data/links.yaml`, `data/keywords.yaml`, `data/committee.yaml`, `data/history.yaml`, `data/awards.yaml` | `layouts/index.html` |
-| 開催履歴 | `/history/` | `data/history.yaml` | `layouts/history/single.html` |
-| 開催統計 | `/statistics/` | `data/history.yaml` | `layouts/statistics/single.html` |
-| 専門委員 | `/committee/` | `data/committee.yaml` | `layouts/committee/single.html` |
-| 表彰 | `/award/` | `data/awards.yaml` | `layouts/award/single.html` |
-| お知らせ | `/news/` | `data/news.yaml`, `data/history.yaml`, `data/awards.yaml` | `layouts/news/single.html` |
-| 研究会記録 | `/posts/...` | `content/posts/*.md` | `layouts/_default/single.html` |
+| ホーム | `/` | `content/_index.md`, `data/news.yaml`, `data/links.yaml`, `data/keywords.yaml`, `data/committee.yaml`, `data/history.yaml`, `data/awards.yaml` | `layouts/home.html` |
+| 開催履歴 | `/history/` | `data/history.yaml` | `layouts/history/page.html` |
+| 開催統計 | `/statistics/` | `data/history.yaml` | `layouts/statistics/page.html` |
+| 専門委員 | `/committee/` | `data/committee.yaml` | `layouts/committee/page.html` |
+| 表彰 | `/award/` | `data/awards.yaml` | `layouts/award/page.html` |
+| お知らせ | `/news/` | `data/news.yaml`, `data/history.yaml`, `data/awards.yaml` | `layouts/news/page.html` |
+| 研究会記録 | `/posts/...` | `content/posts/*.md` | `layouts/page.html` |
 
 **お知らせ**ページとホームの「お知らせ」セクションは、`news.yaml`・`history.yaml`・`awards.yaml` の3つのデータソースを統合して表示しています。
 
@@ -154,19 +154,19 @@ categories:
 
 | ファイル | 対象 |
 |----------|------|
-| `layouts/index.html` | ホーム |
-| `layouts/history/single.html` | 開催履歴 |
-| `layouts/statistics/single.html` | 開催統計（D3.js 地図） |
-| `layouts/committee/single.html` | 専門委員 |
-| `layouts/award/single.html` | 表彰 |
-| `layouts/news/single.html` | お知らせ |
-| `layouts/_default/single.html` | 研究会記録（各記事） |
-| `layouts/_default/list.html` | 記事一覧 |
-| `layouts/_default/baseof.html` | ベースレイアウト |
-| `layouts/partials/header.html` | ヘッダー・ナビゲーション |
-| `layouts/partials/footer.html` | フッター |
-| `layouts/partials/head.html` | `<head>` タグ |
-| `layouts/partials/scripts.html` | JS（ダークモード・モバイルメニュー） |
+| `layouts/home.html` | ホーム |
+| `layouts/history/page.html` | 開催履歴 |
+| `layouts/statistics/page.html` | 開催統計（D3.js 地図） |
+| `layouts/committee/page.html` | 専門委員 |
+| `layouts/award/page.html` | 表彰 |
+| `layouts/news/page.html` | お知らせ |
+| `layouts/page.html` | 研究会記録（各記事） |
+| `layouts/section.html` | 記事一覧 |
+| `layouts/baseof.html` | ベースレイアウト |
+| `layouts/_partials/header.html` | ヘッダー・ナビゲーション |
+| `layouts/_partials/footer.html` | フッター |
+| `layouts/_partials/head.html` | `<head>` タグ |
+| `layouts/_partials/scripts.html` | JS（ダークモード・モバイルメニュー） |
 
 ---
 
@@ -206,4 +206,4 @@ Tailwind CSS v4 のエントリーポイント。Hugo の `css.TailwindCSS` パ�
 ### 注意事項
 
 - Tailwind v4 の任意値クラス（`bg-[#hex]`）は Hugo パイプライン経由だと検出されないことがあります。動的な色指定にはインラインスタイルまたは JS を使用してください。
-- ナビゲーションのレスポンシブ切り替えは 896px のカスタムメディアクエリで制御しています（`layouts/partials/header.html` 内の `<style>` タグ）。
+- ナビゲーションのレスポンシブ切り替えは 896px のカスタムメディアクエリで制御しています（`layouts/_partials/header.html` 内の `<style>` タグ）。
