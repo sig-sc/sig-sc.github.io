@@ -70,73 +70,14 @@
     {{ end }}
 
     <!-- News list (integrated: history + awards + news) -->
-    {{- $today := now | dateFormat "2006-01-02" -}}
-    {{- $items := slice -}}
-
-    {{/* History items (past seminars) */}}
-    {{- range (index hugo.Data.history "history") -}}
-      {{- $dateStr := .date | dateFormat "2006-01-02" -}}
-      {{- if le $dateStr $today -}}
-        {{- $label := "研究会を開催しました。" -}}
-        {{- with .session }}{{ $label = printf "第%d回研究会を開催しました。" . }}{{ end -}}
-        {{- $dateShort := .date | dateFormat "2006-01" -}}
-        {{- $items = $items | append (dict "date" $dateStr "date_short" $dateShort "content" $label "category" "seminar") -}}
-      {{- end -}}
-    {{- end -}}
-
-    {{/* Award items — annual */}}
-    {{- range hugo.Data.awards.annual -}}
-      {{- $year := .year -}}
-      {{- $dateStr := printf "%d-04-01" $year -}}
-      {{- $dateShort := printf "%d" $year -}}
-      {{- if .date -}}
-        {{- $dateStr = .date -}}
-        {{- $dateShort = .date -}}
-      {{- end -}}
-      {{- range .entries -}}
-        {{- $label := printf "%d年 年間表彰「%s」（%s）" $year .title .authors -}}
-        {{- $items = $items | append (dict "date" $dateStr "date_short" $dateShort "content" $label "category" "award") -}}
-      {{- end -}}
-    {{- end -}}
-
-    {{/* Award items — encouragement */}}
-    {{- range hugo.Data.awards.encouragement -}}
-      {{- $session := .session -}}
-      {{- $ym := .date -}}
-      {{- $dateStr := "" -}}
-      {{- range (index hugo.Data.history "history") -}}
-        {{- if eq .session $session -}}
-          {{- $dateStr = .date | dateFormat "2006-01-02" -}}
-        {{- end -}}
-      {{- end -}}
-      {{- if and $dateStr (le $dateStr $today) -}}
-        {{- range .entries -}}
-          {{- $label := printf "第%d回研究会 若手奨励賞「%s」（%s）" $session .title .winner -}}
-          {{- $items = $items | append (dict "date" $dateStr "date_short" ($dateStr | dateFormat "2006-01") "content" $label "category" "award") -}}
-        {{- end -}}
-      {{- end -}}
-    {{- end -}}
-
-    {{/* News items (other) */}}
-    {{- range hugo.Data.news.items -}}
-      {{- $dateStr := printf "%s-01" .date -}}
-      {{- $items = $items | append (dict "date" $dateStr "date_short" .date "content" .content "category" "other") -}}
-    {{- end -}}
-
-    {{- $sorted := sort $items "date" "desc" -}}
+    {{- $sorted := partial "news-items.html" . -}}
 
     <div class="divide-y divide-gray-100 dark:divide-slate-800 rounded-xl border border-gray-200 dark:border-slate-700 overflow-hidden">
       {{ range first 8 $sorted }}
       <div class="flex gap-4 px-5 py-3 bg-white dark:bg-slate-800 hover:bg-gray-50 dark:hover:bg-slate-700/50 transition-colors">
         <time class="flex-shrink-0 text-xs text-gray-500 dark:text-slate-400 font-mono pt-0.5 w-24">{{ .date_short }}</time>
         <div class="flex items-center gap-2">
-          {{- if eq .category "seminar" -}}
-          <span style="display:inline-block;font-size:0.625rem;font-weight:600;padding:1px 0;border-radius:9999px;background:#dbeafe;color:#1d4ed8;white-space:nowrap;width:3rem;text-align:center">研究会</span>
-          {{- else if eq .category "award" -}}
-          <span style="display:inline-block;font-size:0.625rem;font-weight:600;padding:1px 0;border-radius:9999px;background:#fef3c7;color:#92400e;white-space:nowrap;width:3rem;text-align:center">表彰</span>
-          {{- else -}}
-          <span style="display:inline-block;font-size:0.625rem;font-weight:600;padding:1px 0;border-radius:9999px;background:#e5e7eb;color:#374151;white-space:nowrap;width:3rem;text-align:center">その他</span>
-          {{- end -}}
+          {{- partial "news-badge.html" .category -}}
           <p class="text-sm text-gray-700 dark:text-slate-300">{{ .content | markdownify }}</p>
         </div>
       </div>

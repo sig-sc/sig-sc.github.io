@@ -1,0 +1,58 @@
+{{- /*
+  お知らせ項目リストを構築して返す（ホームとお知らせページで共用）。
+  history / awards / news の3データソースを統合し、日付降順でソート済みの
+  dict のスライス（date, date_short, content, category）を返す。
+*/ -}}
+{{- $today := now | dateFormat "2006-01-02" -}}
+{{- $items := slice -}}
+
+{{/* 1. 研究会開催（history） */}}
+{{- range (index hugo.Data.history "history") -}}
+  {{- $dateStr := .date | dateFormat "2006-01-02" -}}
+  {{- if le $dateStr $today -}}
+    {{- $label := "研究会を開催しました。" -}}
+    {{- with .session }}{{ $label = printf "第%d回研究会を開催しました。" . }}{{ end -}}
+    {{- $dateShort := .date | dateFormat "2006-01" -}}
+    {{- $items = $items | append (dict "date" $dateStr "date_short" $dateShort "content" $label "category" "seminar") -}}
+  {{- end -}}
+{{- end -}}
+
+{{/* 2. 年間表彰（awards.annual） */}}
+{{- range hugo.Data.awards.annual -}}
+  {{- $year := .year -}}
+  {{- $dateStr := printf "%d-04-01" $year -}}
+  {{- $dateShort := printf "%d" $year -}}
+  {{- if .date -}}
+    {{- $dateStr = .date -}}
+    {{- $dateShort = .date -}}
+  {{- end -}}
+  {{- range .entries -}}
+    {{- $label := printf "%d年 年間表彰「%s」（%s）" $year .title .authors -}}
+    {{- $items = $items | append (dict "date" $dateStr "date_short" $dateShort "content" $label "category" "award") -}}
+  {{- end -}}
+{{- end -}}
+
+{{/* 3. 若手奨励賞（awards.encouragement、開催日は history から照合） */}}
+{{- range hugo.Data.awards.encouragement -}}
+  {{- $session := .session -}}
+  {{- $dateStr := "" -}}
+  {{- range (index hugo.Data.history "history") -}}
+    {{- if eq .session $session -}}
+      {{- $dateStr = .date | dateFormat "2006-01-02" -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if and $dateStr (le $dateStr $today) -}}
+    {{- range .entries -}}
+      {{- $label := printf "第%d回研究会 若手奨励賞「%s」（%s）" $session .title .winner -}}
+      {{- $items = $items | append (dict "date" $dateStr "date_short" ($dateStr | dateFormat "2006-01") "content" $label "category" "award") -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{/* 4. その他のお知らせ（news.items） */}}
+{{- range hugo.Data.news.items -}}
+  {{- $dateStr := printf "%s-01" .date -}}
+  {{- $items = $items | append (dict "date" $dateStr "date_short" .date "content" .content "category" "other") -}}
+{{- end -}}
+
+{{- return (sort $items "date" "desc") -}}

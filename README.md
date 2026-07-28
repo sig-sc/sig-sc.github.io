@@ -163,10 +163,14 @@ categories:
 | `layouts/page.html` | 研究会記録（各記事） |
 | `layouts/section.html` | 記事一覧 |
 | `layouts/baseof.html` | ベースレイアウト |
+| `layouts/404.html` | 404 ページ |
 | `layouts/_partials/header.html` | ヘッダー・ナビゲーション |
 | `layouts/_partials/footer.html` | フッター |
-| `layouts/_partials/head.html` | `<head>` タグ |
+| `layouts/_partials/head.html` | `<head>` タグ（canonical・OGP 含む） |
 | `layouts/_partials/scripts.html` | JS（ダークモード・モバイルメニュー） |
+| `layouts/_partials/news-items.html` | お知らせ項目リストの構築（ホーム・お知らせページ共用） |
+| `layouts/_partials/news-badge.html` | お知らせのカテゴリバッジ |
+| `layouts/_partials/icon-star.html` | 受賞者の星アイコン |
 
 ---
 

@@ -1,0 +1,8 @@
+{{- /* お知らせのカテゴリバッジ。コンテキストは category 文字列 */ -}}
+{{- if eq . "seminar" -}}
+<span style="display:inline-block;font-size:0.625rem;font-weight:600;padding:1px 0;border-radius:9999px;background:#dbeafe;color:#1d4ed8;white-space:nowrap;width:3rem;text-align:center">研究会</span>
+{{- else if eq . "award" -}}
+<span style="display:inline-block;font-size:0.625rem;font-weight:600;padding:1px 0;border-radius:9999px;background:#fef3c7;color:#92400e;white-space:nowrap;width:3rem;text-align:center">表彰</span>
+{{- else -}}
+<span style="display:inline-block;font-size:0.625rem;font-weight:600;padding:1px 0;border-radius:9999px;background:#e5e7eb;color:#374151;white-space:nowrap;width:3rem;text-align:center">その他</span>
+{{- end -}}
