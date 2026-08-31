@@ -16,6 +16,11 @@ disableKinds = ["taxonomy", "term"]
 [pagination]
   pagerSize = 20
 
+# Hugo 0.165以降、Tailwind CLIの実行に明示的な許可が必要
+[security]
+  [security.exec]
+    allow = ['^(dart-)?sass$', '^go$', '^git$', '^node$', '^postcss$', '^tailwindcss$']
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
