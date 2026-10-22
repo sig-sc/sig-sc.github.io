@@ -3,7 +3,7 @@
   "image": "mcr.microsoft.com/devcontainers/javascript-node:24-bookworm",
   "features": {
     "ghcr.io/devcontainers/features/hugo:1": {
-      "version": "0.165.0",
+      "version": "0.168.0",
       "extended": true
     }
   },
