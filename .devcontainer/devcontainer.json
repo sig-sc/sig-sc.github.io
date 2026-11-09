@@ -1,9 +1,9 @@
 {
   "name": "SIG-SC Hugo + Tailwind",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:26-bookworm",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:26-trixie",
   "features": {
     "ghcr.io/devcontainers/features/hugo:1": {
-      "version": "0.168.0",
+      "version": "0.169.0",
       "extended": true
     }
   },
