@@ -1,0 +1,49 @@
+{{ define "main" }}
+{{/* 推薦論文調書メーカー。画面の見た目と動作は static/tool/suisen-chosho/ の app.css・app.js にある */}}
+<!-- 調書の文字（MS Pゴシックがない環境での代わりの書体） -->
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ "tool/suisen-chosho/app.css" | relURL }}">
+
+<div class="sc-tool">
+  <div class="app">
+    <section class="editor-pane" aria-label="Markdown入力">
+      <div class="bar">
+        <h1><a class="back" href="{{ "tool/" | relURL }}" title="ツール一覧へ">ツール一覧</a> / {{ .Title }}</h1>
+        <button type="button" id="btn-sample">ひな形を入れる</button>
+        <button type="button" id="btn-blank">白紙にする</button>
+        <button type="button" class="primary" id="btn-print">印刷 / PDF保存</button>
+      </div>
+      <div class="saves" aria-label="保存と読み出し">
+        <label for="save-name">保存名</label>
+        <input id="save-name" type="text" placeholder="例：SC20xx-xx 推薦調書">
+        <button type="button" id="btn-save">この名前で保存</button>
+        <span class="sep"></span>
+        <label for="save-list">保存済み</label>
+        <select id="save-list"></select>
+        <button type="button" id="btn-load">読み出す</button>
+        <button type="button" id="btn-del">削除</button>
+      </div>
+      <div class="saves" aria-label="署名画像">
+        <label for="btn-sign">署名画像</label>
+        <input id="sign-file" type="file" accept="image/*" hidden>
+        <button type="button" id="btn-sign">画像を選ぶ</button>
+        <button type="button" id="btn-sign-del">外す</button>
+        <span class="hint" id="sign-state"></span>
+      </div>
+      <textarea id="src" spellcheck="false" aria-label="調書のMarkdown"></textarea>
+      <div class="counts" id="counts" aria-live="polite"></div>
+      <div class="warn" id="warn" role="status"></div>
+      <div class="status" id="status">入力内容はこのブラウザに自動保存されます。</div>
+    </section>
+    <section class="preview-pane" id="pane" aria-label="プレビュー">
+      <div class="pv-bar" id="pvbar">
+        <span id="pvinfo">A4・原本と同じ寸法で表示しています。赤字は未記入（印刷時は黒）。</span>
+        <button type="button" id="btn-overlay" aria-pressed="false">原本を重ねて確認</button>
+      </div>
+      <div class="stage" id="stage"><article class="sheet" id="sheet"></article></div>
+    </section>
+  </div>
+</div>
+
+<script src="{{ "tool/suisen-chosho/app.js" | relURL }}"></script>
+{{ end }}

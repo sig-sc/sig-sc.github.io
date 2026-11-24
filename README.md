@@ -176,6 +176,24 @@ categories:
 
 ---
 
+## ツール（`/tool/`）
+
+専門委員会の運営で使うツールを置く場所。メニューやフッターからはリンクせず、検索結果・サイトマップ・RSS にも出さない（URL を知っていれば誰でも開ける）。
+
+| ファイル | 役割 |
+|----------|------|
+| `content/tool/_index.md` | ツール一覧（`/tool/`）の front matter |
+| `layouts/tool/section.html` | ツール一覧のレイアウト。`content/tool/` のページを自動で並べる |
+| `content/tool/suisen-chosho.md` | 推薦論文調書メーカー（`/tool/suisen-chosho/`）の front matter |
+| `layouts/suisen-chosho/page.html` | 推薦論文調書メーカーの画面 |
+| `static/tool/suisen-chosho/` | 同ツールの CSS・JS・原本画像 |
+
+ツールを追加するときは、`content/tool/<名前>.md` を `suisen-chosho.md` と同じ front matter（`type`・`noindex`・`build.list: local`・`sitemap.disable`）で作り、`layouts/<type>/page.html` に画面を書く。
+
+`app.css` のうち調書（`.sheet` 以下）の寸法は学会様式の再現なので変更しない。
+
+---
+
 ## スタイル（`assets/css/main.css`）
 
 Tailwind CSS v4 のエントリーポイント。Hugo の `css.TailwindCSS` パイプラインでビルドされます。

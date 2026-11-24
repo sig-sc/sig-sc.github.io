@@ -9,6 +9,9 @@
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <link rel="canonical" href="{{ .Permalink }}">
+  {{- if .Params.noindex }}
+  <meta name="robots" content="noindex, nofollow">
+  {{- end }}
 
   <!-- OGP -->
   <meta property="og:site_name" content="{{ .Site.Title }}">

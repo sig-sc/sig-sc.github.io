@@ -1,0 +1,144 @@
+/* 推薦論文調書メーカー
+   画面まわり（入力欄・ボタン）はサイト本体の配色に合わせる。
+   「原本の寸法」以下の調書部分は学会様式の再現なので、数値を変えないこと。 */
+.sc-tool {
+  --desk: #f1f5f9; --panel: #ffffff; --ink: #0f172a; --ink-soft: #64748b; --line: #e2e8f0;
+  --accent: #195892; --accent-hover: #27acd9; --accent-ink: #ffffff; --focus: #195892;
+  --warn-bg: #fff4d6; --warn-ink: #6b4a00; --editor-bg: #ffffff; --ng: #c00;
+  color-scheme: light;
+  background: var(--desk); color: var(--ink);
+  font-size: 14px; line-height: 1.6;
+}
+.dark .sc-tool {
+  --desk: #0f172a; --panel: #1e293b; --ink: #f1f5f9; --ink-soft: #94a3b8; --line: #334155;
+  --accent-hover: #27acd9; --focus: #27acd9;
+  --warn-bg: #3a2f12; --warn-ink: #f4d78a; --editor-bg: #0f172a; --ng: #ff8a8a;
+  color-scheme: dark;
+}
+.sc-tool *, .sc-tool *::before, .sc-tool *::after { box-sizing: border-box; }
+/* サイトのヘッダー（高さ4rem・固定）の下を、ちょうど1画面ぶん使う */
+.sc-tool .app { display: grid; grid-template-columns: minmax(320px, 1fr) minmax(0, 1.2fr); height: calc(100vh - 4rem); height: calc(100dvh - 4rem); min-height: 520px; }
+.sc-tool .editor-pane { display: flex; flex-direction: column; min-height: 0; background: var(--panel); border-right: 1px solid var(--line); }
+.sc-tool .bar { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; padding: 10px 16px; border-bottom: 1px solid var(--line); }
+.sc-tool .bar h1 { font-size: 15px; font-weight: 700; margin: 0 auto 0 0; }
+.sc-tool .bar h1 .back { font-weight: 400; color: var(--ink-soft); text-decoration: none; }
+.sc-tool .bar h1 .back:hover { color: var(--focus); text-decoration: underline; }
+.sc-tool .bar h1 .back:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.sc-tool button { font: inherit; font-size: 13px; font-weight: 500; cursor: pointer; border: 1px solid var(--line); background: transparent; color: var(--ink); padding: 6px 12px; border-radius: 8px; transition: background-color .15s, border-color .15s, color .15s; }
+.sc-tool button.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); font-weight: 700; }
+.sc-tool button.primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
+.sc-tool button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.sc-tool button:hover { border-color: var(--focus); }
+.sc-tool button:disabled { opacity: .5; cursor: default; }
+.sc-tool button:disabled:hover { border-color: var(--line); }
+.sc-tool button:focus-visible, .sc-tool textarea:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.sc-tool textarea {
+  flex: 1; min-height: 0; width: 100%; resize: none; border: 0; margin: 0; padding: 14px 16px;
+  background: var(--editor-bg); color: var(--ink);
+  font-family: "JetBrains Mono", ui-monospace, "SFMono-Regular", "Menlo", "Consolas", "Noto Sans JP", monospace;
+  font-size: 13px; line-height: 1.7;
+}
+.sc-tool .warn { background: var(--warn-bg); color: var(--warn-ink); padding: 8px 16px; font-size: 12.5px; border-top: 1px solid var(--line); }
+.sc-tool .warn:empty { display: none; }
+.sc-tool .warn p { margin: 0; } .sc-tool .warn p + p { margin-top: 4px; }
+.sc-tool .status { padding: 8px 16px; border-top: 1px solid var(--line); font-size: 12px; color: var(--ink-soft); }
+.sc-tool .saves { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; padding: 8px 16px; border-bottom: 1px solid var(--line); font-size: 12.5px; }
+.sc-tool .saves label { color: var(--ink-soft); }
+.sc-tool .saves input, .sc-tool .saves select { font: inherit; font-size: 13px; color: var(--ink); background: var(--editor-bg); border: 1px solid var(--line); border-radius: 8px; padding: 5px 8px; min-width: 0; }
+.sc-tool .saves input { flex: 1 1 140px; }
+.sc-tool .saves select { flex: 1 1 160px; }
+.sc-tool .saves input:focus-visible, .sc-tool .saves select:focus-visible { outline: 2px solid var(--focus); outline-offset: 1px; }
+.sc-tool .saves .sep { flex-basis: 100%; height: 0; }
+.sc-tool .saves .hint { color: var(--ink-soft); }
+
+.sc-tool .preview-pane { overflow: auto; padding: 20px 20px 48px; }
+.sc-tool .pv-bar { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin: 0 auto 12px; color: var(--ink-soft); font-size: 12px; }
+.sc-tool .pv-bar span { margin-right: auto; }
+.sc-tool .stage { margin: 0 auto; }
+
+/* ===== 原本（A4, 単位pt）の寸法をそのまま再現 ===== */
+.sheet {
+  position: relative; transform-origin: top left;
+  width: 595.32pt; min-height: 841.92pt;
+  padding: 65.25pt 65pt 0 65pt;           /* 本文左端65pt・右端530.4pt */
+  background: #fff; color: #000;
+  box-shadow: 0 1px 2px rgba(0,0,0,.2), 0 8px 24px rgba(0,0,0,.1);
+  font-family: "MS PGothic", "ＭＳ Ｐゴシック", "BIZ UDPGothic", "Hiragino Sans", sans-serif;
+  font-size: 10.5pt; line-height: 16pt; font-kerning: none;
+}
+.overlay {
+  position: absolute; inset: 0; width: 595.32pt; height: 841.92pt; pointer-events: none;
+  background: url("genpon.jpg") top left / 595.32pt 841.92pt no-repeat;
+  mix-blend-mode: multiply; opacity: 0; filter: sepia(1) hue-rotate(160deg) saturate(4);
+}
+.sheet.show-overlay .overlay { opacity: .55; }
+.ln { height: 16pt; white-space: nowrap; position: relative; }
+.ln.gap { height: auto; flex: 1 0 6pt; }                  /* 項目間の空き：最小6pt、余りは１〜２・２〜３・３〜４に均等配分 */
+.right { text-align: right; padding-right: 0; }
+
+.frame {
+  margin-top: 11.75pt;                      /* 枠上辺 157pt */
+  margin-left: -0.2pt; width: 480pt;        /* 枠 x=64.8〜544.8pt */
+  border: 0.75pt solid #000;
+  padding: 3.5pt 13.65pt 0 11.45pt;         /* 枠内本文左端77pt */
+  height: 606pt;                            /* 枠 y=157〜763pt：記入量にかかわらず固定 */
+  display: flex; flex-direction: column;
+}
+.frame > * { flex-shrink: 0; }
+.frame > .item.i4 { flex: 1 0 auto; display: flex; flex-direction: column; }
+.frame.overflow { outline: 2pt dashed #c00; outline-offset: 3pt; }
+@media print { .frame.overflow { outline: none; } }
+.center { text-align: center; }
+.abs { position: absolute; top: 0; white-space: nowrap; }
+.fitw { display: inline-block; }
+.sheet { font-feature-settings: "palt"; }
+.sheet .fill { font-feature-settings: normal; }
+.slot { position: absolute; top: 0; white-space: nowrap; transform: translateX(-50%); font-variant-numeric: tabular-nums; }
+.slot.r { transform: translateX(-100%); }
+/* 交付通番が原本の空白に収まらないときの並べ方：右端は「］」の手前（525.1pt）、幅は原本の「［交付通番」左端（383.5pt）までを最小とする */
+.ban-flow { transform: translateX(-100%); display: inline-flex; justify-content: space-between; gap: 3.2pt; min-width: 141.6pt; }
+.circled { display: inline-block; outline: 0.6pt solid #000; outline-offset: -0.5pt; border-radius: 50%; }
+.u { text-decoration: underline; text-decoration-thickness: 0.6pt; text-underline-offset: 1.6pt; }
+.item { position: relative; }
+.box { position: relative; }                              /* 記入欄（行数分の高さ） */
+.box.over::before { content: ""; position: absolute; left: -8pt; top: 0; bottom: 0; width: 2.5pt; background: #c00; }
+@media print { .box.over::before { display: none; } }
+.fill { padding-left: 14pt; white-space: normal; font-size: var(--fs, 10.5pt); line-height: var(--lh, 16pt); }
+.fill p { margin: 0; text-indent: 1em; text-align: justify; line-height: inherit; }
+.fill p.ni { text-indent: 0; }
+.tail { flex: 1 0 0; }                                    /* 日付行の下〜枠下辺763pt（残りの余白） */
+.mid { height: 240pt; display: flex; flex-direction: column; }   /* １の見出し（y=385pt）〜４の見出し（y=625pt）：固定。２・３はこの中で動く */
+.mid > * { flex-shrink: 0; }
+.mid.overflow { outline: 2pt dashed #c00; outline-offset: 1pt; }
+@media print { .mid.overflow { outline: none; } }
+.counts { padding: 10px 16px; border-top: 1px solid var(--line); font-size: 12.5px; display: grid; grid-template-columns: auto auto 1fr; gap: 2px 14px; align-items: baseline; }
+.counts .ok { color: var(--ink-soft); }
+.counts .ng { color: var(--ng); font-weight: 700; }
+.counts .note2 { grid-column: 1 / -1; color: var(--ink-soft); margin-top: 4px; }
+.sign { position: absolute; left: 150.2pt; top: 0; min-width: 92.7pt; height: 14.2pt; line-height: 16pt;
+        border-bottom: 0.6pt solid #000; padding: 0 2pt; text-align: center; white-space: nowrap; }
+.blank { color: #c00; }
+/* 署名画像：署名欄の下線に乗せ、欄の中央に置く（上にはみ出してよい） */
+.sign-img { position: absolute; left: 50%; bottom: -1pt; transform: translateX(-50%); display: block; width: auto; max-width: 200pt; object-fit: contain; object-position: center bottom; mix-blend-mode: multiply; }
+.overflow-flag { color: #c00; font-weight: 700; }
+
+@media (max-width: 860px) {
+  .sc-tool .app { grid-template-columns: 1fr; height: auto; min-height: 0; }
+  .sc-tool .editor-pane { height: 65vh; border-right: 0; border-bottom: 1px solid var(--line); }
+  .sc-tool .preview-pane { padding: 12px 8px 40px; }
+}
+@page { size: A4; margin: 57pt 0 78.9pt 0; }
+@page :first { margin-top: 0; }
+@media print {
+  /* 印刷するのは調書だけ。サイトのヘッダー・フッターは出さない */
+  html, body { height: auto !important; min-height: 0 !important; background: #fff !important; }
+  body { display: block !important; }
+  body > header, body > footer, body > a { display: none !important; }
+  .sc-tool { background: #fff; }
+  .sc-tool .editor-pane, .sc-tool .pv-bar, .overlay { display: none !important; }
+  .sc-tool .app { display: block; height: auto; min-height: 0; }
+  .sc-tool .preview-pane { padding: 0; overflow: visible; }
+  .stage { width: auto !important; height: auto !important; }
+  .sheet { transform: none !important; box-shadow: none; min-height: 0; padding-bottom: 0; }
+  .blank { color: #000; }
+}
