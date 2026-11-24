@@ -20,6 +20,12 @@ annual:
 
 # 若手奨励賞受賞者
 encouragement:
+  - session: 60
+    date: "2026-11"
+    entries:
+      - title: "AIエージェントと類音異義語検索を用いた駄洒落生成手法の検討"
+        winner: "長尾拓弥"
+        authors: "長尾拓弥・中田匠哉・陳思楠・渡邉拓貴・中村匡秀（神戸大）"
   - session: 59
     date: "2026-07"
     entries:
